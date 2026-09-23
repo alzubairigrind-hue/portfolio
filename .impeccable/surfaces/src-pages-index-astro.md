@@ -81,9 +81,24 @@ The user first picked C · Copper (warm charcoal, faint grain, centred restraine
 
 Overall it looked static. Still standing from earlier rounds: dark grounds are fine, Arabic-first, no photography, no sparse pale minimalism.
 
+## Reference picks, round 3 (2026-09-23)
+
+A board of 14 live tech sites recorded as scroll videos, in `reference-board/round-3.html`.
+
+- Liked: 1 Tabby, 2 Tamara, 5 Zid (Saudi, Arabic), 8 Raycast, 13 Spline, 14 LottieFiles.
+- Not picked: Salla, Foodics, Linear, Vercel, Framer, Stripe, Resend, Arc.
+- What the picks share:
+  - Playful and rounded over precise: pill buttons, soft cards, rounded panels. Every "serious tech" site was passed over.
+  - Vivid colour, not monochrome.
+  - Motion carried by playful objects: floating soft 3D shapes, glowing forms, animated characters, and cards that animate in on scroll.
+  - Saudi fintech and e-commerce feel.
+- Consequence for the no-photos rule: animated shapes (CSS/SVG, no heavy 3D runtime) do the atmospheric job photography does on those sites.
+- Type flag: the picks all use bold, rounded, modern Arabic sans. HT Moshreq Pro (calligraphic, chosen for the earlier luxury direction) may no longer fit, so hold the licence purchase until the direction settles.
+
 ## Open decisions
 
-1. The whole visual direction: palette, type scale, button style, motion and scroll behaviour. To be picked from reference board round 3 (`reference-board/round-3.html`): live tech sites, including Saudi tech products, recorded as scroll videos so the motion can be judged.
+1. Dark or light ground: the round-3 picks split (8, 13 dark; 1, 2, 5, 14 light). Settle it by eye in hero prototype round 3: A · Floating shapes (dark), B · Glow (dark), C · Playful light.
+2. Heading typeface: Moshreq vs. a bold rounded Arabic sans (Alexandria is the current fallback). Decide after decision 1, before buying any licence.
 
 ## Direction contract
 
