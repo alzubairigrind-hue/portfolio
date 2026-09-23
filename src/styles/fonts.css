@@ -18,6 +18,5 @@
 
 :root {
   --font-body: "Alexandria", system-ui, sans-serif;
-  /* Placeholder until the licensed HT Moshreq Pro webfont is added. */
   --font-heading: "Alexandria", system-ui, sans-serif;
 }
