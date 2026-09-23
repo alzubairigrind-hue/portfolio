@@ -9,12 +9,21 @@ const { lang } = Astro.props;
 const t = copy[lang];
 ---
 
-<section id="contact">
-  <h2>{t.contact.heading}</h2>
-  <h3>{t.contact.subheading}</h3>
-  <p>{t.contact.body}</p>
-  <a href={links.whatsapp} rel="noopener">{t.contact.cta}</a>
-  <p>
-    {t.contact.emailLead} <a href={`mailto:${links.email}`}>{t.contact.email}</a>
-  </p>
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="panel reveal">
+    <h2 id="contact-heading" class="sr-only">{t.contact.heading}</h2>
+    <h3>{t.contact.subheading}</h3>
+    <p>{t.contact.body}</p>
+    <a class="btn btn--light" href={links.whatsapp} rel="noopener">{t.contact.cta}</a>
+    <p class="email">
+      {t.contact.emailLead} <a href={`mailto:${links.email}`} dir="ltr">{t.contact.email}</a>
+    </p>
+  </div>
 </section>
+
+<style>
+  .panel { display: grid; justify-items: start; gap: 1rem; padding: clamp(1.75rem, 4vw, 3rem); border-radius: 36px; background: var(--hero-ground); color: var(--hero-ink); box-shadow: 0 40px 80px -40px rgb(43 20 99 / 0.9); }
+  .panel h3 { margin: 0; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: 1.35; }
+  .panel p { color: var(--hero-ink-2); }
+  .email a { color: #fff; font-weight: 700; }
+</style>

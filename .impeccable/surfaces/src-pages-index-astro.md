@@ -118,10 +118,15 @@ Copy v2 is proposed in `COPY_V2_DRAFT.md` (from `COPY_RESEARCH.md`), pending app
 - **But the hero "looks so AI":** the soft purple radial glow is a stock AI-hero trope, the googly-eyed blob characters are generic decoration unrelated to the offer, and headline-left/decoration-right is the default template.
 - **Round 5** keeps C2's palette, buttons and motion, removes the glow, and tests hero art that shows the actual offer: 5A WhatsApp-to-website chat, 5B a self-assembling site, 5C type only.
 
+## Prototype round 5 verdict (2026-09-24)
+
+**5A · WhatsApp to website wins:** C2 deep purple, no glow, faint grain, and an animated phone chat that mirrors the real process ("three things" message → written price → "your site is live, domain and hosting in your name") with a mini site popping in, labelled «مثال توضيحي». It is now built on `main` as the real hero.
+
+**Tone correction (2026-09-24):** Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency and always brings in specialists. Copy v2 revision 2 in `COPY_V2_DRAFT.md`.
+
 ## Open decisions
 
-1. Hero art: 5A, 5B or 5C (prototype round 5).
-2. Copy v2 approval, including the line under the name: concrete "websites & online stores" or the original "technology solutions".
+1. Copy v2 revision 2 approval. The owner is reading the four agency sites he liked (Ethar Web, Art4Muslim, Mrhbaa, Shadow Design) and will say what to fill. Until then `copy.ts` keeps the old v1 strings, plus draft-only keys for How we work, commitments and the hero demo.
 
 ## Direction contract
 

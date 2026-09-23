@@ -25,6 +25,18 @@ export type SiteCopy = {
     email: string;
   };
   footer: { copyright: string; switchLabel: string };
+  howWeWork: {
+    heading: string;
+    steps: { title: string; body: string }[];
+    commitmentsHeading: string;
+    commitments: { title: string; body: string }[];
+  };
+  heroDemo: {
+    status: string;
+    label: string;
+    messages: { from: 'me' | 'them'; text: string; chip?: string; chipLtr?: boolean }[];
+    site: { url: string; title: string; button: string };
+  };
 };
 
 export const copy: Record<Lang, SiteCopy> = {
@@ -65,6 +77,34 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     work: { heading: 'أعمال مختارة' },
+    // DRAFT (copy v2 rev 2, pending approval): How we work, commitments, hero demo.
+    howWeWork: {
+      heading: 'كيف نعمل',
+      steps: [
+        { title: 'رسالة على واتساب', body: 'تخبرنا عن نشاطك وما تحتاجه.' },
+        { title: 'سعر مكتوب ونطاق واضح', body: 'نتفق على ما يشمله العمل وما لا يشمله قبل أن نبدأ.' },
+        { title: 'التصميم والبناء', body: 'تراجع العمل وتوافق عليه قبل الإطلاق.' },
+        { title: 'الإطلاق والتسليم', body: 'نسلّمك الموقع وصلاحياته ونشرح لك كيف تديره.' },
+        { title: 'الرعاية بعد الإطلاق', body: 'إن أردت، نتولى التحديثات والنسخ الاحتياطية والحماية.' },
+      ],
+      commitmentsHeading: 'التزاماتنا مكتوبة',
+      commitments: [
+        { title: 'سعر مكتوب قبل أن نبدأ', body: 'السعر وما يشمله وما لا يشمله، مكتوبًا، قبل أي عمل.' },
+        { title: 'موافقتك قبل الإطلاق', body: 'لا يُنشر شيء قبل أن تراجعه وتوافق عليه.' },
+        { title: 'الموقع باسمك', body: 'النطاق والاستضافة وصلاحيات المدير لك، ولا تحتاج إلينا لتبقى تملكه.' },
+      ],
+    },
+    heroDemo: {
+      status: 'متصل الآن',
+      label: 'مثال توضيحي',
+      messages: [
+        { from: 'me', text: 'مرحبًا، نشاطي مقهى، وأحتاج موقعًا فيه قائمة المشروبات، وميزانيتي تقريبية.' },
+        { from: 'them', text: 'أهلًا بك! أرسلنا لك السعر مكتوبًا مع كل ما يشمله العمل.', chip: 'عرض السعر' },
+        { from: 'me', text: 'تم، لنبدأ.' },
+        { from: 'them', text: 'موقعك أصبح مباشرًا، والنطاق والاستضافة باسمك.', chip: 'yourcafe.sa', chipLtr: true },
+      ],
+      site: { url: 'yourcafe.sa', title: 'موقعك هنا', button: 'تواصل معنا' },
+    },
     contact: {
       heading: 'تواصل',
       subheading: 'لديك مشروع في بالك؟',
@@ -115,6 +155,34 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     work: { heading: 'Selected work' },
+    // DRAFT (copy v2 rev 2, pending approval): How we work, commitments, hero demo.
+    howWeWork: {
+      heading: 'How we work',
+      steps: [
+        { title: 'A WhatsApp message', body: 'Tell us about your business and what you need.' },
+        { title: 'A written price and a clear scope', body: "We agree what's included and what isn't before we start." },
+        { title: 'Design and build', body: 'You review and approve the work before launch.' },
+        { title: 'Launch and handover', body: 'We hand over the site and its access, and show you how to run it.' },
+        { title: 'Care after launch', body: 'If you want, we handle updates, backups and security.' },
+      ],
+      commitmentsHeading: 'Our commitments, in writing',
+      commitments: [
+        { title: 'A written price before we start', body: "The price, what it includes and what it doesn't, in writing, before any work." },
+        { title: 'Your approval before launch', body: "Nothing goes live until you've reviewed and approved it." },
+        { title: 'The site is yours', body: "Domain, hosting and admin access in your name, and you don't need us to keep it." },
+      ],
+    },
+    heroDemo: {
+      status: 'Online now',
+      label: 'Illustrative example',
+      messages: [
+        { from: 'me', text: 'Hi, I run a café, I need a site with our drinks menu, and I have a rough budget.' },
+        { from: 'them', text: "Welcome! We've sent you the written price, with everything it includes.", chip: 'Quote' },
+        { from: 'me', text: "Great, let's start." },
+        { from: 'them', text: 'Your site is live, and the domain and hosting are in your name.', chip: 'yourcafe.sa', chipLtr: true },
+      ],
+      site: { url: 'yourcafe.sa', title: 'Your site here', button: 'Contact us' },
+    },
     contact: {
       heading: 'Contact',
       subheading: 'Have a project in mind?',

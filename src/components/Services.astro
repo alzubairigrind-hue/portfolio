@@ -9,12 +9,12 @@ const { lang } = Astro.props;
 const t = copy[lang];
 ---
 
-<section id="services">
-  <h2>{t.services.heading}</h2>
-  <ol>
+<section id="services" class="section" aria-labelledby="services-heading">
+  <h2 id="services-heading" class="reveal">{t.services.heading}</h2>
+  <ol class="grid">
     {
       t.services.items.map((item) => (
-        <li>
+        <li class="card reveal">
           <h3>{item.title}</h3>
           <p>{item.body}</p>
         </li>
@@ -22,3 +22,7 @@ const t = copy[lang];
     }
   </ol>
 </section>
+
+<style>
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+</style>

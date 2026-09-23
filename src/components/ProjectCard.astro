@@ -10,17 +10,26 @@ const { lang, project } = Astro.props;
 const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
 ---
 
-<article>
+<article class="card project reveal">
   <h3>{project.name[lang]}</h3>
   <p>{project.description[lang]}</p>
-  {
-    project.status === 'coming-soon' ? (
-      <p>{project.statusLabel[lang]}</p>
-    ) : (
-      <a href={`/work/${project.slug}/`}>{demoLabel}</a>
-    )
-  }
-  {
-    project.repoUrl && <a href={project.repoUrl} rel="noopener">GitHub</a>
-  }
+  <div class="meta">
+    {
+      project.status === 'coming-soon' ? (
+        <span class="badge">{project.statusLabel[lang]}</span>
+      ) : (
+        <a class="btn btn--brand" href={`/work/${project.slug}/`}>{demoLabel}</a>
+      )
+    }
+    {project.repoUrl && <a class="link" href={project.repoUrl} rel="noopener">GitHub</a>}
+  </div>
 </article>
+
+<style>
+  .project { display: grid; gap: 0.6rem; max-inline-size: 36rem; }
+  .project h3 { margin: 0; }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: 0.4rem; }
+  .badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.9rem; border-radius: var(--radius-pill); background: #fff; border: 1px dashed var(--lilac); color: var(--brand); font-size: 0.88rem; font-weight: 700; }
+  .badge::before { content: ''; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: var(--lilac); }
+  .link { font-weight: 700; }
+</style>

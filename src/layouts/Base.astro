@@ -1,5 +1,6 @@
 ---
 import '../styles/fonts.css';
+import '../styles/global.css';
 import type { Lang } from '../content/copy';
 
 interface Props {
@@ -18,14 +19,44 @@ const canonical = lang === 'ar' ? `${site}/` : `${site}/en/`;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2b1463" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="ar" href={`${site}/`} />
     <link rel="alternate" hreflang="en" href={`${site}/en/`} />
     <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+    <script is:inline>document.documentElement.classList.add('js');</script>
   </head>
   <body>
     <slot />
+    <script>
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.15 },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+      // The hero demo plays once on load and replays every 11 s.
+      const demo = document.querySelector('.hero-demo');
+      if (demo) {
+        const play = () => {
+          demo.classList.remove('play');
+          void (demo as HTMLElement).offsetWidth;
+          demo.classList.add('play');
+        };
+        play();
+        if (!reduce) setInterval(play, 11000);
+      }
+    </script>
   </body>
 </html>

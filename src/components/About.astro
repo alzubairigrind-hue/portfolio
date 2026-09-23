@@ -9,8 +9,12 @@ const { lang } = Astro.props;
 const t = copy[lang];
 ---
 
-<section id="about" aria-labelledby="about-heading">
-  <h2 id="about-heading">{t.about.heading}</h2>
-  <p>{t.about.lead}</p>
-  <p>{t.about.body}</p>
+<section id="about" class="section" aria-labelledby="about-heading">
+  <h2 id="about-heading" class="reveal">{t.about.heading}</h2>
+  <p class="lead reveal">{t.about.lead}</p>
+  <p class="reveal">{t.about.body}</p>
 </section>
+
+<style>
+  .lead { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.6; color: var(--ink); }
+</style>

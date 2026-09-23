@@ -10,9 +10,7 @@ const { lang } = Astro.props;
 const t = copy[lang];
 ---
 
-<section id="work">
-  <h2>{t.work.heading}</h2>
-  {
-    projects.map((project) => <ProjectCard project={project} lang={lang} />)
-  }
+<section id="work" class="section" aria-labelledby="work-heading">
+  <h2 id="work-heading" class="reveal">{t.work.heading}</h2>
+  {projects.map((project) => <ProjectCard project={project} lang={lang} />)}
 </section>
