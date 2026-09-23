@@ -1,0 +1,31 @@
+---
+import '../styles/fonts.css';
+import type { Lang } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+}
+
+const { lang, title, description } = Astro.props;
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+const site = 'https://portfolio.binmahyub.uk';
+const canonical = lang === 'ar' ? `${site}/` : `${site}/en/`;
+---
+
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="ar" href={`${site}/`} />
+    <link rel="alternate" hreflang="en" href={`${site}/en/`} />
+    <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

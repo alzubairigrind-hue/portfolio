@@ -1,0 +1,24 @@
+---
+import { copy, type Lang } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<section id="services">
+  <h2>{t.services.heading}</h2>
+  <ol>
+    {
+      t.services.items.map((item) => (
+        <li>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </li>
+      ))
+    }
+  </ol>
+</section>

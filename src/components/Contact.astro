@@ -1,0 +1,20 @@
+---
+import { copy, links, type Lang } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<section id="contact">
+  <h2>{t.contact.heading}</h2>
+  <h3>{t.contact.subheading}</h3>
+  <p>{t.contact.body}</p>
+  <a href={links.whatsapp} rel="noopener">{t.contact.cta}</a>
+  <p>
+    {t.contact.emailLead} <a href={`mailto:${links.email}`}>{t.contact.email}</a>
+  </p>
+</section>

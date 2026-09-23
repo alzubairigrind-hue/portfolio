@@ -1,0 +1,26 @@
+---
+import { type Lang, type Project } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+  project: Project;
+}
+
+const { lang, project } = Astro.props;
+const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
+---
+
+<article>
+  <h3>{project.name[lang]}</h3>
+  <p>{project.description[lang]}</p>
+  {
+    project.status === 'coming-soon' ? (
+      <p>{project.statusLabel[lang]}</p>
+    ) : (
+      <a href={`/work/${project.slug}/`}>{demoLabel}</a>
+    )
+  }
+  {
+    project.repoUrl && <a href={project.repoUrl} rel="noopener">GitHub</a>
+  }
+</article>

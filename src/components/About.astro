@@ -1,0 +1,16 @@
+---
+import { copy, type Lang } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<section id="about" aria-labelledby="about-heading">
+  <h2 id="about-heading">{t.about.heading}</h2>
+  <p>{t.about.lead}</p>
+  <p>{t.about.body}</p>
+</section>

@@ -1,0 +1,18 @@
+---
+import { copy, projects, type Lang } from '../content/copy';
+import ProjectCard from './ProjectCard.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<section id="work">
+  <h2>{t.work.heading}</h2>
+  {
+    projects.map((project) => <ProjectCard project={project} lang={lang} />)
+  }
+</section>

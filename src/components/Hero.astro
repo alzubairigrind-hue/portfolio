@@ -1,0 +1,19 @@
+---
+import { copy, links, type Lang } from '../content/copy';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<header>
+  <p>{t.hero.name}</p>
+  <p>{t.hero.eyebrow}</p>
+  <h1>{t.hero.headline}</h1>
+  <p>{t.hero.sub}</p>
+  <a href={links.whatsapp} rel="noopener">{t.hero.cta}</a>
+  <a href="#services">{t.hero.secondaryLink}</a>
+</header>
