@@ -102,9 +102,26 @@ All rounds are viewable on branch `prototype/hero` at `/proto` (round 3 at `/pro
 - **Except its colouring:** the mint-green ground is "too hype for an agency". Everything else in C stays.
 - **Heading typeface:** Alexandria (SIL OFL) for everything. HT Moshreq Pro is dropped: its calligraphic character belongs to the abandoned luxury direction, and no licence will be bought.
 
+## Agency rebrand and business answers (2026-09-23)
+
+The site is for **Bin Mahyub / بن مهيوب**, the owner's technology agency. It stands separate from his personal identity, so projects can be delegated under one name. Personal CV facts are off the page, and the email is hello@binmahyub.uk. The owner's answers bind the copy:
+1. Delegation to specialists already happens.
+2. The domain, hosting and access go in the client's name.
+3. There's no "what we don't do" list: beyond our expertise, the best in that field is brought in.
+4. Quotes are written.
+
+Copy v2 is proposed in `COPY_V2_DRAFT.md` (from `COPY_RESEARCH.md`), pending approval. It adds a "How we work" section with a handover block, so the order becomes Hero → About → Services → How we work → Work → Contact.
+
+## Prototype round 4 verdict (2026-09-23)
+
+- **C2 · Deep purple (from Zid) wins on colour.**
+- **But the hero "looks so AI":** the soft purple radial glow is a stock AI-hero trope, the googly-eyed blob characters are generic decoration unrelated to the offer, and headline-left/decoration-right is the default template.
+- **Round 5** keeps C2's palette, buttons and motion, removes the glow, and tests hero art that shows the actual offer: 5A WhatsApp-to-website chat, 5B a self-assembling site, 5C type only.
+
 ## Open decisions
 
-1. C's colour palette: a calmer, agency-credible ground and accent set that keeps C's playfulness. Choose from references or palette variants of C, not invented from adjectives.
+1. Hero art: 5A, 5B or 5C (prototype round 5).
+2. Copy v2 approval, including the line under the name: concrete "websites & online stores" or the original "technology solutions".
 
 ## Direction contract
 
