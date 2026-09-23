@@ -1,5 +1,7 @@
 # Copy v2 — DRAFT for approval (Bin Mahyub), revision 2
 
+> **NOT ADOPTED (2026-09-24), kept for reference.** The owner kept the v1 wording with his name in the hero. Only three of this draft's pieces went live: How we work, Our written commitments, and the hero's illustrative chat. The live copy is `COPY.md`.
+
 - **Status:** proposal, revision 2 (2026-09-24). Nothing on the site uses this until it is approved. Once approved, it replaces the copy in `COPY.md` and `src/content/copy.ts`.
 - **What changed in revision 2:** the tone. Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency, and he always brings in specialists for the best result. The four sites the owner liked are the models: Art4Muslim (written commitments), Mrhbaa (a short first message), Ethar Web (plain wording) and Shadow Design (a clear belief and structure). Their patterns are borrowed, not their sentences.
 - **Words deliberately avoided:** وكالة / agency, شركة / company, فريقنا / our team. Each implies a registered firm or staff.

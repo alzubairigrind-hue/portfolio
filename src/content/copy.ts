@@ -57,7 +57,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       heading: 'من نحن',
       lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟',
-      body: 'ادريس الزبيري، خريج نظم المعلومات الإدارية والأول على دفعته عام 2023، يبني للويب منذ 2022. وسنوات من تدريس أكثر من 50 طالبًا رسّخت عادة لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
+      body: 'ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
     },
     services: {
       heading: 'الخدمات',
@@ -77,7 +77,7 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     work: { heading: 'أعمال مختارة' },
-    // DRAFT (copy v2 rev 2, pending approval): How we work, commitments, hero demo.
+    // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'كيف نعمل',
       steps: [
@@ -111,7 +111,7 @@ export const copy: Record<Lang, SiteCopy> = {
       body: 'أخبرنا عنه على واتساب، وستعرف السعر بوضوح قبل أن نبدأ أي عمل.',
       cta: 'راسلنا على واتساب',
       emailLead: 'أو عبر البريد:',
-      email: 'alzubairi.idris@gmail.com',
+      email: 'info@binmahyub.uk',
     },
     footer: {
       copyright: '© 2026 ادريس الزبيري',
@@ -135,7 +135,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       heading: 'About',
       lead: 'Every site we build starts with one question: how will it still be running a year from now?',
-      body: 'Edres Al-Zubairi graduated first in class in Management Information Systems (2023) and has been building for the web since 2022. Years of teaching more than 50 students left a habit we keep: explain everything plainly, without jargon.',
+      body: 'Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.',
     },
     services: {
       heading: 'Services',
@@ -155,7 +155,7 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     work: { heading: 'Selected work' },
-    // DRAFT (copy v2 rev 2, pending approval): How we work, commitments, hero demo.
+    // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'How we work',
       steps: [
@@ -189,7 +189,7 @@ export const copy: Record<Lang, SiteCopy> = {
       body: "Tell us about it on WhatsApp. You'll get a clear price before any work starts.",
       cta: 'Message us on WhatsApp',
       emailLead: 'or by email:',
-      email: 'alzubairi.idris@gmail.com',
+      email: 'info@binmahyub.uk',
     },
     footer: {
       copyright: '© 2026 Edres Al-Zubairi',
@@ -223,5 +223,5 @@ export const projects: Project[] = [
 
 export const links = {
   whatsapp: 'https://wa.me/966501374100',
-  email: 'alzubairi.idris@gmail.com',
+  email: 'info@binmahyub.uk',
 };

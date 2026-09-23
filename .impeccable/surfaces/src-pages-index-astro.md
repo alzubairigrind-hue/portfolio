@@ -124,9 +124,18 @@ Copy v2 is proposed in `COPY_V2_DRAFT.md` (from `COPY_RESEARCH.md`), pending app
 
 **Tone correction (2026-09-24):** Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency and always brings in specialists. Copy v2 revision 2 in `COPY_V2_DRAFT.md`.
 
+## Copy decision (2026-09-24, final for launch)
+
+The owner kept the v1 wording with **his name in the hero** (ادريس الزبيري). **Bin Mahyub** is the brand behind the domain, the email (info@binmahyub.uk) and the «ب» mark.
+
+- About hides three personal facts at his request (the MIS degree, first in class 2023, teaching 50+ students) and keeps "since 2022".
+- From copy v2 rev 2, only these went live: How we work, Our written commitments, and the illustrative hero chat.
+- The live copy is `COPY.md` v1.1. `COPY_V2_DRAFT.md` is marked not adopted.
+- The agency/studio framing is superseded: no agency, company or team claims on the page.
+
 ## Open decisions
 
-1. Copy v2 revision 2 approval. The owner is reading the four agency sites he liked (Ethar Web, Art4Muslim, Mrhbaa, Shadow Design) and will say what to fill. Until then `copy.ts` keeps the old v1 strings, plus draft-only keys for How we work, commitments and the hero demo.
+None for the design or copy. What's left: Impeccable's finish review, DESIGN.md, then deploy.
 
 ## Direction contract
 
