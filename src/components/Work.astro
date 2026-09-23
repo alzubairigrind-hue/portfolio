@@ -12,5 +12,11 @@ const t = copy[lang];
 
 <section id="work" class="section" aria-labelledby="work-heading">
   <h2 id="work-heading" class="reveal">{t.work.heading}</h2>
-  {projects.map((project) => <ProjectCard project={project} lang={lang} />)}
+  <div class="grid">
+    {projects.map((project) => <ProjectCard project={project} lang={lang} />)}
+  </div>
 </section>
+
+<style>
+  .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); }
+</style>

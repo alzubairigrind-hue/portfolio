@@ -39,6 +39,9 @@ p { margin: 0; }
 a { color: inherit; text-underline-offset: 0.35em; text-decoration-thickness: 1px; }
 ::selection { background: var(--brand); color: #fff; }
 :focus-visible { outline: 3px solid var(--lilac); outline-offset: 3px; border-radius: var(--radius-pill); }
+/* Lilac is for the purple grounds; on white it falls under 3:1, so use the brand purple there. */
+main :focus-visible, footer :focus-visible { outline-color: var(--brand-2); }
+.panel :focus-visible { outline-color: var(--lilac); }
 
 .pad { padding-inline: var(--pad); }
 .sr-only { position: absolute; inline-size: 1px; block-size: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
@@ -63,12 +66,13 @@ a { color: inherit; text-underline-offset: 0.35em; text-decoration-thickness: 1p
 .btn--ghost:hover { background: rgb(255 255 255 / 0.16); scale: 1.05; }
 
 /* Sections */
-.section { max-inline-size: 72rem; margin-inline: auto; padding-inline: var(--pad); padding-block: 4rem; display: grid; gap: 1.25rem; }
-.section h2 { margin: 0; font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.4; }
+.section { max-inline-size: 72rem; margin-inline: auto; padding-inline: var(--pad); padding-block: 4.5rem; display: grid; gap: 1.1rem; }
+.section h2 { margin: 0 0 0.6rem; font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.4; }
 .section h3 { margin: 0 0 0.35rem; font-weight: 800; font-size: 1.2rem; line-height: 1.5; }
 .section p { max-inline-size: var(--measure); color: var(--ink-2); }
 .card { background: var(--card); border: 1px solid var(--card-line); border-radius: var(--radius-card); padding: 1.75rem; box-shadow: 0 18px 40px -28px rgb(0 0 0 / 0.3); transition: scale 0.4s var(--spring); }
-.card:hover { scale: 1.02; }
+/* Only cards that lead somewhere react to hover; a growing card that isn't clickable misleads. */
+.card:has(a):hover { scale: 1.02; }
 
 /* Scroll reveals: hidden only when JS runs, so the page reads fine without it */
 .js .reveal { opacity: 0; translate: 0 32px; scale: 0.97; transition: opacity 0.8s var(--out), translate 0.8s var(--out), scale 0.8s var(--spring); }
