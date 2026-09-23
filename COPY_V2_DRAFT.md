@@ -1,37 +1,29 @@
-# Copy v2 — DRAFT for approval (Bin Mahyub)
+# Copy v2 — DRAFT for approval (Bin Mahyub), revision 2
 
-- **Status:** proposal, 2026-09-23. Nothing on the site uses this until it is approved. Once approved, it replaces the copy in `COPY.md` and `src/content/copy.ts`.
-- **Built from:** `COPY_RESEARCH.md` (18 agency sites compared) and the owner's four business answers:
-  1. Delegation to specialists already happens.
-  2. The domain, hosting and access are registered in the client's name.
-  3. There's no "what we don't do" list: if a project needs other expertise, the best in that field is brought in.
-  4. Quotes are written.
-- **Voice:** "we", warm and confident, Modern Standard Arabic. No superlatives, and no numbers we can't prove.
-- **New page order:** Hero → About → Services → **How we work** (new) → Work → Contact.
+- **Status:** proposal, revision 2 (2026-09-24). Nothing on the site uses this until it is approved. Once approved, it replaces the copy in `COPY.md` and `src/content/copy.ts`.
+- **What changed in revision 2:** the tone. Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency, and he always brings in specialists for the best result. The four sites the owner liked are the models: Art4Muslim (written commitments), Mrhbaa (a short first message), Ethar Web (plain wording) and Shadow Design (a clear belief and structure). Their patterns are borrowed, not their sentences.
+- **Words deliberately avoided:** وكالة / agency, شركة / company, فريقنا / our team. Each implies a registered firm or staff.
+- **Built from:** `COPY_RESEARCH.md` and the owner's answers:
+  - specialists are brought in for every project
+  - the client owns the domain, hosting and access
+  - there's no "we don't do" list
+  - quotes are written
+- **Email:** info@binmahyub.uk.
+- **Page order:** Hero → About → Services → **How we work + Our written commitments** → Work → Contact.
 
 ## What changed and why
 
 | Where | Change | Reason |
 |---|---|---|
-| Page title, line under the name | "حلول تقنية" / "technology solutions" → a concrete description (**your choice below**) | Nobody searches for "technology solutions"; every Saudi agency title names the service |
-| Hero subline | names who it's for | Research pattern: say what you build *and* for whom |
-| About | adds how the agency works: one name, the right specialist per project, the best in the field beyond our expertise, one point of contact | Answers 1 and 3; how credible small studios say "we" |
-| Landing pages | "مظهر فاخر" / "premium look" → what we actually build | "فاخر" is worn out on Saudi agency sites |
-| WordPress & WooCommerce | "بشكل صحيح" / "properly" → "cleanly and securely" | Says what "properly" means |
-| **How we work** (new) | 5 steps, from the first message to care after launch | The biggest honest gap in the research |
-| **What you get at handover** (new) | domain, hosting and admin access in the client's name | Answer 2; the strongest proof that needs no numbers |
-| Work heading | "أعمال مختارة" / "Selected work" → "أحدث مشاريعنا" / "Latest project" | There is one project; "selected" implies many |
-| Contact | says what to send; **written** price | Research pattern (Mrhbaa); answer 4 |
-| Kept as is | headline, WhatsApp button, maintenance service, contact heading, footer | Research verdict: keep |
-
-## Your choice: the line under the name (and page title)
-
-| Option | Arabic | English |
-|---|---|---|
-| **A · Concrete (recommended by the research)** | وكالة مواقع ومتاجر · المملكة العربية السعودية | Websites & online stores · Saudi Arabia |
-| **B · Your original framing** | حلول تقنية · المملكة العربية السعودية | Technology solutions · Saudi Arabia |
-
-Option A matches what the page sells today. Option B leaves room for services the agency will add through specialists. The copy below uses A. Say "B" and every place it appears switches.
+| Line under the name | **"مواقع ومتاجر · المملكة العربية السعودية"** / "Websites & stores · Saudi Arabia" | Concrete, and it claims no business type |
+| Hero subline | names who it's for | Research pattern |
+| About | "an **independent web studio**"; the look is only the start, a site that works and keeps working is the point; **specialists brought in for every project**; one name, one person responsible | Honest for a freelancer building toward an agency; the "we" is true because every project involves specialists |
+| Services | concrete wording; "فاخر" / "premium" dropped | Research: "فاخر" is worn out |
+| **How we work** (new) | 5 steps, first message → care after launch | The biggest honest gap |
+| **Our written commitments** (new) | 3 commitments: written price, your approval before launch, the site in your name | Art4Muslim's pattern: promises the client can hold us to |
+| Work heading | "أحدث مشاريعنا" / "Latest project" | One project; "selected" implies many |
+| Contact | say what to send; a **written** price; info@ | Mrhbaa's pattern and the owner's answers |
+| Kept | headline, WhatsApp buttons, maintenance service, contact heading, footer | Research verdict: keep |
 
 ---
 
@@ -39,11 +31,11 @@ Option A matches what the page sells today. Option B leaves room for services th
 
 ### بيانات الصفحة
 - **العنوان:** بن مهيوب — مواقع ومتاجر ووردبريس في السعودية
-- **الوصف:** صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم مدروس وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.
+- **الوصف:** استوديو ويب مستقل يبني صفحات الهبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم مدروس وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.
 
 ### الواجهة
 - **الاسم:** بن مهيوب
-- **السطر تحت الاسم:** وكالة مواقع ومتاجر · المملكة العربية السعودية
+- **السطر تحت الاسم:** مواقع ومتاجر · المملكة العربية السعودية
 - **العنوان:** نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.
 - **النص الفرعي:** صفحات هبوط ومواقع ومتاجر ووردبريس لأصحاب الأعمال في السعودية: تصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.
 - **الزر الرئيسي:** راسلنا على واتساب
@@ -52,7 +44,7 @@ Option A matches what the page sells today. Option B leaves room for services th
 ### من نحن
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟
 
-بن مهيوب وكالة تقنية في المملكة العربية السعودية، نبني المواقع للأعمال ونرعاها بعد الإطلاق. نعمل تحت اسم واحد، ونستعين لكل مشروع بالمختص المناسب، وإن احتاج مشروعك خبرة خارج تخصصنا استعنّا بأفضل المختصين في مجالها. وفي كل الأحوال، يبقى تواصلك معنا في مكان واحد ومع مسؤول واحد عن مشروعك.
+بن مهيوب استوديو ويب مستقل في المملكة العربية السعودية. المظهر الجميل عندنا بداية فقط؛ ما يهمنا أن يعمل موقعك لصالحك ويبقى يعمل بعد الإطلاق. ولكل مشروع نستعين بالمختصين الذين يحتاجهم، لتحصل على أفضل نتيجة، تحت اسم واحد ومع مسؤول واحد عن مشروعك.
 
 ونشرح كل شيء بوضوح وبلا مصطلحات معقدة، لتعرف دائمًا ما الذي تدفع مقابله ولماذا.
 
@@ -60,7 +52,7 @@ Option A matches what the page sells today. Option B leaves room for services th
 1. **صفحات الهبوط**
    صفحة واحدة بهدف واحد: رسالة واضحة، وتحميل سريع على أي جوال، وزر يوصل الزائر إليك مباشرة.
 2. **مواقع ووردبريس ومتاجر ووكومرس**
-   مواقع أعمال ومتاجر إلكترونية تستطيع تحديث محتواها ومنتجاتها بنفسك، بإعداد نظيف وآمن من اليوم الأول.
+   مواقع أعمال ومتاجر إلكترونية تستطيع تعديل محتواها ومنتجاتها بنفسك، بلا تعقيد تقني، وبإعداد نظيف وآمن من اليوم الأول.
 3. **الإدارة والصيانة**
    تحديثات ونسخ احتياطية وحماية وإصلاحات، ليبقى موقعك يعمل وأنت منشغل بعملك.
 
@@ -71,8 +63,10 @@ Option A matches what the page sells today. Option B leaves room for services th
 4. **الإطلاق والتسليم** — نسلّمك الموقع وصلاحياته ونشرح لك كيف تديره.
 5. **الرعاية بعد الإطلاق** — إن أردت، نتولى التحديثات والنسخ الاحتياطية والحماية.
 
-**ماذا تستلم عند التسليم**
-الموقع باسمك: النطاق والاستضافة وصلاحيات المدير لك، ولا تحتاج إلينا لتبقى تملكه.
+### التزاماتنا مكتوبة (جديد)
+- **سعر مكتوب قبل أن نبدأ** — السعر وما يشمله وما لا يشمله، مكتوبًا، قبل أي عمل.
+- **موافقتك قبل الإطلاق** — لا يُنشر شيء قبل أن تراجعه وتوافق عليه.
+- **الموقع باسمك** — النطاق والاستضافة وصلاحيات المدير لك، ولا تحتاج إلينا لتبقى تملكه.
 
 ### أحدث مشاريعنا
 - **أدب الفروسية**
@@ -83,7 +77,7 @@ Option A matches what the page sells today. Option B leaves room for services th
 - **العنوان:** لديك مشروع في بالك؟
 - **النص:** أرسل لنا على واتساب ثلاثة أشياء: نشاطك، وما تحتاجه، وميزانيتك التقريبية. سنخبرك كيف نستطيع المساعدة، وستستلم سعرًا مكتوبًا قبل أن نبدأ أي عمل.
 - **الزر:** راسلنا على واتساب
-- **ثانوي:** أو عبر البريد: hello@binmahyub.uk
+- **ثانوي:** أو عبر البريد: info@binmahyub.uk
 
 ### التذييل
 © 2026 بن مهيوب · English
@@ -94,11 +88,11 @@ Option A matches what the page sells today. Option B leaves room for services th
 
 ### Meta
 - **Title:** Bin Mahyub — Websites & WordPress stores in Saudi Arabia
-- **Description:** Landing pages, WordPress sites and WooCommerce stores, carefully designed and fast, with ongoing administration and maintenance after launch.
+- **Description:** An independent web studio building landing pages, WordPress sites and WooCommerce stores, carefully designed and fast, with ongoing administration and maintenance after launch.
 
 ### Hero
 - **Name:** Bin Mahyub
-- **Line under the name:** Websites & online stores · Saudi Arabia
+- **Line under the name:** Websites & stores · Saudi Arabia
 - **Headline:** Websites worthy of your business, built to keep running after launch.
 - **Subheadline:** Landing pages, WordPress sites and stores for Saudi businesses: carefully designed, fast on every phone, and looked after long after handover.
 - **Primary CTA:** Message us on WhatsApp
@@ -107,13 +101,13 @@ Option A matches what the page sells today. Option B leaves room for services th
 ### About us
 Every site we build starts with one question: how will it still be running a year from now?
 
-Bin Mahyub is a technology agency in Saudi Arabia. We build websites for businesses and look after them after launch. We work under one name and bring in the right specialist for each project, and when a project needs expertise beyond ours, we bring in the best in that field. Either way, you deal with one point of contact the whole way through.
+Bin Mahyub is an independent web studio in Saudi Arabia. A good look is only the start; what matters to us is a site that works for you and keeps working after launch. For every project we bring in the specialists it needs, so you get the best result, under one name and with one person responsible for your project.
 
 We explain everything plainly, without jargon, so you always know what you're paying for and why.
 
 ### Services
 1. **Landing pages.** One page, one goal: a clear message, fast loading on any phone, and a button that brings the visitor straight to you.
-2. **WordPress sites & WooCommerce stores.** Business sites and online stores where you can update content and products yourself, set up cleanly and securely from day one.
+2. **WordPress sites & WooCommerce stores.** Business sites and online stores where you can edit content and products yourself, without technical hassle, set up cleanly and securely from day one.
 3. **Administration & maintenance.** Updates, backups, security and fixes, so your site keeps running while you run your business.
 
 ### How we work (new)
@@ -123,8 +117,10 @@ We explain everything plainly, without jargon, so you always know what you're pa
 4. **Launch and handover:** we hand over the site and its access, and show you how to run it.
 5. **Care after launch:** if you want, we handle updates, backups and security.
 
-**What you get at handover**
-The site is yours: domain, hosting and admin access in your name, and you don't need us to keep it.
+### Our commitments, in writing (new)
+- **A written price before we start:** the price, what it includes and what it doesn't, in writing, before any work.
+- **Your approval before launch:** nothing goes live until you've reviewed and approved it.
+- **The site is yours:** domain, hosting and admin access in your name, and you don't need us to keep it.
 
 ### Latest project
 - **Adab Al-Furusia**
@@ -135,7 +131,7 @@ The site is yours: domain, hosting and admin access in your name, and you don't 
 - **Heading:** Have a project in mind?
 - **Body:** Send us three things on WhatsApp: what your business does, what you need, and a rough budget. We'll tell you how we can help, and you'll get a written price before any work starts.
 - **CTA:** Message us on WhatsApp
-- **Secondary:** or by email: hello@binmahyub.uk
+- **Secondary:** or by email: info@binmahyub.uk
 
 ### Footer
 © 2026 Bin Mahyub · العربية
@@ -143,7 +139,6 @@ The site is yours: domain, hosting and admin access in your name, and you don't 
 ---
 
 ## Left out on purpose
-
 - **"We reply during working hours":** add it only once working hours are set and published.
-- **An FAQ:** worth adding later. Its answers, such as how long a build takes, need real numbers from delivered projects first.
-- **Anything in the research's "not usable" list:** counters, testimonials, client logos, "team of experts", "best/leading" claims.
+- **An FAQ:** worth adding later; answers such as build time need real numbers from delivered projects first.
+- **Anything in the research's "not usable" list:** counters, testimonials, client logos, "team of experts", "best/leading", guarantees not offered in writing.
