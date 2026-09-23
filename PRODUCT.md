@@ -1,0 +1,56 @@
+# Product
+
+<!-- impeccable:product-schema 1 -->
+
+## Platform
+
+web
+
+## Stack
+
+Astro + Vue islands, static output, deployed to Cloudflare Pages at portfolio.binmahyub.uk.
+
+## Users
+
+Primary: small-business owners in Saudi Arabia looking to commission a website, arriving mostly through referrals. Secondary: recruiters evaluating Edres as a candidate. Both land on the same one-page site; the primary user's job is to decide quickly whether to trust this developer and message him.
+
+## Product Purpose
+
+A one-page personal portfolio for Edres Al-Zubairi (ادريس الزبيري), a web developer in Saudi Arabia. The product's single job is converting a visit into a WhatsApp message (`https://wa.me/966501374100`). Success is measured by that tap, not by time on page or scroll depth.
+
+## Positioning
+
+Arabic-first, teaching-rooted, plain-language technical trust: sites built to keep running after launch, explained without jargon, with the price known before any work starts. This directly answers the client worries the copy was drafted against: a cheap/template look, breaking on phones, being slow or invisible on Google, and unclear pricing.
+
+## Operating Context
+
+Saudi small-business referral market — most visitors arrive already primed by word of mouth, not cold search. WhatsApp is the native, expected contact channel in this market, not a fallback. Arabic is the default language and culturally primary; English exists for the recruiter audience, not as an equal-priority parallel track.
+
+## Capabilities and Constraints
+
+- Bilingual delivery is two separate static pages, not a runtime language toggle: Arabic at `/` (`dir="rtl"`), English at `/en`.
+- Copy is finalized in `COPY.md` and must be used verbatim, in both languages — not paraphrased during build.
+- Project cards show name + short explanation + a "Demo" link (a copy hosted at `/work/<slug>/`) + a "GitHub" link only when the repo is actually public. No screenshots.
+- Only one project ships at launch — "Adab Al-Furusia" (أدب الفروسية), an Arabic equestrian-academy site. Its demo is marked "coming soon"; it must not be presented as live until it is.
+- RTL correctness is a hard constraint, not a nice-to-have: never split Arabic text into per-letter spans (breaks letter joining), use logical CSS properties throughout, mirror directional icons, and verify the rendered page in an actual browser at desktop and mobile widths — CSS review alone is not sufficient proof.
+
+## Brand Commitments
+
+- Name: Edres Al-Zubairi / ادريس الزبيري.
+- Voice: "we", warm and confident; Modern Standard Arabic for the Arabic copy.
+- Contact channels: WhatsApp (`https://wa.me/966501374100`) as primary, email (`alzubairi.idris@gmail.com`) as secondary.
+
+## Evidence on Hand
+
+- `COPY.md` — finalized v1 draft (2026-09-22) with full Arabic and English copy for every section.
+- CV facts only, no invented testimonials: first in class, Management Information Systems (2023); building for the web since 2022; taught 50+ students.
+- One real project on hand: Adab Al-Furusia, an Arabic equestrian-academy website. Its live demo does not exist yet at launch — future work must keep it marked "coming soon" rather than fabricating a working demo link.
+- `REFERENCES.md` — a set of Awwwards-winning developer/designer portfolios collected as background research. The user has explicitly rejected these as direct visual references; they inform later visual-world work only as context on category conventions to differentiate from, never as a template to copy.
+
+## Product Principles
+
+1. Built to keep running — durability after launch is the core promise, not a one-off delivery.
+2. Plain-language, jargon-free explanation, rooted in the owner's teaching background.
+3. Price clarity before work starts — WhatsApp is a qualification step, not a black box.
+4. Evidence-only proof — real CV facts and real (even if unfinished) project work, never fabricated metrics or testimonials.
+5. Arabic-first as a structural commitment — a dedicated page and correct RTL mechanics, not a cosmetic toggle bolted onto an English-first build.
