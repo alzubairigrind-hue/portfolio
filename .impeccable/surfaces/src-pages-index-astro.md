@@ -40,8 +40,7 @@ Hero → About → Services → Work → Contact (Work moved after Services beca
 
 ## Decided
 
-- Type (2026-09-23): HT Moshreq Pro (HadiType, paid) for headings, in Arabic and in its Latin on `/en`. Alexandria (SIL OFL) for all body and UI text in both scripts.
-- Moshreq licence: Edres buys the HadiType Webfont Licence; the Desktop Licence does not cover websites. No Moshreq files are committed until the licence is confirmed. Convert to WOFF2 or subset only if the licence terms allow it. Until then, headings use a fallback face and the layout must not depend on Moshreq's metrics.
+- Type (revised 2026-09-23): Alexandria (SIL OFL, self-hosted) for headings and body in both scripts. HT Moshreq Pro was chosen earlier for the luxury direction, then dropped when round 3 settled on playful and rounded; no licence is bought.
 
 - Hero secondary link (2026-09-23): «ماذا نبني» / "What we build", pointing to Services, not Work. COPY.md updated.
 - Sadu motif (2026-09-23): العويرجان Uwairjan, a chain of stepped dot-pyramids. Ornament only: its meaning is never stated on the page (it rests on a single study). Source and caveats: `SADU.md`. Parked after round 2: not used on the page unless the user brings it back.
@@ -95,10 +94,17 @@ A board of 14 live tech sites recorded as scroll videos, in `reference-board/rou
 - Consequence for the no-photos rule: animated shapes (CSS/SVG, no heavy 3D runtime) do the atmospheric job photography does on those sites.
 - Type flag: the picks all use bold, rounded, modern Arabic sans. HT Moshreq Pro (calligraphic, chosen for the earlier luxury direction) may no longer fit, so hold the licence purchase until the direction settles.
 
+## Prototype round 3 verdict (2026-09-23)
+
+All rounds are viewable on branch `prototype/hero` at `/proto` (round 3 at `/proto/round-3`, rebranded to Bin Mahyub in `0e55078`).
+
+- **C · Playful light wins**: a light ground; rounded white cards that pop in on scroll; glossy black pill WhatsApp button with spring hover; playful animated characters that bob, blink and follow the cursor; headline rising word by word; brand mark tile beside بن مهيوب.
+- **Except its colouring:** the mint-green ground is "too hype for an agency". Everything else in C stays.
+- **Heading typeface:** Alexandria (SIL OFL) for everything. HT Moshreq Pro is dropped: its calligraphic character belongs to the abandoned luxury direction, and no licence will be bought.
+
 ## Open decisions
 
-1. Dark or light ground: the round-3 picks split (8, 13 dark; 1, 2, 5, 14 light). Settle it by eye in hero prototype round 3: A · Floating shapes (dark), B · Glow (dark), C · Playful light.
-2. Heading typeface: Moshreq vs. a bold rounded Arabic sans (Alexandria is the current fallback). Decide after decision 1, before buying any licence.
+1. C's colour palette: a calmer, agency-credible ground and accent set that keeps C's playfulness. Choose from references or palette variants of C, not invented from adjectives.
 
 ## Direction contract
 
