@@ -69,20 +69,32 @@ A board of 11 texture- and type-led design projects (Behance), lettered A–K, i
   - Accent: warm metal (copper/brass), optionally with small colour pops.
   - Sadu: left out of the page for now (no pattern card was picked). `SADU.md` stays for reference.
 
+## Prototype round 2 verdict (2026-09-23)
+
+The user first picked C · Copper (warm charcoal, faint grain, centred restrained headline, copper accents), then rejected it on sight. Record: branch `prototype/hero`, commit `085c976`. Their reasons, which now bind the direction:
+
+1. The headline was too big.
+2. The colouring didn't feel techie: charcoal and copper read as craft or luxury, not technology.
+3. There was no motion.
+4. There were no scroll effects.
+5. The buttons weren't "bubbly": flat rectangles instead of rounded, soft, lively controls.
+
+Overall it looked static. Still standing from earlier rounds: dark grounds are fine, Arabic-first, no photography, no sparse pale minimalism.
+
 ## Open decisions
 
-1. Which of the three round-2 directions (Fabric / Poster / Copper) wins, from the second hero prototype.
+1. The whole visual direction: palette, type scale, button style, motion and scroll behaviour. To be picked from reference board round 3 (`reference-board/round-3.html`): live tech sites, including Saudi tech products, recorded as scroll videos so the motion can be judged.
 
 ## Direction contract
 
-THESIS: A developer you can trust with your business, shown as an immersive dark scene carried by giant Arabic type on a subtle material texture, instead of photography or ornament. The page refuses both the sparse white minimal portfolio and the cold, precise dark tech look.
+THESIS: A developer you can trust with your business, shown as a lively, modern tech page: Arabic-first, alive with motion and scroll effects, friendly rounded controls. The page refuses the sparse white minimal portfolio, the static poster, and the craft/luxury palette. (Pending round 3; revise from the picks.)
 
-OWN-WORLD: A near-black to warm-charcoal ground with a subtle full-screen material texture (fabric or grain). Off-white type, a warm copper/brass accent reserved for the WhatsApp action, and at most small pops of colour. The Arabic headline at poster scale is the image. Components feel like fitted joinery: solid, precise, few.
+OWN-WORLD: Pending round 3. Known so far: dark grounds are welcome, the palette must read as technology rather than craft, buttons are rounded and soft ("bubbly"), headline size is moderate rather than poster scale, and motion and scroll effects are expected, not optional (still off under prefers-reduced-motion).
 
 STORY: The visitor lands inside a warm, familiar scene, reads the promise, sees the WhatsApp button, then reads the real facts (first in class, teaching, since 2022), the three services and an honest unfinished project, and messages knowing a clear price comes first.
 
-FIRST VIEWPORT: A full-screen dark field with its material texture. The Arabic promise headline is set at poster scale and dominates the screen, and the headline's Moshreq kashida elongation is the typographic signature, used once, in the hero only. The copper/brass WhatsApp button sits directly under it, with the secondary link beside it. The name is a small sand signature at the top inline-start. On a phone the button is visible without scrolling.
+FIRST VIEWPORT: Pending round 3. Fixed so far: the Arabic promise headline at a confident but moderate size (not poster scale), the WhatsApp button as a rounded, lively primary control directly under it with the secondary link beside it, and visible motion on load. The name is a small sand signature at the top inline-start. On a phone the button is visible without scrolling.
 
-FORM: Derived from the user's two reference-board rounds (round 1: rich, immersive, Arabic-first; round 2: F, J, K). No concept-seed roll; no seed key. Code-led, because no image generation is available.
+FORM: Derived from the user's reference-board rounds (round 1: rich, immersive, Arabic-first; round 2: F, J, K; round 3: pending) and the round-2 prototype verdict. No concept-seed roll; no seed key. Code-led, because no image generation is available.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
