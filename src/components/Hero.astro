@@ -110,10 +110,11 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
   .avatar { display: grid; place-items: center; inline-size: 2.1rem; block-size: 2.1rem; border-radius: 30%; background: var(--brand); color: #fff; font-weight: 900; font-family: var(--font-heading); }
   .chat { display: grid; gap: 0.5rem; padding: 0.9rem 0.5rem 1rem; min-block-size: 300px; align-content: start; }
   .msg { max-inline-size: 84%; padding: 0.55rem 0.8rem; border-radius: 16px; box-shadow: 0 2px 6px -3px rgb(0 0 0 / 0.2); }
-  .msg--me { justify-self: start; background: var(--lilac-soft); border-start-start-radius: 4px; }
-  .msg--them { justify-self: end; background: #fff; border-start-end-radius: 4px; }
+  /* The phone is the client's: their own messages sit on the end side, as in WhatsApp. */
+  .msg--me { justify-self: end; background: var(--lilac-soft); border-start-end-radius: 4px; }
+  .msg--them { justify-self: start; background: #fff; border-start-start-radius: 4px; }
   .chip { display: inline-block; margin-block-start: 0.35rem; margin-inline-start: 0.25rem; padding: 0.1rem 0.65rem; border-radius: var(--radius-pill); background: var(--brand); color: #fff; font-size: 0.75rem; font-weight: 700; }
-  .typing { justify-self: end; display: flex; gap: 4px; padding: 0.6rem 0.8rem; background: #fff; border-radius: 16px; }
+  .typing { justify-self: start; display: flex; gap: 4px; padding: 0.6rem 0.8rem; background: #fff; border-radius: 16px; }
   .typing i { inline-size: 6px; block-size: 6px; border-radius: 50%; background: #9a90bf; animation: dot 0.9s ease-in-out infinite; }
   .typing i:nth-child(2) { animation-delay: 0.15s; }
   .typing i:nth-child(3) { animation-delay: 0.3s; }
