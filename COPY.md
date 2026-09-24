@@ -8,7 +8,11 @@
   - The email is now info@binmahyub.uk, since Bin Mahyub is the brand, domain and email.
   - New sections from copy v2 rev 2: How we work, Our written commitments, and the hero's illustrative chat.
   - Page order: Hero → About → Services → How we work → Work → Contact.
-  - Later the same day, with the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
+  - Later the same day:
+    - Section headings no longer say "about us" or "we". The About heading is removed, and its statement becomes the section title. How we work → «كيف يتم العمل» / "How the work is done". Our commitments → «التزامات مكتوبة» / "Commitments in writing".
+    - Bin Mahyub sits quietly in the details: the chat contact name, the «ب» mark, and the email line («أو راسل بن مهيوب عبر البريد» / "or email Bin Mahyub").
+    - The hero name and the footer stay Edres Al-Zubairi.
+  - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -34,7 +38,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
   - عرض حي — قريبًا
   - (الكود: غير متاح)
 
-### من نحن
+### (قسم التعريف — بلا عنوان ظاهر)
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟
 
 ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.
@@ -49,19 +53,20 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 3. **الإدارة والصيانة**
    تحديثات ونسخ احتياطية وحماية وإصلاحات، ليبقى موقعك يعمل وأنت منشغل بعملك.
 
-### كيف نعمل
+### كيف يتم العمل
 1. **رسالة على واتساب** — تخبرنا عن نشاطك وما تحتاجه.
 2. **سعر مكتوب ونطاق واضح** — نتفق على ما يشمله العمل وما لا يشمله قبل أن نبدأ.
 3. **التصميم والبناء** — تراجع العمل وتوافق عليه قبل الإطلاق.
 4. **الإطلاق والتسليم** — نسلّمك الموقع وصلاحياته ونشرح لك كيف تديره.
 5. **الرعاية بعد الإطلاق** — إن أردت، نتولى التحديثات والنسخ الاحتياطية والحماية.
 
-**التزاماتنا مكتوبة**
+**التزامات مكتوبة**
 - **سعر مكتوب قبل أن نبدأ** — السعر وما يشمله وما لا يشمله، مكتوبًا، قبل أي عمل.
 - **موافقتك قبل الإطلاق** — لا يُنشر شيء قبل أن تراجعه وتوافق عليه.
 - **الموقع باسمك** — النطاق والاستضافة وصلاحيات المدير لك، ولا تحتاج إلينا لتبقى تملكه.
 
 ### المحادثة التوضيحية في الواجهة (مثال توضيحي)
+- **اسم جهة الاتصال:** بن مهيوب
 - **الحالة:** متصل الآن
 - **العميل:** مرحبًا، نشاطي مقهى، وأحتاج موقعًا فيه قائمة المشروبات، وميزانيتي تقريبية.
 - **نحن:** أهلًا بك! أرسلنا لك السعر مكتوبًا مع كل ما يشمله العمل. (شارة: عرض السعر)
@@ -74,7 +79,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **العنوان:** لديك مشروع في بالك؟
 - **النص:** أخبرنا عنه على واتساب، وستعرف السعر بوضوح قبل أن نبدأ أي عمل.
 - **الزر:** راسلنا على واتساب → `https://wa.me/966501374100`
-- **ثانوي:** أو عبر البريد: info@binmahyub.uk
+- **ثانوي:** أو راسل بن مهيوب عبر البريد: info@binmahyub.uk
 
 ### التذييل
 © 2026 ادريس الزبيري · English
@@ -101,7 +106,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
   - Live demo — coming soon
   - (Code: not public)
 
-### About
+### (Intro section — no visible heading)
 Every site we build starts with one question: how will it still be running a year from now?
 
 Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.
@@ -113,19 +118,20 @@ Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we
 2. **WordPress sites & WooCommerce stores.** Business sites and online stores you can update yourself, set up properly from day one.
 3. **Administration & maintenance.** Updates, backups, security and fixes, so your site keeps running while you run your business.
 
-### How we work
+### How the work is done
 1. **A WhatsApp message:** Tell us about your business and what you need.
 2. **A written price and a clear scope:** We agree what's included and what isn't before we start.
 3. **Design and build:** You review and approve the work before launch.
 4. **Launch and handover:** We hand over the site and its access, and show you how to run it.
 5. **Care after launch:** If you want, we handle updates, backups and security.
 
-**Our commitments, in writing**
+**Commitments in writing**
 - **A written price before we start:** The price, what it includes and what it doesn't, in writing, before any work.
 - **Your approval before launch:** Nothing goes live until you've reviewed and approved it.
 - **The site is yours:** Domain, hosting and admin access in your name, and you don't need us to keep it.
 
 ### Hero illustrative chat (labelled as an example)
+- **Contact name:** Bin Mahyub
 - **Status:** Online now
 - **Client:** Hi, I run a café, I need a site with our drinks menu, and I have a rough budget.
 - **Us:** Welcome! We've sent you the written price, with everything it includes. (chip: Quote)
@@ -138,7 +144,7 @@ Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we
 - **Heading:** Have a project in mind?
 - **Body:** Tell us about it on WhatsApp. You'll get a clear price before any work starts.
 - **CTA:** Message us on WhatsApp → `https://wa.me/966501374100`
-- **Secondary:** or by email: info@binmahyub.uk
+- **Secondary:** or email Bin Mahyub: info@binmahyub.uk
 
 ### Footer
 © 2026 Edres Al-Zubairi · العربية

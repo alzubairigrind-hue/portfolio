@@ -9,9 +9,8 @@ const { lang } = Astro.props;
 const t = copy[lang];
 ---
 
-<section id="about" class="section" aria-labelledby="about-heading">
-  <h2 id="about-heading" class="reveal">{t.about.heading}</h2>
-  <p class="statement reveal">{t.about.lead}</p>
+<section id="about" class="section" aria-labelledby="about-statement">
+  <h2 id="about-statement" class="statement reveal">{t.about.lead}</h2>
   <div class="row reveal">
     <span class="since">{t.about.since}</span>
     <p>{t.about.body}</p>

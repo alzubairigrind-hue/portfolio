@@ -251,7 +251,7 @@ A phone-shaped card (330px, 34px corners, pale lavender body) holding a WhatsApp
 The «ب» (Latin "B") tile, a white-to-lilac gradient squircle with Night Purple letter at 900, sits beside the owner's name (800) and a role line in Soft Lavender Ink. The tile is a placeholder mark for Bin Mahyub until a real logo exists.
 
 ### About Statement and Since Badge
-The About lead question is set as a statement: 800 weight, clamp(1.6rem, 3.2vw, 2.6rem), Night Purple, about 20ch (26ch in English). The body sits beside a brand-gradient pill badge, «منذ 2022» / "Since 2022", in the heading face at 800. It repeats the approved sentence's own words and adds no new claim. Chosen in prototype round 6 (6B).
+The intro section has no visible "About" heading. Its lead question *is* the section heading (an `h2` labelling the section), set as a statement: 800 weight, clamp(1.6rem, 3.2vw, 2.6rem), Night Purple, about 20ch (26ch in English). The body sits beside a brand-gradient pill badge, «منذ 2022» / "Since 2022", in the heading face at 800. It repeats the approved sentence's own words and adds no new claim. Chosen in prototype round 6 (6B).
 
 ### Service Drawings (signature)
 Each service card opens with a 150px lavender-gradient art well holding a small drawing built from CSS/SVG, one per service:

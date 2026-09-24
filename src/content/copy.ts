@@ -10,7 +10,7 @@ export type SiteCopy = {
     cta: string;
     secondaryLink: string;
   };
-  about: { heading: string; lead: string; body: string; since: string };
+  about: { lead: string; body: string; since: string };
   services: {
     heading: string;
     items: { title: string; body: string }[];
@@ -32,6 +32,7 @@ export type SiteCopy = {
     commitments: { title: string; body: string }[];
   };
   heroDemo: {
+    contact: string;
     status: string;
     label: string;
     messages: { from: 'me' | 'them'; text: string; chip?: string; chipLtr?: boolean }[];
@@ -55,7 +56,6 @@ export const copy: Record<Lang, SiteCopy> = {
       secondaryLink: 'ماذا نبني',
     },
     about: {
-      heading: 'من نحن',
       lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟',
       since: 'منذ 2022',
       body: 'ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
@@ -80,7 +80,7 @@ export const copy: Record<Lang, SiteCopy> = {
     work: { heading: 'أعمال مختارة' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
-      heading: 'كيف نعمل',
+      heading: 'كيف يتم العمل',
       steps: [
         { title: 'رسالة على واتساب', body: 'تخبرنا عن نشاطك وما تحتاجه.' },
         { title: 'سعر مكتوب ونطاق واضح', body: 'نتفق على ما يشمله العمل وما لا يشمله قبل أن نبدأ.' },
@@ -88,7 +88,7 @@ export const copy: Record<Lang, SiteCopy> = {
         { title: 'الإطلاق والتسليم', body: 'نسلّمك الموقع وصلاحياته ونشرح لك كيف تديره.' },
         { title: 'الرعاية بعد الإطلاق', body: 'إن أردت، نتولى التحديثات والنسخ الاحتياطية والحماية.' },
       ],
-      commitmentsHeading: 'التزاماتنا مكتوبة',
+      commitmentsHeading: 'التزامات مكتوبة',
       commitments: [
         { title: 'سعر مكتوب قبل أن نبدأ', body: 'السعر وما يشمله وما لا يشمله، مكتوبًا، قبل أي عمل.' },
         { title: 'موافقتك قبل الإطلاق', body: 'لا يُنشر شيء قبل أن تراجعه وتوافق عليه.' },
@@ -96,6 +96,7 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     heroDemo: {
+      contact: 'بن مهيوب',
       status: 'متصل الآن',
       label: 'مثال توضيحي',
       messages: [
@@ -111,7 +112,7 @@ export const copy: Record<Lang, SiteCopy> = {
       subheading: 'لديك مشروع في بالك؟',
       body: 'أخبرنا عنه على واتساب، وستعرف السعر بوضوح قبل أن نبدأ أي عمل.',
       cta: 'راسلنا على واتساب',
-      emailLead: 'أو عبر البريد:',
+      emailLead: 'أو راسل بن مهيوب عبر البريد:',
       email: 'info@binmahyub.uk',
     },
     footer: {
@@ -134,7 +135,6 @@ export const copy: Record<Lang, SiteCopy> = {
       secondaryLink: 'What we build',
     },
     about: {
-      heading: 'About',
       lead: 'Every site we build starts with one question: how will it still be running a year from now?',
       since: 'Since 2022',
       body: 'Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.',
@@ -159,7 +159,7 @@ export const copy: Record<Lang, SiteCopy> = {
     work: { heading: 'Selected work' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
-      heading: 'How we work',
+      heading: 'How the work is done',
       steps: [
         { title: 'A WhatsApp message', body: 'Tell us about your business and what you need.' },
         { title: 'A written price and a clear scope', body: "We agree what's included and what isn't before we start." },
@@ -167,7 +167,7 @@ export const copy: Record<Lang, SiteCopy> = {
         { title: 'Launch and handover', body: 'We hand over the site and its access, and show you how to run it.' },
         { title: 'Care after launch', body: 'If you want, we handle updates, backups and security.' },
       ],
-      commitmentsHeading: 'Our commitments, in writing',
+      commitmentsHeading: 'Commitments in writing',
       commitments: [
         { title: 'A written price before we start', body: "The price, what it includes and what it doesn't, in writing, before any work." },
         { title: 'Your approval before launch', body: "Nothing goes live until you've reviewed and approved it." },
@@ -175,6 +175,7 @@ export const copy: Record<Lang, SiteCopy> = {
       ],
     },
     heroDemo: {
+      contact: 'Bin Mahyub',
       status: 'Online now',
       label: 'Illustrative example',
       messages: [
@@ -190,7 +191,7 @@ export const copy: Record<Lang, SiteCopy> = {
       subheading: 'Have a project in mind?',
       body: "Tell us about it on WhatsApp. You'll get a clear price before any work starts.",
       cta: 'Message us on WhatsApp',
-      emailLead: 'or by email:',
+      emailLead: 'or email Bin Mahyub:',
       email: 'info@binmahyub.uk',
     },
     footer: {

@@ -139,6 +139,13 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 - The owner later asked to see the below-hero redesign the review had suggested. Prototype round 6 (branch `prototype/hero`, `/proto/round-6`) offered 6A Purple band, 6B Moving drawings and 6C Big statements. **6B was chosen** and built on `main`: the About statement with a «منذ 2022» badge, a moving drawing per service, and the project in a browser card.
 - DESIGN.md records the shipped system. Favicons come from the «ب» tile.
 
+## Voice and brand placement (2026-09-24, final)
+
+- The hero name and the footer stay **Edres Al-Zubairi**.
+- **Bin Mahyub** sits quietly in the details: the chat contact, the «ب» mark, and the email line.
+- No section heading says "about us" or "we": the intro's statement is its heading, then «كيف يتم العمل» / "How the work is done" and «التزامات مكتوبة» / "Commitments in writing".
+- "We" stays in body copy and buttons. An "I"-voice rewrite was proposed and set aside.
+
 ## Open decisions
 
 None. What's left: the owner uploads `dist` following `DEPLOY.md`.

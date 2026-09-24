@@ -37,7 +37,9 @@ Saudi small-business referral market — most visitors arrive already primed by 
 ## Brand Commitments
 
 - Name in the hero: Edres Al-Zubairi / ادريس الزبيري.
-- **Bin Mahyub / بن مهيوب** (spelled with هـ) is the brand: the domain, the email and the «ب» mark beside the name. Edres is a freelancer building toward an agency. He works under this brand rather than his own name alone, and brings in specialists for every project to deliver the promised result. The page must not claim a registered agency, company, team or staff (decided 2026-09-24).
+- **Bin Mahyub / بن مهيوب** (spelled with هـ) is the brand. For now it sits **quietly in the details**, not the headline: the domain, the email (the contact line reads «أو راسل بن مهيوب عبر البريد»), the «ب» mark beside the name, and the contact name in the hero chat. The hero name and the footer are Edres Al-Zubairi (decided 2026-09-24).
+- Section headings never say "about us" or "we": the intro section has no visible heading, and «كيف يتم العمل» and «التزامات مكتوبة» are the titles. "We" remains in body sentences and buttons.
+- Earlier framing: Edres is a freelancer building toward an agency. He works under this brand rather than his own name alone, and brings in specialists for every project to deliver the promised result. The page must not claim a registered agency, company, team or staff (decided 2026-09-24).
 - Voice: "we", warm and confident; Modern Standard Arabic for the Arabic copy. "We" is honest because every project involves specialists.
 - Contact channels: WhatsApp (`https://wa.me/966501374100`) as primary, email `info@binmahyub.uk` as secondary. It forwards to Gmail through Cloudflare Email Routing; setup and sending guide in `EMAIL_SETUP.md`.
 
