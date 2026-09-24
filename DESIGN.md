@@ -197,7 +197,7 @@ Page order: Hero → About → Services → Work → How the work is done (with 
 
 The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 
-Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fit so the one project spans the full row and 3–5 later wrap into columns). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
+Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
 
 **The Logical Properties Rule.** Every margin, padding, inset, size and corner is written with logical properties (`inline`, `block`, `start`, `end`), so the Arabic and English pages mirror from one stylesheet. Physical left/right is not used.
 
@@ -265,6 +265,7 @@ The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chose
 
 ### Project Browser Card
 A project is shown inside a browser window: 22px corners, a lavender bar with three dots, the coming-soon badge pushed to the bar's inline-end, and the name and description in the body. A live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+Between the top bar and the text is a 120px lavender-gradient well (16px corners) holding two lilac-mist bars (70% and 45%) and a small Night Purple pill; it is decorative (`aria-hidden`), abstract, and never a screenshot (chosen in prototype round 9, 9C, 2026-09-24).
 
 ### How-we-work Path (signature)
 Numbered steps with Arabic-Indic digits on the Arabic page. A 2px rail runs down the inline-start; a violet-to-lilac line fills it as the visitor scrolls, and each step number turns from an idle white circle (lilac ring) to the purple gradient with a spring bump when the line reaches it. Under reduced motion the path is fully filled and all steps lit.

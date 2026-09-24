@@ -15,6 +15,7 @@ const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
     <i></i><i></i><i></i>
     {project.status === 'coming-soon' && <span class="badge">{project.statusLabel[lang]}</span>}
   </div>
+  <div class="preview" aria-hidden="true"><span class="preview__bar preview__bar--wide"></span><span class="preview__bar preview__bar--short"></span><span class="preview__pill"></span></div>
   <div class="body">
     <h3>{project.name[lang]}</h3>
     <p>{project.description[lang]}</p>
@@ -39,4 +40,10 @@ const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
   .body h3 { margin: 0; }
   .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: 0.5rem; }
   .link { font-weight: 700; }
+  /* An abstract drawn preview, never a screenshot: the project stays honestly "coming soon". */
+  .preview { block-size: 120px; margin-block-start: 1.5rem; margin-inline: 1.75rem; padding: 1.25rem; display: grid; align-content: center; gap: 0.75rem; border-radius: 16px; background: linear-gradient(160deg, #ece6ff, #f8f6ff); }
+  .preview__bar { display: block; block-size: 8px; border-radius: 99px; background: #ddd2ff; }
+  .preview__bar--wide { inline-size: 70%; }
+  .preview__bar--short { inline-size: 45%; }
+  .preview__pill { display: block; inline-size: 64px; block-size: 16px; border-radius: 999px; background: var(--brand); }
 </style>

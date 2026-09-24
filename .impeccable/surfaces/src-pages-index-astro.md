@@ -159,6 +159,7 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
   - **The name stays «ادريس» (no hamza) by the owner's choice.** Do not flag or "correct" it.
   - The colloquial contact heading «عندك فكرة مشروع؟» is the owner's decision; do not flag it.
   - Applied: a language switch pill in the hero signature row, chat chips styled as attachments (not buttons), the English contact CTA kept on one line on phones.
+- Round 9 (`/proto/round-9`): the owner preferred the earlier card-sized project card over the full-width row. **9C won** and is on `main`: the card at normal size (auto-fill grid) with an abstract drawn preview well (bars and a pill, never a screenshot) between its top bar and text.
 
 ## Open decisions
 
