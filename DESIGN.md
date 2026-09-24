@@ -127,7 +127,7 @@ components:
 
 **Creative North Star: "The Evening Chat"**
 
-The page is a conversation that happens after hours: a deep purple scene where a business owner sends a WhatsApp message and a website comes back. Everything in the system supports that feeling of a friendly, modern tech studio you can simply message. The hero is the night, the white page below is the daylight explanation, and the purple returns in panels exactly where trust is asked for (written commitments, the final call to message).
+The page is a conversation that happens after hours: a deep purple scene where a business owner sends a WhatsApp message and a website comes back. Everything in the system supports that feeling of a friendly, modern tech studio you can simply message. The hero is the night, the white page below is the daylight explanation, and the purple returns exactly where action is asked for (the final call to message). The written commitments carry the hero's chat instead, as messages from Bin Mahyub.
 
 It is Arabic-first and right-to-left by default, with English as a mirrored twin built from the same components. Density is generous and calm on white, lively in the hero. Controls are round, soft and springy ("bubbly"); cards are soft lavender with large corners; motion is expected, not decorative garnish, and it disappears completely under reduced motion without the page looking unfinished.
 
@@ -146,7 +146,7 @@ The world was chosen through reference boards and five prototype rounds. Rejecte
 A two-register palette: a saturated deep purple night for scenes and calls to action, and a white page with lavender-tinted surfaces for reading.
 
 ### Primary
-- **Night Purple** (`hero-ground` / `brand`): the hero ground, the Commitments and Contact panels, the brand button's base, chips, avatar, step numbers when lit, text on light buttons, and the browser theme colour. It is the one colour of the brand.
+- **Night Purple** (`hero-ground` / `brand`): the hero ground, the Contact panel, the brand button's base, chips, avatar, step numbers when lit, text on light buttons, and the browser theme colour. It is the one colour of the brand.
 - **Violet Lift** (`brand-2`): the top stop of every purple gradient (brand button, step numbers), the start of the How-we-work progress line, and the focus ring on white sections.
 
 ### Secondary
@@ -163,7 +163,7 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 ### Named Rules
 **The One Purple Rule.** The brand has one hue. Deep purple grounds, violet-to-purple gradients and lilac tints are all the same family; no second accent hue enters the system.
 
-**The Night Returns Rule.** Purple grounds appear only in the hero and in panels that ask for trust or action (commitments, contact). Ordinary content sits on white or lavender.
+**The Night Returns Rule.** Purple grounds appear only in the hero and in the panel that asks for action (contact). Ordinary content sits on white or lavender.
 
 **The Ring Matches Its Ground Rule.** Focus rings are lilac (3px, 3px offset, pill-rounded) on purple grounds and Violet Lift on white, so the ring always clears 3:1.
 
@@ -195,7 +195,7 @@ A single centred column: sections cap at 72rem with fluid inline padding (`pad`,
 
 The hero fills the first screen (100svh) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 
-Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem. How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
+Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments are a chat thread capped at 46rem. How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
 
 **The Logical Properties Rule.** Every margin, padding, inset, size and corner is written with logical properties (`inline`, `block`, `start`, `end`), so the Arabic and English pages mirror from one stylesheet. Physical left/right is not used.
 
@@ -207,7 +207,7 @@ A soft, lifted hybrid. Surfaces are tinted (lavender on white, purple on white),
 - **Card float** (`box-shadow: 0 18px 40px -28px rgb(0 0 0 / 0.3)`): every card at rest.
 - **Button gloss, light** (`inset 0 -3px 0 rgb(43 20 99 / 0.12), 0 14px 30px -12px rgb(0 0 0 / 0.55)`): the white pill on purple.
 - **Button gloss, brand** (`inset 0 2px 0 rgb(255 255 255 / 0.18), inset 0 -3px 0 rgb(0 0 0 / 0.2), 0 14px 30px -12px rgb(43 20 99 / 0.6)`): the purple pill on white.
-- **Panel float** (`0 30px 60px -36px rgb(43 20 99 / 0.8)` commitments; `0 40px 80px -40px rgb(43 20 99 / 0.9)` contact): purple panels cast a purple shadow.
+- **Panel float** (`0 40px 80px -40px rgb(43 20 99 / 0.9)` contact; the commitments chat window uses a lighter `0 30px 60px -36px rgb(43 20 99 / 0.55)`): purple panels cast a purple shadow.
 - **Device float** (`0 40px 80px -30px rgb(0 0 0 / 0.6)`): the hero phone and mini site.
 
 ### Named Rules
@@ -235,7 +235,7 @@ Bubbly, glossy and springy: the user's explicit choice.
 - **Hover:** only cards containing a link scale (1.02, spring). A card that grows but is not clickable misleads.
 
 ### Purple Panel
-The night ground reused as a block: Night Purple fill, white headings, Soft Lavender Ink body, large corner, purple cast shadow. Used for the written-commitments block (white circle ticks with an inline SVG check) and the contact call to action. Buttons inside use the Light variant; focus rings inside revert to lilac.
+The night ground reused as a block: Night Purple fill, white headings, Soft Lavender Ink body, large corner, purple cast shadow. Used for the contact call to action. Buttons inside use the Light variant; focus rings inside revert to lilac.
 
 ### Chips and Badges
 - **Chat chip:** small Night Purple pill with white 700 text inside chat bubbles (price, domain).
@@ -263,6 +263,9 @@ The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chose
 
 ### Project Browser Card
 A project is shown inside a browser window: 22px corners, a lavender bar with three dots, the coming-soon badge pushed to the bar's inline-end, and the name and description in the body. A live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+
+### Commitments Chat (signature)
+Round 7A (2026-09-24): the three written commitments are incoming messages in a light chat window, the hero phone's colours (`#f3f0fb` window, white header with the «ب»/"B" avatar and «بن مهيوب» / "Bin Mahyub", no online status). White bubbles on the start side with a tucked 4px corner, bold brand-purple titles, ✓✓ read ticks in `brand-2`, and the hero's «عرض السعر» / "Quote" chip on the written-price message. The bubbles arrive one after another on scroll (0.35s apart); under reduced motion they simply appear.
 
 ### How-we-work Path (signature)
 Numbered steps with Arabic-Indic digits on the Arabic page. A 2px rail runs down the inline-start; a violet-to-lilac line fills it as the visitor scrolls, and each step number turns from an idle white circle (lilac ring) to the purple gradient with a spring bump when the line reaches it. Under reduced motion the path is fully filled and all steps lit.
