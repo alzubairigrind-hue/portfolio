@@ -7,7 +7,7 @@
   - About: three personal details are hidden at the owner's request (the MIS degree, first in class 2023, teaching 50+ students); "since 2022" stays.
   - The email is now info@binmahyub.uk, since Bin Mahyub is the brand, domain and email.
   - New sections from copy v2 rev 2: How we work, Our written commitments, and the hero's illustrative chat.
-  - Page order: Hero → About → Services → How we work → Work → Contact.
+  - Page order: Hero → About → Services → Work → How we work → Contact (Work moved up after the 27/32 critique, so the commitments run straight into the ask).
   - Later the same day:
     - Section headings no longer say "about us" or "we". The About heading is removed, and its statement becomes the section title. How we work → «كيف يتم العمل» / "How the work is done". Our commitments → «التزامات مكتوبة» / "Commitments in writing".
     - Bin Mahyub sits quietly in the details: the chat contact name, the «ب» mark, and the email line («أو راسل بن مهيوب عبر البريد» / "or email Bin Mahyub").

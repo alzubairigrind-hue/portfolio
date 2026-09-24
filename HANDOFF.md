@@ -1,10 +1,10 @@
 # HANDOFF: portfolio one-pager (read this first)
 
-- **Written:** 2026-09-24, at the end of a long session. The next agent starts with no memory of it.
+- **Written:** 2026-09-24, updated the same day after a second session. The next agent starts with no memory of it.
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
   - Arabic at `/` (RTL, default), English at `/en`.
   - Astro 7 static, Alexandria font only, deploys to Cloudflare Pages at **portfolio.binmahyub.uk**.
-- **Status:** about 90% done. The real page is built, reviewed and committed. What's left is below under **Next steps**.
+- **Status:** ready to launch. Every planned step is done, the second critique scored 27/32, and `dist/` is built from `main`. What's left is the owner's upload and the **Later** list.
 
 ---
 
@@ -43,7 +43,7 @@
 - `COPY.md`: the **live copy, verbatim source**. Every visible string in `src/content/copy.ts` must match it character for character. When you change copy, change both.
 - `DESIGN.md` plus `.impeccable/design.json`: the shipped design system.
 - `.impeccable/surfaces/src-pages-index-astro.md`: the design brief and full decision history. Read or write it with `~/.claude/skills/impeccable/scripts/impeccable surface-brief read|write src/pages/index.astro …`.
-- `.impeccable/critique/2026-09-24T08-16-06Z__src-pages-index-astro.md`: the **latest critique, 25/32**. Its issues are the next steps.
+- `.impeccable/critique/2026-09-24T10-22-16Z__src-pages-index-astro.md`: the **latest critique, 27/32** (the earlier 25/32 one is closed). Its remaining minor points are optional.
 - `DEPLOY.md`: the owner's step-by-step Cloudflare Pages Direct Upload guide.
 - `EMAIL_SETUP.md`: receiving is live (info@binmahyub.uk goes to Gmail); Part B, sending, is for later.
 - `COPY_RESEARCH.md`: 18 agency sites, reference only. `COPY_V2_DRAFT.md`: **not adopted**, reference only.
@@ -52,7 +52,7 @@
 
 ## 3. Final decisions (don't reopen without the owner)
 
-- **Name:** the hero name and footer are **Edres Al-Zubairi / ادريس الزبيري**, «مطوّر مواقع · المملكة العربية السعودية». **Bin Mahyub** appears only in the details: the hero chat's contact name, the «ب» mark tile, and the email line «أو راسل بن مهيوب عبر البريد: info@binmahyub.uk». Never claim an agency, company or team.
+- **Name:** the hero name and footer are **Edres Al-Zubairi / ادريس الزبيري** (spelled «ادريس» with no hamza by the owner's choice; don't "correct" it), «مطوّر مواقع · المملكة العربية السعودية». **Bin Mahyub** appears only in the details: the hero chat's contact name, the «ب» mark tile, and the email line «أو راسل بن مهيوب عبر البريد: info@binmahyub.uk». Never claim an agency, company or team.
 - **Voice:** no section *heading* says "we" or "about us". "We" stays in body sentences and buttons.
 - **About:**
   - No visible heading; the statement is the section title: «كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟»
@@ -62,33 +62,25 @@
 - **Contact:**
   - The heading is the owner's colloquial «عندك فكرة مشروع؟» (the rest of the page is formal Arabic).
   - It offers a **free consultation, which is a free WhatsApp chat only, with no call promised**.
-  - The button «اطلب استشارتك المجانية» opens WhatsApp pre-filled with «مرحبًا، أرغب في استشارة مجانية لمشروعي». The hero WhatsApp button has no pre-fill (yet).
+  - The button «اطلب استشارتك المجانية» opens WhatsApp pre-filled with «مرحبًا، أرغب في استشارة مجانية لمشروعي». The hero button «راسلنا على واتساب» pre-fills «مرحبًا، أرغب في التحدث عن موقع لنشاطي». Both pills carry the WhatsApp glyph.
 - **Design:**
   - **C2 deep purple** (#2b1463), pill buttons, 28px cards.
   - **5A hero:** an animated WhatsApp chat that turns into a live mini site, labelled «مثال توضيحي».
   - **6B middle:** service cards with small moving drawings (phone, store, shield), and the project in a browser-window card.
   - The How-we-work path fills and lights up on scroll.
+  - **Commitments panel:** the dark purple panel stays. It may get **small enhancements only, never a redesign** (a chat-bubble redesign, round 7A, was rejected on sight and reverted). Round 8C is live: staggered pop-in, self-drawing ticks with a lilac ring, and column dividers on desktop.
+  - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
+  - **Page order:** Hero → About → Services → Work («نعمل عليه الآن» / "What we're building now", full-width) → How the work is done + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** Alexandria (self-hosted, OFL). HT Moshreq Pro was dropped, so no licence is needed.
 - **One project:** Adab Al-Furusia, marked "coming soon". Never present it as live until it is.
 
-## 4. Next steps (in order)
+## 4. Next steps
 
-The latest critique left an approved plan (the owner answered: WhatsApp clarity and the chat loop first, all 5 issues, keep all the motion, prototype before changing 6B). **Items 1–4 still need his "go" and his approval of the copy lines marked ✎.**
+**Done on 2026-09-24 (second session):** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
 
-1. **WhatsApp buttons (`/impeccable clarify`):**
-   - Add a WhatsApp icon inside both pills, keeping their colours.
-   - Give the hero button a pre-fill too. ✎ Proposed: «مرحبًا، أرغب في التحدث عن موقع لنشاطي» / "Hi, I'd like to talk about a website for my business".
-2. **Hero chat (`/impeccable animate`):** play once and hold the final state. Replay only when it scrolls back into view or is tapped, never wiping mid-read. It currently replays every 11 s (`src/layouts/Base.astro` script).
-3. **Work section (`/impeccable layout`):** the single project as a full-width row. ✎ Title «أعمال مختارة» → «أحدث مشاريعنا» / "Selected work" → "Latest project".
-4. **Readability (`/impeccable harden`):**
-   - The «مثال توضيحي» label brighter and larger (it's 12.5 px at 55% white now).
-   - The email link at a 44 px tap target.
-   - Paragraph width capped at about 65–70 characters.
-   - ✎ Remove the leftover «فاخر»: Services «مظهر فاخر» → «رسالة واضحة»; the meta description «بتصميم فاخر» → «بتصميم مدروس».
-5. **Round 7 prototype** on the prototype worktree at `/proto/round-7`: carry the chat look through the page (commitments as messages you'll receive, contact as the start of the chat). 2–3 variants, same switcher pattern as `src/pages/proto/round-6.astro`. The owner picks; nothing reaches `main` without his pick.
-6. **`/impeccable polish`**, then **re-run `/impeccable critique`** and compare it with 25/32.
-7. **Rebuild `dist`.** The owner uploads following `DEPLOY.md` from step 5.
+1. **The owner uploads `dist/`** following `DEPLOY.md` from step 5. Run `pnpm build` again first if anything changed after commit `208de89`.
+2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
 
 **Later:**
 - sending email (`EMAIL_SETUP.md` Part B)
@@ -109,6 +101,7 @@ The latest critique left an approved plan (the owner answered: WhatsApp clarity 
 - **`cp` is aliased to `cp -i`,** so use `command cp -f`. Use `ffmpeg -nostdin` inside loops.
 - **Don't kill a server with `pkill -f "<pattern>"`** from a shell whose own command line contains that pattern; it kills itself. Use `pgrep` to get the PID, then `kill <PID>`.
 - **The Playwright MCP code runner has no `fs` or `require`.** Download files with `curl` instead. Its browser sometimes closes mid-run; just retry.
+- **The Playwright MCP browser profile can be locked** ("Browser is already in use"). Drive a headless browser from a Node script instead: `playwright-core` from `~/.npm/_npx/e41f203b7505f1fb/node_modules/playwright-core` with `executablePath` set to `~/.cache/ms-playwright/chromium-1234/chrome-linux*/chrome`.
 - **Root docs used to vanish when switching branches.** After committing docs on `main`, merge `main` into `prototype/hero`, inside the worktree.
 - **Arabic spelling:** watch the hamzas (إذا، أن، إلى); they're a visible trust signal in this market. Never split Arabic below the word level in animations; letter joining breaks.
 - **Servers left running at handoff:** the dev servers on :4321 (`main`) and :4322 (prototype worktree). They're safe to stop and restart with the commands above.
