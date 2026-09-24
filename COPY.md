@@ -13,6 +13,7 @@
     - Bin Mahyub sits quietly in the details: the chat contact name, the «ب» mark, and the email line («أو راسل بن مهيوب عبر البريد» / "or email Bin Mahyub").
     - The hero name and the footer stay Edres Al-Zubairi.
   - The intro statement now promises growth and easy care («كيف سيكبر معك ويسهل الاعتناء به؟» / "how will it grow with you and stay easy to look after?") instead of "still running after a year". The paragraph drops the name: «نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.» (owner's own wording).
+  - The paragraph beside the «منذ 2022» badge is the owner's own wording (two hamzas corrected), with no repeated year.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
@@ -42,7 +43,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (قسم التعريف — بلا عنوان ظاهر)
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟
 
-نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.
+من صفحة واحدة إلى متجر كامل، نبني كل موقع على أساس متين يسهل البناء عليه لاحقًا، نستعين بالمختصين إذا احتاج المشروع ذلك. ونشرح لك كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.
 
 - **الشارة:** منذ 2022
 
@@ -110,7 +111,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (Intro section — no visible heading)
 Every site we build starts with one question: how will it grow with you and stay easy to look after?
 
-We've been building for the web since 2022. We explain everything plainly, without jargon.
+From a single page to a full store, we build every site on a solid base that's easy to build on later, and we bring in specialists when a project needs them. We explain everything to you plainly, without jargon: it matters to us that you know what you're paying for and why.
 
 - **Badge:** Since 2022
 
