@@ -14,7 +14,7 @@ const t = copy[lang];
     <h2 id="contact-heading" class="sr-only">{t.contact.heading}</h2>
     <h3>{t.contact.subheading}</h3>
     <p>{t.contact.body}</p>
-    <a class="btn btn--light" href={links.whatsapp} rel="noopener">{t.contact.cta}</a>
+    <a class="btn btn--light" href={`${links.whatsapp}?text=${encodeURIComponent(t.contact.prefill)}`} rel="noopener">{t.contact.cta}</a>
     <p class="email">
       {t.contact.emailLead} <a href={`mailto:${links.email}`} dir="ltr">{t.contact.email}</a>
     </p>

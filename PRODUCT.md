@@ -41,6 +41,7 @@ Saudi small-business referral market — most visitors arrive already primed by 
 - Section headings never say "about us" or "we": the intro section has no visible heading, and «كيف يتم العمل» and «التزامات مكتوبة» are the titles. "We" remains in body sentences and buttons.
 - Earlier framing: Edres is a freelancer building toward an agency. He works under this brand rather than his own name alone, and brings in specialists for every project to deliver the promised result. The page must not claim a registered agency, company, team or staff (decided 2026-09-24).
 - Voice: "we", warm and confident; Modern Standard Arabic for the Arabic copy. "We" is honest because every project involves specialists.
+- **Free consultation** (decided 2026-09-24): the contact section offers a free first WhatsApp chat about the client's idea, with no obligation and no call promised. It is real and must stay so; if it stops being offered, remove it from the page.
 - Contact channels: WhatsApp (`https://wa.me/966501374100`) as primary, email `info@binmahyub.uk` as secondary. It forwards to Gmail through Cloudflare Email Routing; setup and sending guide in `EMAIL_SETUP.md`.
 
 ## Evidence on Hand

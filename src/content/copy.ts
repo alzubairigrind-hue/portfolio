@@ -21,6 +21,7 @@ export type SiteCopy = {
     subheading: string;
     body: string;
     cta: string;
+    prefill: string;
     emailLead: string;
     email: string;
   };
@@ -109,9 +110,10 @@ export const copy: Record<Lang, SiteCopy> = {
     },
     contact: {
       heading: 'تواصل',
-      subheading: 'لديك مشروع في بالك؟',
-      body: 'أخبرنا عنه على واتساب، وستعرف السعر بوضوح قبل أن نبدأ أي عمل.',
-      cta: 'راسلنا على واتساب',
+      subheading: 'لديك فكرة مشروع؟',
+      body: 'اطلب استشارتك المجانية على واتساب، لنتعرّف أكثر على فكرتك ونقترح عليك أنسب طريقة لتنفيذها. وقبل أي عمل، ستستلم سعرًا مكتوبًا.',
+      cta: 'اطلب استشارتك المجانية',
+      prefill: 'مرحبًا، أرغب في استشارة مجانية لمشروعي',
       emailLead: 'أو راسل بن مهيوب عبر البريد:',
       email: 'info@binmahyub.uk',
     },
@@ -188,9 +190,10 @@ export const copy: Record<Lang, SiteCopy> = {
     },
     contact: {
       heading: 'Contact',
-      subheading: 'Have a project in mind?',
-      body: "Tell us about it on WhatsApp. You'll get a clear price before any work starts.",
-      cta: 'Message us on WhatsApp',
+      subheading: 'Have a project idea?',
+      body: "Request your free consultation on WhatsApp: let's get to know your idea, and we'll suggest the best way to build it. Before any work starts, you'll get a written price.",
+      cta: 'Get your free consultation',
+      prefill: "Hi, I'd like a free consultation for my project",
       emailLead: 'or email Bin Mahyub:',
       email: 'info@binmahyub.uk',
     },

@@ -15,6 +15,7 @@
   - The intro statement now promises growth and easy care («كيف سيكبر معك ويسهل الاعتناء به؟» / "how will it grow with you and stay easy to look after?") instead of "still running after a year". The paragraph drops the name: «نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.» (owner's own wording).
   - The paragraph beside the «منذ 2022» badge is the owner's own wording (two hamzas corrected), with no repeated year.
   - It then opens with «لهذا» ("That's why") and answers both halves of the statement (easy to build on and easy to look after).
+  - Contact now invites a **free consultation**: a free WhatsApp chat about the idea, confirmed by the owner as real; no call is promised. The button pre-fills «مرحبًا، أرغب في استشارة مجانية لمشروعي» / "Hi, I'd like a free consultation for my project". The written-price promise closes the section.
   - Final form: the purple «منذ 2022» / "Since 2022" pill opens the paragraph inline, and the sentence continues from it («ونحن نضع لكل موقع…» / "we've been giving every site…"), the owner's wording polished.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
@@ -80,9 +81,9 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **الوسم:** مثال توضيحي
 
 ### تواصل
-- **العنوان:** لديك مشروع في بالك؟
-- **النص:** أخبرنا عنه على واتساب، وستعرف السعر بوضوح قبل أن نبدأ أي عمل.
-- **الزر:** راسلنا على واتساب → `https://wa.me/966501374100`
+- **العنوان:** لديك فكرة مشروع؟
+- **النص:** اطلب استشارتك المجانية على واتساب، لنتعرّف أكثر على فكرتك ونقترح عليك أنسب طريقة لتنفيذها. وقبل أي عمل، ستستلم سعرًا مكتوبًا.
+- **الزر:** اطلب استشارتك المجانية → `https://wa.me/966501374100` مع رسالة جاهزة: مرحبًا، أرغب في استشارة مجانية لمشروعي
 - **ثانوي:** أو راسل بن مهيوب عبر البريد: info@binmahyub.uk
 
 ### التذييل
@@ -145,9 +146,9 @@ Every site we build starts with one question: how will it grow with you and stay
 - **Label:** Illustrative example
 
 ### Contact
-- **Heading:** Have a project in mind?
-- **Body:** Tell us about it on WhatsApp. You'll get a clear price before any work starts.
-- **CTA:** Message us on WhatsApp → `https://wa.me/966501374100`
+- **Heading:** Have a project idea?
+- **Body:** Request your free consultation on WhatsApp: let's get to know your idea, and we'll suggest the best way to build it. Before any work starts, you'll get a written price.
+- **CTA:** Get your free consultation → `https://wa.me/966501374100` with a pre-filled message: Hi, I'd like a free consultation for my project
 - **Secondary:** or email Bin Mahyub: info@binmahyub.uk
 
 ### Footer
