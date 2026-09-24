@@ -2,9 +2,9 @@
 
 - **Written:** 2026-09-24, updated the same day after a second session. The next agent starts with no memory of it.
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
-  - Arabic at `/` (RTL, default), English at `/en`.
-  - Astro 7 static, Alexandria font only, deploys to Cloudflare Pages at **portfolio.binmahyub.uk**.
-- **Status:** ready to launch. Every planned step is done, the second critique scored 27/32, and `dist/` is built from `main`. What's left is the owner's upload and the **Later** list.
+  - Arabic at `/` (RTL, default), English at `/en/`.
+  - Astro 7 static, Alexandria font for the portfolio itself, deployed to Cloudflare Pages at **portfolio.binmahyub.uk**.
+- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia demo is live at `/work/adab-al-furusia/`. What's left is the owner's upload and the **Later** list.
 
 ---
 
@@ -39,7 +39,7 @@
 | **Upload folder** | `dist/` (run `pnpm build` on `main` first) |
 
 **Code map (`src/`):**
-- `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → How the work is done → Contact → footer). Change the order there, once.
+- `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en/`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → How the work is done → Contact → footer). Change the order there, once.
 - `components/`: one file per section, plus the shared pieces `WhatsAppIcon.astro`, `LanguageSwitch.astro` and `ProjectCard.astro`. The hero chat playback script lives in `Hero.astro`; the page-wide scroll reveal is in `layouts/Base.astro`.
 - `content/copy.ts`: every visible string, including the «ب»/B mark and the «عرض حي»/Live demo label, plus the `projects` list. It must match `COPY.md` verbatim.
 - `shared/i18n.ts`: a leaf module (imports nothing from the app) with the `Lang` type, `dirFor`, `pathFor`, `otherLang` and `localizeDigits`. Use it instead of hard-coding `/en/`, `rtl` or Arabic-Indic digits.
@@ -53,8 +53,8 @@
 - `.impeccable/critique/2026-09-24T11-28-32Z__src-pages-index-astro.md`: the **latest critique, 28/32**, checked at 8 screen widths (320–1920) in both languages. Its P1s are fixed; its remaining points are optional. Trend: 25 → 27 → 28.
 - `DEPLOY.md`: the owner's step-by-step Cloudflare Pages Direct Upload guide.
 - `EMAIL_SETUP.md`: receiving is live (info@binmahyub.uk goes to Gmail); Part B, sending, is for later.
-- `COPY_RESEARCH.md`: 18 agency sites, reference only. `COPY_V2_DRAFT.md`: **not adopted**, reference only.
-- `REFERENCE_BOARD_METHOD.md`, `SADU.md` (the Sadu motif, parked), `REFERENCES.md` (rejected Awwwards references).
+- `docs/archive/COPY_RESEARCH.md`: 18 agency sites, reference only. `docs/archive/COPY_V2_DRAFT.md`: **not adopted**, reference only.
+- `docs/archive/REFERENCE_BOARD_METHOD.md`, `docs/archive/SADU.md` (the Sadu motif, parked), `docs/archive/REFERENCES.md` (rejected Awwwards references).
 - `notes.md`: **the owner's own empty file. Leave it untouched and uncommitted.**
 
 ## 3. Final decisions (don't reopen without the owner)
@@ -79,8 +79,8 @@
   - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
   - **Page order:** Hero → About → Services → Work («نعمل عليه الآن» / "What we're building now", full-width) → How the work is done + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
-- **Font:** Alexandria (self-hosted, OFL). HT Moshreq Pro was dropped, so no licence is needed.
-- **Projects:** Adab Al-Furusia is the first of several, marked "coming soon"; never present it as live until it is. Its card is card-sized (about ⅓ width on desktop) with an abstract drawn preview (round 9C). **Keep the card-sized layout:** more projects will sit beside it in the row (the owner rejected a wide-screen relayout, round 10).
+- **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demo under `public/work/adab-al-furusia/` ships its own HT Moshreq Pro and IBM Plex Sans Arabic fonts.
+- **Projects:** Adab Al-Furusia is live at `/work/adab-al-furusia/`. Its card is card-sized (about ⅓ width on desktop) with an abstract drawn preview (round 9C). **Keep the card-sized layout:** more projects will sit beside it in the row (the owner rejected a wide-screen relayout, round 10).
 
 ## 4. Next steps
 
@@ -88,13 +88,13 @@
 
 **Done earlier the same day:** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
 
-1. **The owner uploads `dist/`** following `DEPLOY.md` from step 5. Run `pnpm build` again first if anything changed after commit `7fbd49a`.
+1. **Run `pnpm build` on `main`, then upload `dist/`** following `DEPLOY.md` from step 5.
 2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
 
 **Adding a project** (the owner will add several):
 - Add an entry to the `projects` array in `src/content/copy.ts`: `slug`, `name` {ar, en}, `description` {ar, en}, `status` (`'coming-soon'` or `'live'`), `statusLabel` {ar, en}, `repoUrl` (a URL only if the repo is public, else `null`).
 - Add the same name, description and label verbatim to `COPY.md` under «نعمل عليه الآن» / "What we're building now", and add the new `slug` to the copy check's allowed data values.
-- `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). Keep it `'coming-soon'` until then.
+- `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). For a new project, keep it `'coming-soon'` until then; Adab Al-Furusia is already live.
 - With more than one project, consider retitling the section (for example back to «أعمال مختارة» / "Selected work"); ask the owner.
 - Run the checks in section 5, then rebuild `dist/`.
 
@@ -108,7 +108,7 @@
 ## 5. Checks to run after any change
 
 - **Build:** `pnpm build` on `main`.
-- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `COPY.md`. Only the data values `adab-al-furusia`, `coming-soon` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
+- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `COPY.md`. Only the data values `adab-al-furusia`, `coming-soon`, `live` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
 - **Visual:** screenshots of `/` and `/en/` at 1440×900 and 390×844. Wait about 7 s for the hero chat. Scroll to trigger reveals. **Measure the rendered DOM, not just the CSS.**
 
 ## 6. Gotchas hit in this project

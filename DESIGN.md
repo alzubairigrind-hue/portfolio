@@ -102,13 +102,19 @@ components:
     backgroundColor: "{colors.page}"
     textColor: "{colors.brand}"
     rounded: "{rounded.pill}"
-    padding: "0.3rem 0.9rem"
+    padding: "0.25rem 0.85rem"
   language-switch:
-    backgroundColor: "{colors.card}"
-    textColor: "{colors.brand}"
+    variants:
+      hero:
+        backgroundColor: "rgb(255 255 255 / 0.1)"
+        textColor: "{colors.hero-ink}"
+      footer:
+        backgroundColor: "{colors.card}"
+        textColor: "{colors.brand}"
+        border: "1px solid {colors.card-line}"
     rounded: "{rounded.pill}"
     padding: "0 1.1rem"
-    height: "2.5rem"
+    minHeight: "2.75rem"
   step-number:
     backgroundColor: "linear-gradient(180deg, #4a2aa0, #2b1463)"
     textColor: "{colors.hero-ink}"
@@ -241,8 +247,8 @@ Bubbly, glossy and springy: the user's explicit choice.
 The night ground reused as a block: Night Purple fill, white headings, Soft Lavender Ink body, large corner, purple cast shadow. Used for the written-commitments block and the contact call to action. In the commitments block (round 8C, 2026-09-24) each promise has a white circle tick (2.4rem, inline SVG check) with a soft lilac ring; on wide screens thin lilac dividers split the three columns; on reveal the promises pop in one by one with the spring and each tick draws itself (off under reduced motion). Buttons inside use the Light variant; focus rings inside revert to lilac.
 
 ### Chips and Badges
-- **Chat chip:** small Night Purple pill with white 700 text inside chat bubbles (price, domain).
-- **Coming-soon badge:** white pill, dashed lilac border, lilac dot, Night Purple text. The honest state of an unfinished project.
+- **Chat chip:** small Lilac Mist pill with Night Purple 700 text inside chat bubbles (price, domain).
+- **Coming-soon badge:** white pill, dashed lilac border, lilac dot, Night Purple text. A supported state for an unfinished future project; Adab Al-Furusia is live.
 
 ### Navigation
 There is no top navigation. The footer carries the copyright and the language switch: a lavender pill (`language-switch`) with Night Purple text that scales to 1.05 on hover, marked with the target language and direction.
@@ -266,7 +272,7 @@ The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chose
 The store tiles use lilac-to-purple tones only; no orange, pink or mint.
 
 ### Project Browser Card
-A project is shown inside a browser window: 22px corners, a lavender bar with three dots, the coming-soon badge pushed to the bar's inline-end, and the name and description in the body. A live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+A project is shown inside a browser window: 22px corners, a lavender bar with three dots, and the name and description in the body. A coming-soon project can show its badge at the bar's inline-end; a live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
 Between the top bar and the text is a 120px lavender-gradient well (16px corners) holding two lilac-mist bars (70% and 45%) and a small Night Purple pill; it is decorative (`aria-hidden`), abstract, and never a screenshot (chosen in prototype round 9, 9C, 2026-09-24).
 
 ### How-we-work Path (signature)

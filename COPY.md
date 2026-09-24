@@ -20,12 +20,13 @@
   - Final form: the purple «منذ 2022» / "Since 2022" pill opens the paragraph inline, and the sentence continues from it («ونحن نضع لكل موقع…» / "we've been giving every site…"), the owner's wording polished.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
   - After the 25/32 critique (owner-approved): the hero WhatsApp button pre-fills «مرحبًا، أرغب في التحدث عن موقع لنشاطي» / "Hi, I'd like to talk about a website for my business"; the Work title is «نعمل عليه الآن» / "What we're building now" (one unfinished project); the leftover luxury wording is gone (Services «رسالة واضحة» / "a clear message"; meta «بتصميم مدروس» / "Carefully designed"); the hero chat gains a replay control, «إعادة التشغيل» / "Replay".
+- **Changed 2026-09-24:** Adab Al-Furusia is live; its card links to the demo at `/work/adab-al-furusia/`.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
 - **Proof used:** "building since 2022", the written commitments and the honest process. No invented testimonials or numbers.
 
-The Arabic version is the default page (`/`). The English version is at `/en`.
+The Arabic version is the default page (`/`). The English version is at `/en/`.
 
 ---
 
@@ -41,10 +42,11 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **الرابط الثانوي:** ماذا نبني ← الخدمات
 
 ### نعمل عليه الآن
-- **زر العرض الحي (عند الإطلاق):** عرض حي
+- **زر العرض الحي:** عرض حي
 - **أدب الفروسية**
   موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.
-  - عرض حي — قريبًا
+  - عرض حي → `/work/adab-al-furusia/`
+  - **وسم الشارة (يظهر فقط عندما يكون المشروع قريبًا من الإطلاق؛ لا يظهر الآن):** عرض حي — قريبًا
   - (الكود: غير متاح)
 
 ### (قسم التعريف — بلا عنوان ظاهر)
@@ -100,7 +102,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 
 ---
 
-## English (`/en`)
+## English (`/en/`)
 
 ### Hero
 - **Name:** Edres Al-Zubairi
@@ -112,10 +114,11 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **Secondary link:** What we build → Services
 
 ### What we're building now
-- **Live demo button (once live):** Live demo
+- **Live demo button:** Live demo
 - **Adab Al-Furusia**
   An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.
-  - Live demo — coming soon
+  - Live demo → `/work/adab-al-furusia/`
+  - Badge label (shown only while coming soon; not displayed now): Live demo — coming soon
   - (Code: not public)
 
 ### (Intro section — no visible heading)

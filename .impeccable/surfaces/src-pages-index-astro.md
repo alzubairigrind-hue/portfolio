@@ -43,13 +43,13 @@ Hero → About → Services → Work → Contact (Work moved after Services beca
 - Type (revised 2026-09-23): Alexandria (SIL OFL, self-hosted) for headings and body in both scripts. HT Moshreq Pro was chosen earlier for the luxury direction, then dropped when round 3 settled on playful and rounded; no licence is bought.
 
 - Hero secondary link (2026-09-23): «ماذا نبني» / "What we build", pointing to Services, not Work. COPY.md updated.
-- Sadu motif (2026-09-23): العويرجان Uwairjan, a chain of stepped dot-pyramids. Ornament only: its meaning is never stated on the page (it rests on a single study). Source and caveats: `SADU.md`. Parked after round 2: not used on the page unless the user brings it back.
+- Sadu motif (2026-09-23): العويرجان Uwairjan, a chain of stepped dot-pyramids. Ornament only: its meaning is never stated on the page (it rests on a single study). Source and caveats: `docs/archive/SADU.md`. Parked after round 2: not used on the page unless the user brings it back.
 - Build prerequisite: draw the motif from a real photographed Uwairjan reference (e.g. the UNESCO element gallery for file 02158), not from text descriptions. Never ship the photo; it is a drawing reference only. Avoid tribal brands (wasm) and figurative motifs.
 - Hero atmosphere (2026-09-23): texture and type only. No photography anywhere on the page.
 
 ## Reference picks (2026-09-23)
 
-The first prototype (three heroes on flat walnut with thin Sadu bands) was rejected in full. A board of 14 real sites from outside developer portfolios was then answered by number; method and board in `REFERENCE_BOARD_METHOD.md`.
+The first prototype (three heroes on flat walnut with thin Sadu bands) was rejected in full. A board of 14 real sites from outside developer portfolios was then answered by number; method and board in `docs/archive/REFERENCE_BOARD_METHOD.md`.
 
 - Liked: Diriyah Hotels, Experience AlUla, Ithra, Red Sea Global (all four Saudi sites), Edgewood Studio, HadiType, Anderson & Sheppard.
 - Hated: Fernweh, Studio Moe, Benchmark, 29LT, Aman, Toteme (pale, sparse, minimal) and A. Lange & Söhne (cold, precise dark).
@@ -66,7 +66,7 @@ A board of 11 texture- and type-led design projects (Behance), lettered A–K, i
   - Bold move: giant Arabic type.
   - Ground: near-black to warm charcoal. This replaces the walnut browns, since no dark pick was brown.
   - Accent: warm metal (copper/brass), optionally with small colour pops.
-  - Sadu: left out of the page for now (no pattern card was picked). `SADU.md` stays for reference.
+  - Sadu: left out of the page for now (no pattern card was picked). `docs/archive/SADU.md` stays for reference.
 
 ## Prototype round 2 verdict (2026-09-23)
 
@@ -110,7 +110,7 @@ The site is for **Bin Mahyub / بن مهيوب**, the owner's technology agency.
 3. There's no "what we don't do" list: beyond our expertise, the best in that field is brought in.
 4. Quotes are written.
 
-Copy v2 is proposed in `COPY_V2_DRAFT.md` (from `COPY_RESEARCH.md`), pending approval. It adds a "How we work" section with a handover block, so the order becomes Hero → About → Services → How we work → Work → Contact.
+Copy v2 is proposed in `docs/archive/COPY_V2_DRAFT.md` (from `docs/archive/COPY_RESEARCH.md`), pending approval. It adds a "How we work" section with a handover block, so the order becomes Hero → About → Services → How we work → Work → Contact.
 
 ## Prototype round 4 verdict (2026-09-23)
 
@@ -122,7 +122,7 @@ Copy v2 is proposed in `COPY_V2_DRAFT.md` (from `COPY_RESEARCH.md`), pending app
 
 **5A · WhatsApp to website wins:** C2 deep purple, no glow, faint grain, and an animated phone chat that mirrors the real process ("three things" message → written price → "your site is live, domain and hosting in your name") with a mini site popping in, labelled «مثال توضيحي». It is now built on `main` as the real hero.
 
-**Tone correction (2026-09-24):** Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency and always brings in specialists. Copy v2 revision 2 in `COPY_V2_DRAFT.md`.
+**Tone correction (2026-09-24):** Bin Mahyub is presented as an **independent web studio** (استوديو ويب مستقل), not an agency or company. The owner is a freelancer building toward an agency and always brings in specialists. Copy v2 revision 2 in `docs/archive/COPY_V2_DRAFT.md`.
 
 ## Copy decision (2026-09-24, final for launch)
 
@@ -130,7 +130,7 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 
 - About hides three personal facts at his request (the MIS degree, first in class 2023, teaching 50+ students) and keeps "since 2022".
 - From copy v2 rev 2, only these went live: How we work, Our written commitments, and the illustrative hero chat.
-- The live copy is `COPY.md` v1.1. `COPY_V2_DRAFT.md` is marked not adopted.
+- The live copy is `COPY.md` v1.1. `docs/archive/COPY_V2_DRAFT.md` is marked not adopted.
 - The agency/studio framing is superseded: no agency, company or team claims on the page.
 
 ## Finish review and round 6 (2026-09-24)
