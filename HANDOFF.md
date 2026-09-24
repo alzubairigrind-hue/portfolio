@@ -38,6 +38,13 @@
 | **Reference boards 1–3** | `reference-board/` (git-excluded via `.git/info/exclude`; third-party screenshots, never commit). Archive: `../005_myPortfolio-archive/reference-board-2026-09-23.tar.gz` |
 | **Upload folder** | `dist/` (run `pnpm build` on `main` first) |
 
+**Code map (`src/`):**
+- `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → How the work is done → Contact → footer). Change the order there, once.
+- `components/`: one file per section, plus the shared pieces `WhatsAppIcon.astro`, `LanguageSwitch.astro` and `ProjectCard.astro`. The hero chat playback script lives in `Hero.astro`; the page-wide scroll reveal is in `layouts/Base.astro`.
+- `content/copy.ts`: every visible string, including the «ب»/B mark and the «عرض حي»/Live demo label, plus the `projects` list. It must match `COPY.md` verbatim.
+- `shared/i18n.ts`: a leaf module (imports nothing from the app) with the `Lang` type, `dirFor`, `pathFor`, `otherLang` and `localizeDigits`. Use it instead of hard-coding `/en/`, `rtl` or Arabic-Indic digits.
+- `styles/`: `global.css` (tokens, buttons, sections, reveals) and `fonts.css`.
+
 **Key documents in the root:**
 - `PRODUCT.md`: audience, purpose, brand placement, honesty rules, facts kept off the page.
 - `COPY.md`: the **live copy, verbatim source**. Every visible string in `src/content/copy.ts` must match it character for character. When you change copy, change both.
