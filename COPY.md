@@ -19,6 +19,7 @@
   - The contact heading uses the owner's warmer spoken form «عندك فكرة مشروع؟»; the rest of the page stays formal Arabic.
   - Final form: the purple «منذ 2022» / "Since 2022" pill opens the paragraph inline, and the sentence continues from it («ونحن نضع لكل موقع…» / "we've been giving every site…"), the owner's wording polished.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
+  - After the 25/32 critique (owner-approved): the hero WhatsApp button pre-fills «مرحبًا، أرغب في التحدث عن موقع لنشاطي» / "Hi, I'd like to talk about a website for my business"; the Work title is «نعمل عليه الآن» / "What we're building now" (one unfinished project); the leftover luxury wording is gone (Services «رسالة واضحة» / "a clear message"; meta «بتصميم مدروس» / "Carefully designed"); the hero chat gains a replay control, «إعادة التشغيل» / "Replay".
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -35,10 +36,10 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **السطر العلوي:** مطوّر مواقع · المملكة العربية السعودية
 - **العنوان:** نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.
 - **النص الفرعي:** صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.
-- **الزر الرئيسي:** راسلنا على واتساب
+- **الزر الرئيسي:** راسلنا على واتساب → `https://wa.me/966501374100` مع رسالة جاهزة: مرحبًا، أرغب في التحدث عن موقع لنشاطي
 - **الرابط الثانوي:** ماذا نبني ← الخدمات
 
-### أعمال مختارة
+### نعمل عليه الآن
 - **أدب الفروسية**
   موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.
   - عرض حي — قريبًا
@@ -53,7 +54,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 
 ### الخدمات
 1. **صفحات الهبوط**
-   صفحة واحدة بهدف واحد: مظهر فاخر، وتحميل سريع على أي جوال، وزوار يتحولون إلى رسائل.
+   صفحة واحدة بهدف واحد: رسالة واضحة، وتحميل سريع على أي جوال، وزوار يتحولون إلى رسائل.
 2. **مواقع ووردبريس ومتاجر ووكومرس**
    مواقع أعمال ومتاجر إلكترونية تستطيع تحديثها بنفسك، مبنية بشكل صحيح من اليوم الأول.
 3. **الإدارة والصيانة**
@@ -80,6 +81,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **نحن:** موقعك أصبح مباشرًا، والنطاق والاستضافة باسمك. (شارة: yourcafe.sa)
 - **الموقع المصغّر:** yourcafe.sa · موقعك هنا · تواصل معنا
 - **الوسم:** مثال توضيحي
+- **زر الإعادة:** إعادة التشغيل
 
 ### تواصل
 - **العنوان:** عندك فكرة مشروع؟
@@ -92,7 +94,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 
 ### بيانات الصفحة
 - **العنوان:** ادريس الزبيري — مطوّر مواقع في السعودية
-- **الوصف:** صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم فاخر وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.
+- **الوصف:** صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم مدروس وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.
 
 ---
 
@@ -103,10 +105,10 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **Eyebrow:** Web developer · Saudi Arabia
 - **Headline:** Websites worthy of your business, built to keep running after launch.
 - **Subheadline:** Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.
-- **Primary CTA:** Message us on WhatsApp
+- **Primary CTA:** Message us on WhatsApp → `https://wa.me/966501374100` with a pre-filled message: Hi, I'd like to talk about a website for my business
 - **Secondary link:** What we build → Services
 
-### Selected work
+### What we're building now
 - **Adab Al-Furusia**
   An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.
   - Live demo — coming soon
@@ -120,7 +122,7 @@ Every site we build starts with one question: how will it grow with you and stay
 - **Badge (opens the paragraph):** Since 2022
 
 ### Services
-1. **Landing pages.** One page, one goal: a premium look, fast loading on any phone, and visitors who turn into messages.
+1. **Landing pages.** One page, one goal: a clear message, fast loading on any phone, and visitors who turn into messages.
 2. **WordPress sites & WooCommerce stores.** Business sites and online stores you can update yourself, set up properly from day one.
 3. **Administration & maintenance.** Updates, backups, security and fixes, so your site keeps running while you run your business.
 
@@ -145,6 +147,7 @@ Every site we build starts with one question: how will it grow with you and stay
 - **Us:** Your site is live, and the domain and hosting are in your name. (chip: yourcafe.sa)
 - **Mini site:** yourcafe.sa · Your site here · Contact us
 - **Label:** Illustrative example
+- **Replay button:** Replay
 
 ### Contact
 - **Heading:** Have a project idea?
@@ -157,7 +160,7 @@ Every site we build starts with one question: how will it grow with you and stay
 
 ### Meta
 - **Title:** Edres Al-Zubairi — Web developer, Saudi Arabia
-- **Description:** Premium, fast landing pages, WordPress sites and WooCommerce stores, with ongoing administration and maintenance after launch.
+- **Description:** Carefully designed, fast landing pages, WordPress sites and WooCommerce stores, with ongoing administration and maintenance after launch.
 
 ---
 

@@ -8,6 +8,7 @@ export type SiteCopy = {
     headline: string;
     sub: string;
     cta: string;
+    prefill: string;
     secondaryLink: string;
   };
   about: { lead: string; body: string; since: string };
@@ -36,6 +37,7 @@ export type SiteCopy = {
     contact: string;
     status: string;
     label: string;
+    replay: string;
     messages: { from: 'me' | 'them'; text: string; chip?: string; chipLtr?: boolean }[];
     site: { url: string; title: string; button: string };
   };
@@ -46,7 +48,7 @@ export const copy: Record<Lang, SiteCopy> = {
     meta: {
       title: 'ادريس الزبيري — مطوّر مواقع في السعودية',
       description:
-        'صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم فاخر وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.',
+        'صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس بتصميم مدروس وسرعة عالية، مع إدارة وصيانة مستمرة بعد الإطلاق.',
     },
     hero: {
       name: 'ادريس الزبيري',
@@ -54,6 +56,7 @@ export const copy: Record<Lang, SiteCopy> = {
       headline: 'نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.',
       sub: 'صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.',
       cta: 'راسلنا على واتساب',
+      prefill: 'مرحبًا، أرغب في التحدث عن موقع لنشاطي',
       secondaryLink: 'ماذا نبني',
     },
     about: {
@@ -66,7 +69,7 @@ export const copy: Record<Lang, SiteCopy> = {
       items: [
         {
           title: 'صفحات الهبوط',
-          body: 'صفحة واحدة بهدف واحد: مظهر فاخر، وتحميل سريع على أي جوال، وزوار يتحولون إلى رسائل.',
+          body: 'صفحة واحدة بهدف واحد: رسالة واضحة، وتحميل سريع على أي جوال، وزوار يتحولون إلى رسائل.',
         },
         {
           title: 'مواقع ووردبريس ومتاجر ووكومرس',
@@ -78,7 +81,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: 'أعمال مختارة' },
+    work: { heading: 'نعمل عليه الآن' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'كيف يتم العمل',
@@ -100,6 +103,7 @@ export const copy: Record<Lang, SiteCopy> = {
       contact: 'بن مهيوب',
       status: 'متصل الآن',
       label: 'مثال توضيحي',
+      replay: 'إعادة التشغيل',
       messages: [
         { from: 'me', text: 'مرحبًا، نشاطي مقهى، وأحتاج موقعًا فيه قائمة المشروبات، وميزانيتي تقريبية.' },
         { from: 'them', text: 'أهلًا بك! أرسلنا لك السعر مكتوبًا مع كل ما يشمله العمل.', chip: 'عرض السعر' },
@@ -126,7 +130,7 @@ export const copy: Record<Lang, SiteCopy> = {
     meta: {
       title: 'Edres Al-Zubairi — Web developer, Saudi Arabia',
       description:
-        'Premium, fast landing pages, WordPress sites and WooCommerce stores, with ongoing administration and maintenance after launch.',
+        'Carefully designed, fast landing pages, WordPress sites and WooCommerce stores, with ongoing administration and maintenance after launch.',
     },
     hero: {
       name: 'Edres Al-Zubairi',
@@ -134,6 +138,7 @@ export const copy: Record<Lang, SiteCopy> = {
       headline: 'Websites worthy of your business, built to keep running after launch.',
       sub: 'Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.',
       cta: 'Message us on WhatsApp',
+      prefill: "Hi, I'd like to talk about a website for my business",
       secondaryLink: 'What we build',
     },
     about: {
@@ -146,7 +151,7 @@ export const copy: Record<Lang, SiteCopy> = {
       items: [
         {
           title: 'Landing pages',
-          body: 'One page, one goal: a premium look, fast loading on any phone, and visitors who turn into messages.',
+          body: 'One page, one goal: a clear message, fast loading on any phone, and visitors who turn into messages.',
         },
         {
           title: 'WordPress sites & WooCommerce stores',
@@ -158,7 +163,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: 'Selected work' },
+    work: { heading: "What we're building now" },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'How the work is done',
@@ -180,6 +185,7 @@ export const copy: Record<Lang, SiteCopy> = {
       contact: 'Bin Mahyub',
       status: 'Online now',
       label: 'Illustrative example',
+      replay: 'Replay',
       messages: [
         { from: 'me', text: 'Hi, I run a café, I need a site with our drinks menu, and I have a rough budget.' },
         { from: 'them', text: "Welcome! We've sent you the written price, with everything it includes.", chip: 'Quote' },

@@ -49,16 +49,28 @@ const canonical = lang === 'ar' ? `${site}/` : `${site}/en/`;
       );
       document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
-      // The hero demo plays once on load and replays every 11 s.
-      const demo = document.querySelector('.hero-demo');
-      if (demo) {
+      // The hero demo plays once when it is well in view, then holds its final state.
+      // It replays only after leaving the screen completely, or on a tap, never mid-read.
+      const demo = document.querySelector<HTMLElement>('.hero-demo');
+      if (demo && !reduce) {
         const play = () => {
           demo.classList.remove('play');
-          void (demo as HTMLElement).offsetWidth;
+          void demo.offsetWidth;
           demo.classList.add('play');
         };
-        play();
-        if (!reduce) setInterval(play, 11000);
+        let away = true;
+        new IntersectionObserver(
+          ([e]) => {
+            if (!e.isIntersecting) away = true;
+            else if (away && e.intersectionRatio >= 0.4) {
+              away = false;
+              play();
+            }
+          },
+          { threshold: [0, 0.4] },
+        ).observe(demo);
+        demo.querySelector('.phone')?.addEventListener('click', play);
+        demo.querySelector('.replay')?.addEventListener('click', play);
       }
     </script>
   </body>
