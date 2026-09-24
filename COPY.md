@@ -16,6 +16,7 @@
   - The paragraph beside the «منذ 2022» badge is the owner's own wording (two hamzas corrected), with no repeated year.
   - It then opens with «لهذا» ("That's why") and answers both halves of the statement (easy to build on and easy to look after).
   - Contact now invites a **free consultation**: a free WhatsApp chat about the idea, confirmed by the owner as real; no call is promised. The button pre-fills «مرحبًا، أرغب في استشارة مجانية لمشروعي» / "Hi, I'd like a free consultation for my project". The written-price promise closes the section.
+  - The contact heading uses the owner's warmer spoken form «عندك فكرة مشروع؟»; the rest of the page stays formal Arabic.
   - Final form: the purple «منذ 2022» / "Since 2022" pill opens the paragraph inline, and the sentence continues from it («ونحن نضع لكل موقع…» / "we've been giving every site…"), the owner's wording polished.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
@@ -81,7 +82,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **الوسم:** مثال توضيحي
 
 ### تواصل
-- **العنوان:** لديك فكرة مشروع؟
+- **العنوان:** عندك فكرة مشروع؟
 - **النص:** اطلب استشارتك المجانية على واتساب، لنتعرّف أكثر على فكرتك ونقترح عليك أنسب طريقة لتنفيذها. وقبل أي عمل، ستستلم سعرًا مكتوبًا.
 - **الزر:** اطلب استشارتك المجانية → `https://wa.me/966501374100` مع رسالة جاهزة: مرحبًا، أرغب في استشارة مجانية لمشروعي
 - **ثانوي:** أو راسل بن مهيوب عبر البريد: info@binmahyub.uk
