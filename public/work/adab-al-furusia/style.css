@@ -434,7 +434,7 @@ button {
   background: linear-gradient(
     180deg,
     rgba(43, 30, 26, 0.55) 0%,
-    rgba(43, 30, 26, 0.4) 40%,
+    rgba(43, 30, 26, 0.64) 40%,
     rgba(43, 30, 26, 0.75) 100%
   );
 }
@@ -446,7 +446,8 @@ button {
 }
 
 .hero-kicker {
-  color: var(--af-taupe);
+  color: var(--af-sand);
+  text-shadow: 0 1px 12px rgba(43, 30, 26, 0.6);
   margin-bottom: var(--space-md);
 }
 

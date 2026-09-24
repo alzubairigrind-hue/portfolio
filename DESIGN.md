@@ -272,7 +272,7 @@ The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chose
 The store tiles use lilac-to-purple tones only; no orange, pink or mint.
 
 ### Project Browser Card
-A project is shown inside a browser window: 22px corners, a lavender bar with three dots, and the name and description in the body. A coming-soon project can show its badge at the bar's inline-end; a live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+A project is shown inside a browser window: 22px corners, a lavender bar with three dots, and the name and description in the body. A coming-soon project can show its badge at the bar's inline-end; a live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Both links open in a new tab. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
 Between the top bar and the text is a 120px lavender-gradient well (16px corners) holding two lilac-mist bars (70% and 45%) and a small Night Purple pill; it is decorative (`aria-hidden`), abstract, and never a screenshot (chosen in prototype round 9, 9C, 2026-09-24).
 
 ### How-we-work Path (signature)

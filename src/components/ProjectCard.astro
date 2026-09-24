@@ -21,8 +21,8 @@ const { lang, project } = Astro.props;
     {
       (project.status === 'live' || project.repoUrl) && (
         <div class="links">
-          {project.status === 'live' && <a class="btn btn--brand" href={`/work/${project.slug}/`}>{copy[lang].work.demoLabel}</a>}
-          {project.repoUrl && <a class="link" href={project.repoUrl} rel="noopener">GitHub</a>}
+          {project.status === 'live' && <a class="btn btn--brand" href={`/work/${project.slug}/`} target="_blank" rel="noopener">{copy[lang].work.demoLabel}</a>}
+          {project.repoUrl && <a class="link" href={project.repoUrl} target="_blank" rel="noopener">GitHub</a>}
         </div>
       )
     }
