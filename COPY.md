@@ -33,6 +33,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 
 ### الواجهة
 - **الاسم:** ادريس الزبيري
+- **الحرف في الشعار:** ب
 - **السطر العلوي:** مطوّر مواقع · المملكة العربية السعودية
 - **العنوان:** نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.
 - **النص الفرعي:** صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.
@@ -40,6 +41,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **الرابط الثانوي:** ماذا نبني ← الخدمات
 
 ### نعمل عليه الآن
+- **زر العرض الحي (عند الإطلاق):** عرض حي
 - **أدب الفروسية**
   موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.
   - عرض حي — قريبًا
@@ -102,6 +104,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 
 ### Hero
 - **Name:** Edres Al-Zubairi
+- **Mark letter:** B
 - **Eyebrow:** Web developer · Saudi Arabia
 - **Headline:** Websites worthy of your business, built to keep running after launch.
 - **Subheadline:** Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.
@@ -109,6 +112,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 - **Secondary link:** What we build → Services
 
 ### What we're building now
+- **Live demo button (once live):** Live demo
 - **Adab Al-Furusia**
   An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.
   - Live demo — coming soon

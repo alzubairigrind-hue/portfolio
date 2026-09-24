@@ -6,6 +6,7 @@ export type SiteCopy = {
   meta: { title: string; description: string };
   hero: {
     name: string;
+    mark: string;
     eyebrow: string;
     headline: string;
     sub: string;
@@ -18,7 +19,7 @@ export type SiteCopy = {
     heading: string;
     items: { title: string; body: string }[];
   };
-  work: { heading: string };
+  work: { heading: string; demoLabel: string };
   contact: {
     heading: string;
     subheading: string;
@@ -54,6 +55,7 @@ export const copy: Record<Lang, SiteCopy> = {
     },
     hero: {
       name: 'ادريس الزبيري',
+      mark: 'ب',
       eyebrow: 'مطوّر مواقع · المملكة العربية السعودية',
       headline: 'نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.',
       sub: 'صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.',
@@ -83,7 +85,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: 'نعمل عليه الآن' },
+    work: { heading: 'نعمل عليه الآن', demoLabel: 'عرض حي' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'كيف يتم العمل',
@@ -136,6 +138,7 @@ export const copy: Record<Lang, SiteCopy> = {
     },
     hero: {
       name: 'Edres Al-Zubairi',
+      mark: 'B',
       eyebrow: 'Web developer · Saudi Arabia',
       headline: 'Websites worthy of your business, built to keep running after launch.',
       sub: 'Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.',
@@ -165,7 +168,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: "What we're building now" },
+    work: { heading: "What we're building now", demoLabel: 'Live demo' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'How the work is done',

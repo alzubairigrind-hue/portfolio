@@ -12,13 +12,12 @@ const t = copy[lang];
 const demo = t.heroDemo;
 // Whole words only: splitting inside an Arabic word would break letter joining.
 const words = t.hero.headline.split(' ');
-const mark = lang === 'ar' ? 'ب' : 'B';
 const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
 ---
 
 <header class="hero">
   <div class="pad sig">
-    <span class="mark" aria-hidden="true">{mark}</span>
+    <span class="mark" aria-hidden="true">{t.hero.mark}</span>
     <div>
       <p class="sig-name">{t.hero.name}</p>
       <p class="sig-role">{t.hero.eyebrow}</p>
@@ -41,7 +40,7 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
   <div class="hero__art hero-demo">
     <div class="phone" aria-hidden="true">
       <div class="phone__top">
-        <span class="avatar">{mark}</span>
+        <span class="avatar">{t.hero.mark}</span>
         <div><b>{demo.contact}</b><small>{demo.status}</small></div>
       </div>
       <div class="chat">

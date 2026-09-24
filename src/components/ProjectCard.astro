@@ -1,5 +1,5 @@
 ---
-import { type Lang, type Project } from '../content/copy';
+import { copy, type Lang, type Project } from '../content/copy';
 
 interface Props {
   lang: Lang;
@@ -7,7 +7,6 @@ interface Props {
 }
 
 const { lang, project } = Astro.props;
-const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
 ---
 
 <article class="browser reveal">
@@ -22,7 +21,7 @@ const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
     {
       (project.status === 'live' || project.repoUrl) && (
         <div class="links">
-          {project.status === 'live' && <a class="btn btn--brand" href={`/work/${project.slug}/`}>{demoLabel}</a>}
+          {project.status === 'live' && <a class="btn btn--brand" href={`/work/${project.slug}/`}>{copy[lang].work.demoLabel}</a>}
           {project.repoUrl && <a class="link" href={project.repoUrl} rel="noopener">GitHub</a>}
         </div>
       )
