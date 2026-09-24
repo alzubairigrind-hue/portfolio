@@ -1,4 +1,6 @@
-export type Lang = 'ar' | 'en';
+import type { Lang } from '../shared/i18n';
+
+export type { Lang };
 
 export type SiteCopy = {
   meta: { title: string; description: string };

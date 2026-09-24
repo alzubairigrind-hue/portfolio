@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../content/copy';
+import { localizeDigits } from '../shared/i18n';
 
 interface Props {
   lang: Lang;
@@ -8,7 +9,7 @@ interface Props {
 const { lang } = Astro.props;
 const t = copy[lang];
 const [landing, store, care] = t.services.items;
-const cartCount = lang === 'ar' ? '٢' : '2';
+const cartCount = localizeDigits(2, lang);
 ---
 
 <section id="services" class="section" aria-labelledby="services-heading">

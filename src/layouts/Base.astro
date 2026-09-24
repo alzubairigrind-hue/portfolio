@@ -2,6 +2,7 @@
 import '../styles/fonts.css';
 import '../styles/global.css';
 import type { Lang } from '../content/copy';
+import { dirFor, pathFor } from '../shared/i18n';
 
 interface Props {
   lang: Lang;
@@ -10,9 +11,9 @@ interface Props {
 }
 
 const { lang, title, description } = Astro.props;
-const dir = lang === 'ar' ? 'rtl' : 'ltr';
+const dir = dirFor(lang);
 const site = 'https://portfolio.binmahyub.uk';
-const canonical = lang === 'ar' ? `${site}/` : `${site}/en/`;
+const canonical = `${site}${pathFor(lang)}`;
 ---
 
 <html lang={lang} dir={dir}>
@@ -26,9 +27,9 @@ const canonical = lang === 'ar' ? `${site}/` : `${site}/en/`;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="ar" href={`${site}/`} />
-    <link rel="alternate" hreflang="en" href={`${site}/en/`} />
-    <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+    <link rel="alternate" hreflang="ar" href={`${site}${pathFor('ar')}`} />
+    <link rel="alternate" hreflang="en" href={`${site}${pathFor('en')}`} />
+    <link rel="alternate" hreflang="x-default" href={`${site}${pathFor('ar')}`} />
     <script is:inline>document.documentElement.classList.add('js');</script>
   </head>
   <body>

@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../content/copy';
+import { localizeDigits } from '../shared/i18n';
 
 interface Props {
   lang: Lang;
@@ -7,7 +8,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = copy[lang].howWeWork;
-const digits = lang === 'ar' ? ['١', '٢', '٣', '٤', '٥'] : ['1', '2', '3', '4', '5'];
+const digits = [1, 2, 3, 4, 5].map((n) => localizeDigits(n, lang));
 ---
 
 <section id="how" class="section" aria-labelledby="how-heading">
