@@ -70,6 +70,34 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
   </div>
 </header>
 
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // The hero demo plays once when it is well in view, then holds its final state.
+  // It replays only after leaving the screen completely, or on a tap, never mid-read.
+  const demo = document.querySelector<HTMLElement>('.hero-demo');
+  if (demo && !reduce) {
+    const play = () => {
+      demo.classList.remove('play');
+      void demo.offsetWidth;
+      demo.classList.add('play');
+    };
+    let away = true;
+    new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting) away = true;
+        else if (away && e.intersectionRatio >= 0.4) {
+          away = false;
+          play();
+        }
+      },
+      { threshold: [0, 0.4] },
+    ).observe(demo);
+    demo.querySelector('.phone')?.addEventListener('click', play);
+    demo.querySelector('.replay')?.addEventListener('click', play);
+  }
+</script>
+
 <style>
   .hero {
     position: relative;
