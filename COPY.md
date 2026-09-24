@@ -15,6 +15,7 @@
   - The intro statement now promises growth and easy care («كيف سيكبر معك ويسهل الاعتناء به؟» / "how will it grow with you and stay easy to look after?") instead of "still running after a year". The paragraph drops the name: «نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.» (owner's own wording).
   - The paragraph beside the «منذ 2022» badge is the owner's own wording (two hamzas corrected), with no repeated year.
   - It then opens with «لهذا» ("That's why") and answers both halves of the statement (easy to build on and easy to look after).
+  - Final form: the purple «منذ 2022» / "Since 2022" pill opens the paragraph inline, and the sentence continues from it («ونحن نضع لكل موقع…» / "we've been giving every site…"), the owner's wording polished.
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
@@ -44,9 +45,9 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (قسم التعريف — بلا عنوان ظاهر)
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟
 
-لهذا، من صفحة واحدة إلى متجر كامل، نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، ونستعين بالمختصين إذا احتاج المشروع ذلك. ونشرح لك كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.
+[منذ 2022] ونحن نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، من صفحة واحدة إلى متجر متكامل. نستعين بمختصين إذا استدعى المشروع ذلك، ونشرح كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.
 
-- **الشارة:** منذ 2022
+- **الشارة (تبدأ بها الفقرة):** منذ 2022
 
 ### الخدمات
 1. **صفحات الهبوط**
@@ -112,9 +113,9 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (Intro section — no visible heading)
 Every site we build starts with one question: how will it grow with you and stay easy to look after?
 
-That's why, from a single page to a full store, we give every site a solid base that's easy to build on later and easy to look after, and we bring in specialists when a project needs them. We explain everything to you plainly, without jargon: it matters to us that you know what you're paying for and why.
+[Since 2022] we've been giving every site a solid base that's easy to build on later and easy to look after, from a single page to a complete store. We bring in specialists when a project calls for it, and explain everything plainly, without jargon: it matters to us that you know what you're paying for and why.
 
-- **Badge:** Since 2022
+- **Badge (opens the paragraph):** Since 2022
 
 ### Services
 1. **Landing pages.** One page, one goal: a premium look, fast loading on any phone, and visitors who turn into messages.

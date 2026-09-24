@@ -58,7 +58,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟',
       since: 'منذ 2022',
-      body: 'لهذا، من صفحة واحدة إلى متجر كامل، نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، ونستعين بالمختصين إذا احتاج المشروع ذلك. ونشرح لك كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.',
+      body: 'ونحن نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، من صفحة واحدة إلى متجر متكامل. نستعين بمختصين إذا استدعى المشروع ذلك، ونشرح كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.',
     },
     services: {
       heading: 'الخدمات',
@@ -137,7 +137,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       lead: 'Every site we build starts with one question: how will it grow with you and stay easy to look after?',
       since: 'Since 2022',
-      body: "That's why, from a single page to a full store, we give every site a solid base that's easy to build on later and easy to look after, and we bring in specialists when a project needs them. We explain everything to you plainly, without jargon: it matters to us that you know what you're paying for and why.",
+      body: "we've been giving every site a solid base that's easy to build on later and easy to look after, from a single page to a complete store. We bring in specialists when a project calls for it, and explain everything plainly, without jargon: it matters to us that you know what you're paying for and why.",
     },
     services: {
       heading: 'Services',
