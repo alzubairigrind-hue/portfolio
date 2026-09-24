@@ -195,7 +195,7 @@ A single centred column: sections cap at 72rem with fluid inline padding (`pad`,
 
 The hero fills the first screen (100svh) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 
-Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem. How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
+Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
 
 **The Logical Properties Rule.** Every margin, padding, inset, size and corner is written with logical properties (`inline`, `block`, `start`, `end`), so the Arabic and English pages mirror from one stylesheet. Physical left/right is not used.
 
@@ -235,7 +235,7 @@ Bubbly, glossy and springy: the user's explicit choice.
 - **Hover:** only cards containing a link scale (1.02, spring). A card that grows but is not clickable misleads.
 
 ### Purple Panel
-The night ground reused as a block: Night Purple fill, white headings, Soft Lavender Ink body, large corner, purple cast shadow. Used for the written-commitments block (white circle ticks with an inline SVG check) and the contact call to action. Buttons inside use the Light variant; focus rings inside revert to lilac.
+The night ground reused as a block: Night Purple fill, white headings, Soft Lavender Ink body, large corner, purple cast shadow. Used for the written-commitments block and the contact call to action. In the commitments block (round 8C, 2026-09-24) each promise has a white circle tick (2.4rem, inline SVG check) with a soft lilac ring; on wide screens thin lilac dividers split the three columns; on reveal the promises pop in one by one with the spring and each tick draws itself (off under reduced motion). Buttons inside use the Light variant; focus rings inside revert to lilac.
 
 ### Chips and Badges
 - **Chat chip:** small Night Purple pill with white 700 text inside chat bubbles (price, domain).

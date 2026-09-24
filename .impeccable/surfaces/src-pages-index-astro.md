@@ -150,6 +150,7 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 
 - From the 25/32 critique, applied on `main`: WhatsApp glyph in both pills and a hero pre-fill; the hero chat plays once and holds (replays on full re-entry, tap, or a Replay button); Work as a full-width row titled «نعمل عليه الآن» / "What we're building now"; label, email tap target and measure fixes; the last «فاخر» removed.
 - Round 7 (branch `prototype/hero`, `/proto/round-7`) tried carrying the chat into commitments (7A) and contact (7B). 7A was built on `main`, then **rejected on sight and reverted**: the owner likes the dark «التزامات مكتوبة» panel as it is. Binding: that panel may get small enhancements only, never a redesign. 7B was not adopted either; the critique's "chat doesn't carry below the hero" point is closed by the owner's choice.
+- Round 8 (`/proto/round-8`) offered small enhancements to that panel. **8C · Clearer structure won** and is on `main`: staggered spring pop-in with self-drawing ticks, larger ticks with a soft lilac ring, and thin lilac column dividers on wide screens. The panel's colour, heading and layout are otherwise unchanged.
 
 ## Open decisions
 
