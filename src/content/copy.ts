@@ -56,9 +56,9 @@ export const copy: Record<Lang, SiteCopy> = {
       secondaryLink: 'ماذا نبني',
     },
     about: {
-      lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟',
+      lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟',
       since: 'منذ 2022',
-      body: 'ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
+      body: 'نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
     },
     services: {
       heading: 'الخدمات',
@@ -135,9 +135,9 @@ export const copy: Record<Lang, SiteCopy> = {
       secondaryLink: 'What we build',
     },
     about: {
-      lead: 'Every site we build starts with one question: how will it still be running a year from now?',
+      lead: 'Every site we build starts with one question: how will it grow with you and stay easy to look after?',
       since: 'Since 2022',
-      body: 'Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.',
+      body: "We've been building for the web since 2022. We explain everything plainly, without jargon.",
     },
     services: {
       heading: 'Services',

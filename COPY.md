@@ -12,6 +12,7 @@
     - Section headings no longer say "about us" or "we". The About heading is removed, and its statement becomes the section title. How we work → «كيف يتم العمل» / "How the work is done". Our commitments → «التزامات مكتوبة» / "Commitments in writing".
     - Bin Mahyub sits quietly in the details: the chat contact name, the «ب» mark, and the email line («أو راسل بن مهيوب عبر البريد» / "or email Bin Mahyub").
     - The hero name and the footer stay Edres Al-Zubairi.
+  - The intro statement now promises growth and easy care («كيف سيكبر معك ويسهل الاعتناء به؟» / "how will it grow with you and stay easy to look after?") instead of "still running after a year". The paragraph drops the name: «نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.» (owner's own wording).
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
@@ -39,9 +40,9 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
   - (الكود: غير متاح)
 
 ### (قسم التعريف — بلا عنوان ظاهر)
-كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟
+كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟
 
-ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.
+نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.
 
 - **الشارة:** منذ 2022
 
@@ -107,9 +108,9 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
   - (Code: not public)
 
 ### (Intro section — no visible heading)
-Every site we build starts with one question: how will it still be running a year from now?
+Every site we build starts with one question: how will it grow with you and stay easy to look after?
 
-Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.
+We've been building for the web since 2022. We explain everything plainly, without jargon.
 
 - **Badge:** Since 2022
 
