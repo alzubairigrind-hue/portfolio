@@ -10,6 +10,7 @@ target_fingerprint: "sha256:bc42e64606bb6422bcd0e5dbca193813af0017e44441cb407da2
 target_path: /home/alzubairi/02_Profession/Projects/01_Personal/005_myPortfolio/src/pages/index.astro
 timestamp: 2026-09-24T08-16-06Z
 slug: src-pages-index-astro
+closed: true
 ---
 Method: dual-agent (A: design review · B: detector + in-page scan)
 
