@@ -152,6 +152,14 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 - Round 7 (branch `prototype/hero`, `/proto/round-7`) tried carrying the chat into commitments (7A) and contact (7B). 7A was built on `main`, then **rejected on sight and reverted**: the owner likes the dark «التزامات مكتوبة» panel as it is. Binding: that panel may get small enhancements only, never a redesign. 7B was not adopted either; the critique's "chat doesn't carry below the hero" point is closed by the owner's choice.
 - Round 8 (`/proto/round-8`) offered small enhancements to that panel. **8C · Clearer structure won** and is on `main`: staggered spring pop-in with self-drawing ticks, larger ticks with a soft lilac ring, and thin lilac column dividers on wide screens. The panel's colour, heading and layout are otherwise unchanged.
 
+## Critique 27/32 and its follow-up (2026-09-24)
+
+- Second critique: 27/32 (up from 25). The owner's answers bind:
+  - **Page order is now Hero → About → Services → Work → How the work is done (with commitments) → Contact**, so the trust peak runs straight into the ask. This supersedes the earlier order.
+  - **The name stays «ادريس» (no hamza) by the owner's choice.** Do not flag or "correct" it.
+  - The colloquial contact heading «عندك فكرة مشروع؟» is the owner's decision; do not flag it.
+  - Applied: a language switch pill in the hero signature row, chat chips styled as attachments (not buttons), the English contact CTA kept on one line on phones.
+
 ## Open decisions
 
 None. What's left: the owner uploads `dist` following `DEPLOY.md`.

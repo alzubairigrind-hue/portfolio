@@ -23,6 +23,12 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
       <p class="sig-name">{t.hero.name}</p>
       <p class="sig-role">{t.hero.eyebrow}</p>
     </div>
+    {/* Recruiters landing on the Arabic page need the switch before the footer. */}
+    {lang === 'ar' ? (
+      <a class="lang" href="/en/" lang="en" hreflang="en">{t.footer.switchLabel}</a>
+    ) : (
+      <a class="lang" href="/" lang="ar" hreflang="ar" dir="rtl">{t.footer.switchLabel}</a>
+    )}
   </div>
 
   <div class="pad hero__text">
@@ -96,8 +102,10 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
 
   .sig { grid-column: 1 / -1; grid-row: 1; padding-block-start: clamp(1.25rem, 3vw, 2rem); display: flex; align-items: center; gap: 0.8rem; position: relative; z-index: 2; }
   .mark { flex: none; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 30%; background: linear-gradient(150deg, #ffffff, #d9ceff); color: var(--brand); font-family: var(--font-heading); font-weight: 900; font-size: 1.4rem; line-height: 1; box-shadow: inset 0 -3px 0 rgb(0 0 0 / 0.1), 0 10px 22px -10px rgb(0 0 0 / 0.5); }
-  .sig-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.35rem; line-height: 1.25; }
+  .sig-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.35rem; line-height: 1.25; white-space: nowrap; }
   .sig-role { font-size: 0.875rem; color: var(--hero-ink-2); }
+  .lang { margin-inline-start: auto; display: inline-flex; align-items: center; min-block-size: 2.75rem; padding-inline: 1.1rem; border-radius: var(--radius-pill); background: rgb(255 255 255 / 0.1); color: #fff; font-size: 0.9rem; font-weight: 700; text-decoration: none; transition: scale 0.35s var(--spring), background-color 0.25s; }
+  .lang:hover { background: rgb(255 255 255 / 0.18); scale: 1.05; }
 
   .hero__text { grid-column: 1; grid-row: 2; align-self: center; display: grid; gap: 1.6rem; padding-block: 2rem 4rem; position: relative; z-index: 2; }
   h1 { margin: 0; font-size: clamp(2.1rem, 4.4vw, 4rem); font-weight: 800; line-height: 1.32; max-inline-size: 15ch; }
@@ -130,7 +138,8 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
   /* The phone is the client's: their own messages sit on the end side, as in WhatsApp. */
   .msg--me { justify-self: end; background: var(--lilac-soft); border-start-end-radius: 4px; }
   .msg--them { justify-self: start; background: #fff; border-start-start-radius: 4px; }
-  .chip { display: inline-block; margin-block-start: 0.35rem; margin-inline-start: 0.25rem; padding: 0.1rem 0.65rem; border-radius: var(--radius-pill); background: var(--brand); color: #fff; font-size: 0.75rem; font-weight: 700; }
+  /* Chips read as attachments, not buttons: a lilac tint instead of the filled brand pill. */
+  .chip { display: inline-block; margin-block-start: 0.35rem; margin-inline-start: 0.25rem; padding: 0.1rem 0.65rem; border-radius: var(--radius-pill); background: var(--lilac-soft); color: var(--brand); box-shadow: inset 0 0 0 1px rgb(43 20 99 / 0.12); font-size: 0.75rem; font-weight: 700; }
   .typing { justify-self: start; display: flex; gap: 4px; padding: 0.6rem 0.8rem; background: #fff; border-radius: 16px; }
   .typing i { inline-size: 6px; block-size: 6px; border-radius: 50%; background: #9a90bf; animation: dot 0.9s ease-in-out infinite; }
   .typing i:nth-child(2) { animation-delay: 0.15s; }
@@ -154,6 +163,7 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
   .mini-btn { margin-block-start: 0.2rem; padding: 0.2rem 0.8rem; border-radius: var(--radius-pill); background: var(--brand); color: #fff; font-size: 0.72rem; font-weight: 700; }
 
   @media (max-width: 48rem) {
+    .lang { padding-inline: 0.85rem; font-size: 0.85rem; }
     .hero { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
     .hero__text { grid-row: 2; align-self: start; padding-block: 1.5rem; }
     .hero__art { grid-column: 1; grid-row: 3; padding: 1rem 1.25rem 2rem; display: flex; flex-direction: column; align-items: center; }

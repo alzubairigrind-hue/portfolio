@@ -193,6 +193,8 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 
 A single centred column: sections cap at 72rem with fluid inline padding (`pad`, 1.25rem to 5rem) and 4.5rem block padding, stacked in a grid with a 1.1rem gap. Paragraphs cap at 52ch (about 57–63 characters per line in Alexandria, since `ch` is narrower than the average Arabic letter).
 
+Page order: Hero → About → Services → Work → How the work is done (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row also carries the language switch pill at its inline-end (translucent white on purple, 44px), mirroring the footer one.
+
 The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 
 Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fit so the one project spans the full row and 3–5 later wrap into columns). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
@@ -245,7 +247,7 @@ The night ground reused as a block: Night Purple fill, white headings, Soft Lave
 There is no top navigation. The footer carries the copyright and the language switch: a lavender pill (`language-switch`) with Night Purple text that scales to 1.05 on hover, marked with the target language and direction.
 
 ### Hero WhatsApp Demo (signature)
-A phone-shaped card (330px, 34px corners, pale lavender body) holding a WhatsApp-style chat that replays every 11s: the client's messages (Lilac Mist) on the end side, the studio's replies (white) on the start side, a three-dot typing indicator, then a small browser-window mini site that pops in slightly rotated. Messages enter with a spring rise; the mini site pops. It is decorative (`aria-hidden`) and always captioned «مثال توضيحي» / "Illustrative example".
+A phone-shaped card (330px, 34px corners, pale lavender body) holding a WhatsApp-style chat that plays once when well in view and holds its final state (it replays after leaving the screen, on a tap, or via the Replay pill beside the label): the client's messages (Lilac Mist) on the end side, the studio's replies (white) on the start side, a three-dot typing indicator, chips that read as attachments (Lilac Mist tint, Night Purple text, not filled buttons), then a small browser-window mini site that pops in slightly rotated. Messages enter with a spring rise; the mini site pops. It is decorative (`aria-hidden`) and always captioned «مثال توضيحي» / "Illustrative example".
 
 ### Brand Signature
 The «ب» (Latin "B") tile, a white-to-lilac gradient squircle with Night Purple letter at 900, sits beside the owner's name (800) and a role line in Soft Lavender Ink. The tile is a placeholder mark for Bin Mahyub until a real logo exists.
