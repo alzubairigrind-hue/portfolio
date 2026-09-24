@@ -250,6 +250,20 @@ A phone-shaped card (330px, 34px corners, pale lavender body) holding a WhatsApp
 ### Brand Signature
 The «ب» (Latin "B") tile, a white-to-lilac gradient squircle with Night Purple letter at 900, sits beside the owner's name (800) and a role line in Soft Lavender Ink. The tile is a placeholder mark for Bin Mahyub until a real logo exists.
 
+### About Statement and Since Badge
+The About lead question is set as a statement: 800 weight, clamp(1.6rem, 3.2vw, 2.6rem), Night Purple, about 20ch (26ch in English). The body sits beside a brand-gradient pill badge, «منذ 2022» / "Since 2022", in the heading face at 800. It repeats the approved sentence's own words and adds no new claim. Chosen in prototype round 6 (6B).
+
+### Service Drawings (signature)
+Each service card opens with a 150px lavender-gradient art well holding a small drawing built from CSS/SVG, one per service:
+- **Landing pages:** a phone outline that bobs, its button pulsing.
+- **WordPress & WooCommerce:** a store tile of four gradient product blocks with a bouncing cart badge (Arabic-Indic «٢» on `/`, "2" on `/en`).
+- **Maintenance:** a purple shield with a white check inside a slowly turning dashed lilac ring.
+
+The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chosen in prototype round 6 (6B). They answer the review finding that the page below the hero read as a template.
+
+### Project Browser Card
+A project is shown inside a browser window: 22px corners, a lavender bar with three dots, the coming-soon badge pushed to the bar's inline-end, and the name and description in the body. A live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+
 ### How-we-work Path (signature)
 Numbered steps with Arabic-Indic digits on the Arabic page. A 2px rail runs down the inline-start; a violet-to-lilac line fills it as the visitor scrolls, and each step number turns from an idle white circle (lilac ring) to the purple gradient with a spring bump when the line reaches it. Under reduced motion the path is fully filled and all steps lit.
 

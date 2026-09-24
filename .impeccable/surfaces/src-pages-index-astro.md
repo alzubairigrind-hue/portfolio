@@ -133,9 +133,15 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 - The live copy is `COPY.md` v1.1. `COPY_V2_DRAFT.md` is marked not adopted.
 - The agency/studio framing is superseded: no agency, company or team claims on the page.
 
+## Finish review and round 6 (2026-09-24)
+
+- The finish review confirmed the hero matches 5A. Its fixes are applied: phone mini site, scroll path, focus ring, email hover, hover only on linked cards, heading spacing, Work grid. The chat bubbles now sit on WhatsApp's sides at the owner's request.
+- The owner later asked to see the below-hero redesign the review had suggested. Prototype round 6 (branch `prototype/hero`, `/proto/round-6`) offered 6A Purple band, 6B Moving drawings and 6C Big statements. **6B was chosen** and built on `main`: the About statement with a «منذ 2022» badge, a moving drawing per service, and the project in a browser card.
+- DESIGN.md records the shipped system. Favicons come from the «ب» tile.
+
 ## Open decisions
 
-None for the design or copy. What's left: Impeccable's finish review, DESIGN.md, then deploy.
+None. What's left: the owner uploads `dist` following `DEPLOY.md`.
 
 ## Direction contract
 

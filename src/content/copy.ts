@@ -10,7 +10,7 @@ export type SiteCopy = {
     cta: string;
     secondaryLink: string;
   };
-  about: { heading: string; lead: string; body: string };
+  about: { heading: string; lead: string; body: string; since: string };
   services: {
     heading: string;
     items: { title: string; body: string }[];
@@ -57,6 +57,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       heading: 'من نحن',
       lead: 'كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟',
+      since: 'منذ 2022',
       body: 'ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.',
     },
     services: {
@@ -135,6 +136,7 @@ export const copy: Record<Lang, SiteCopy> = {
     about: {
       heading: 'About',
       lead: 'Every site we build starts with one question: how will it still be running a year from now?',
+      since: 'Since 2022',
       body: 'Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.',
     },
     services: {

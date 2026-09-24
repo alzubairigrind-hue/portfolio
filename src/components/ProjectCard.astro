@@ -10,26 +10,33 @@ const { lang, project } = Astro.props;
 const demoLabel = lang === 'ar' ? 'عرض حي' : 'Live demo';
 ---
 
-<article class="card project reveal">
-  <h3>{project.name[lang]}</h3>
-  <p>{project.description[lang]}</p>
-  <div class="meta">
+<article class="browser reveal">
+  <div class="bar">
+    <i></i><i></i><i></i>
+    {project.status === 'coming-soon' && <span class="badge">{project.statusLabel[lang]}</span>}
+  </div>
+  <div class="body">
+    <h3>{project.name[lang]}</h3>
+    <p>{project.description[lang]}</p>
     {
-      project.status === 'coming-soon' ? (
-        <span class="badge">{project.statusLabel[lang]}</span>
-      ) : (
-        <a class="btn btn--brand" href={`/work/${project.slug}/`}>{demoLabel}</a>
+      (project.status === 'live' || project.repoUrl) && (
+        <div class="links">
+          {project.status === 'live' && <a class="btn btn--brand" href={`/work/${project.slug}/`}>{demoLabel}</a>}
+          {project.repoUrl && <a class="link" href={project.repoUrl} rel="noopener">GitHub</a>}
+        </div>
       )
     }
-    {project.repoUrl && <a class="link" href={project.repoUrl} rel="noopener">GitHub</a>}
   </div>
 </article>
 
 <style>
-  .project { display: grid; gap: 0.6rem; align-content: start; }
-  .project h3 { margin: 0; }
-  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: 0.4rem; }
-  .badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.9rem; border-radius: var(--radius-pill); background: #fff; border: 1px dashed var(--lilac); color: var(--brand); font-size: 0.88rem; font-weight: 700; }
+  .browser { border-radius: 22px; overflow: hidden; background: #fff; border: 1px solid var(--card-line); box-shadow: 0 30px 60px -36px rgb(43 20 99 / 0.55); }
+  .bar { display: flex; align-items: center; gap: 6px; padding: 0.7rem 1rem; background: #f1eefa; }
+  .bar i { inline-size: 10px; block-size: 10px; border-radius: 50%; background: #cfc6ea; }
+  .badge { margin-inline-start: auto; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.85rem; border-radius: var(--radius-pill); background: #fff; border: 1px dashed var(--lilac); color: var(--brand); font-size: 0.8rem; font-weight: 700; }
   .badge::before { content: ''; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: var(--lilac); }
+  .body { padding: 1.5rem 1.75rem 1.75rem; display: grid; gap: 0.5rem; }
+  .body h3 { margin: 0; }
+  .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: 0.5rem; }
   .link { font-weight: 700; }
 </style>

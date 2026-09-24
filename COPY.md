@@ -8,6 +8,7 @@
   - The email is now info@binmahyub.uk, since Bin Mahyub is the brand, domain and email.
   - New sections from copy v2 rev 2: How we work, Our written commitments, and the hero's illustrative chat.
   - Page order: Hero → About → Services → How we work → Work → Contact.
+  - Later the same day, with the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -37,6 +38,8 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيبقى يعمل بعد سنة؟
 
 ادريس الزبيري يبني للويب منذ 2022. ومن عاداتنا التي لا نتخلى عنها: أن نشرح كل شيء بوضوح، بلا مصطلحات معقدة.
+
+- **الشارة:** منذ 2022
 
 ### الخدمات
 1. **صفحات الهبوط**
@@ -102,6 +105,8 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 Every site we build starts with one question: how will it still be running a year from now?
 
 Edres Al-Zubairi has been building for the web since 2022. One habit we keep: we explain everything plainly, without jargon.
+
+- **Badge:** Since 2022
 
 ### Services
 1. **Landing pages.** One page, one goal: a premium look, fast loading on any phone, and visitors who turn into messages.
