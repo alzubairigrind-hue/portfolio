@@ -14,6 +14,7 @@
     - The hero name and the footer stay Edres Al-Zubairi.
   - The intro statement now promises growth and easy care («كيف سيكبر معك ويسهل الاعتناء به؟» / "how will it grow with you and stay easy to look after?") instead of "still running after a year". The paragraph drops the name: «نبني للويب منذ 2022. نشرح كل شيء بوضوح، بلا مصطلحات معقدة.» (owner's own wording).
   - The paragraph beside the «منذ 2022» badge is the owner's own wording (two hamzas corrected), with no repeated year.
+  - It then opens with «لهذا» ("That's why") and answers both halves of the statement (easy to build on and easy to look after).
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
@@ -43,7 +44,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (قسم التعريف — بلا عنوان ظاهر)
 كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟
 
-من صفحة واحدة إلى متجر كامل، نبني كل موقع على أساس متين يسهل البناء عليه لاحقًا، نستعين بالمختصين إذا احتاج المشروع ذلك. ونشرح لك كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.
+لهذا، من صفحة واحدة إلى متجر كامل، نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، ونستعين بالمختصين إذا احتاج المشروع ذلك. ونشرح لك كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.
 
 - **الشارة:** منذ 2022
 
@@ -111,7 +112,7 @@ The Arabic version is the default page (`/`). The English version is at `/en`.
 ### (Intro section — no visible heading)
 Every site we build starts with one question: how will it grow with you and stay easy to look after?
 
-From a single page to a full store, we build every site on a solid base that's easy to build on later, and we bring in specialists when a project needs them. We explain everything to you plainly, without jargon: it matters to us that you know what you're paying for and why.
+That's why, from a single page to a full store, we give every site a solid base that's easy to build on later and easy to look after, and we bring in specialists when a project needs them. We explain everything to you plainly, without jargon: it matters to us that you know what you're paying for and why.
 
 - **Badge:** Since 2022
 
