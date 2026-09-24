@@ -1,0 +1,22 @@
+---
+import { copy } from '../content/copy';
+import { otherLang, pathFor, type Lang } from '../shared/i18n';
+
+interface Props {
+  lang: Lang;
+  class: string;
+  [key: string]: unknown;
+}
+
+const { lang, class: className, ...rest } = Astro.props;
+const target = otherLang(lang);
+---
+
+<a
+  class={className}
+  href={pathFor(target)}
+  lang={target}
+  hreflang={target}
+  dir={target === 'ar' ? 'rtl' : undefined}
+  {...rest}
+>{copy[lang].footer.switchLabel}</a>

@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../content/copy';
+import LanguageSwitch from './LanguageSwitch.astro';
 
 interface Props {
   lang: Lang;
@@ -7,18 +8,11 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = copy[lang];
-const isAr = lang === 'ar';
 ---
 
 <footer>
   <p>{t.footer.copyright}</p>
-  {
-    isAr ? (
-      <a class="switch" href="/en/" lang="en" hreflang="en">{t.footer.switchLabel}</a>
-    ) : (
-      <a class="switch" href="/" lang="ar" hreflang="ar" dir="rtl">{t.footer.switchLabel}</a>
-    )
-  }
+  <LanguageSwitch lang={lang} class="switch" />
 </footer>
 
 <style>

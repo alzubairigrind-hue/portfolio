@@ -1,5 +1,6 @@
 ---
 import { copy, links, type Lang } from '../content/copy';
+import LanguageSwitch from './LanguageSwitch.astro';
 import WhatsAppIcon from './WhatsAppIcon.astro';
 
 interface Props {
@@ -23,11 +24,7 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
       <p class="sig-role">{t.hero.eyebrow}</p>
     </div>
     {/* Recruiters landing on the Arabic page need the switch before the footer. */}
-    {lang === 'ar' ? (
-      <a class="lang" href="/en/" lang="en" hreflang="en">{t.footer.switchLabel}</a>
-    ) : (
-      <a class="lang" href="/" lang="ar" hreflang="ar" dir="rtl">{t.footer.switchLabel}</a>
-    )}
+    <LanguageSwitch lang={lang} class="lang" />
   </div>
 
   <div class="pad hero__text">
