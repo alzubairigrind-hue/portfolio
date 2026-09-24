@@ -43,7 +43,7 @@
 - `COPY.md`: the **live copy, verbatim source**. Every visible string in `src/content/copy.ts` must match it character for character. When you change copy, change both.
 - `DESIGN.md` plus `.impeccable/design.json`: the shipped design system.
 - `.impeccable/surfaces/src-pages-index-astro.md`: the design brief and full decision history. Read or write it with `~/.claude/skills/impeccable/scripts/impeccable surface-brief read|write src/pages/index.astro …`.
-- `.impeccable/critique/2026-09-24T10-22-16Z__src-pages-index-astro.md`: the **latest critique, 27/32** (the earlier 25/32 one is closed). Its remaining minor points are optional.
+- `.impeccable/critique/2026-09-24T11-28-32Z__src-pages-index-astro.md`: the **latest critique, 28/32**, checked at 8 screen widths (320–1920) in both languages. Its P1s are fixed; its remaining points are optional. Trend: 25 → 27 → 28.
 - `DEPLOY.md`: the owner's step-by-step Cloudflare Pages Direct Upload guide.
 - `EMAIL_SETUP.md`: receiving is live (info@binmahyub.uk goes to Gmail); Part B, sending, is for later.
 - `COPY_RESEARCH.md`: 18 agency sites, reference only. `COPY_V2_DRAFT.md`: **not adopted**, reference only.
@@ -73,14 +73,23 @@
   - **Page order:** Hero → About → Services → Work («نعمل عليه الآن» / "What we're building now", full-width) → How the work is done + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** Alexandria (self-hosted, OFL). HT Moshreq Pro was dropped, so no licence is needed.
-- **One project:** Adab Al-Furusia, marked "coming soon". Never present it as live until it is.
+- **Projects:** Adab Al-Furusia is the first of several, marked "coming soon"; never present it as live until it is. Its card is card-sized (about ⅓ width on desktop) with an abstract drawn preview (round 9C). **Keep the card-sized layout:** more projects will sit beside it in the row (the owner rejected a wide-screen relayout, round 10).
 
 ## 4. Next steps
 
-**Done on 2026-09-24 (second session):** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
+**Done on 2026-09-24 (second session, continued):** round 9C (card-sized project card with a drawn preview); a third critique at all screen sizes, 28/32; fixes for its P1s (no sideways scroll at 320 px, the mini site in flow under the phone at 820–1100 px) and the store drawing's purple-only tiles; round 10 rejected. Heavy lifting went through the `codex-delegate` skill, with every result checked here before commit.
 
-1. **The owner uploads `dist/`** following `DEPLOY.md` from step 5. Run `pnpm build` again first if anything changed after commit `208de89`.
+**Done earlier the same day:** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
+
+1. **The owner uploads `dist/`** following `DEPLOY.md` from step 5. Run `pnpm build` again first if anything changed after commit `7fbd49a`.
 2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
+
+**Adding a project** (the owner will add several):
+- Add an entry to the `projects` array in `src/content/copy.ts`: `slug`, `name` {ar, en}, `description` {ar, en}, `status` (`'coming-soon'` or `'live'`), `statusLabel` {ar, en}, `repoUrl` (a URL only if the repo is public, else `null`).
+- Add the same name, description and label verbatim to `COPY.md` under «نعمل عليه الآن» / "What we're building now", and add the new `slug` to the copy check's allowed data values.
+- `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). Keep it `'coming-soon'` until then.
+- With more than one project, consider retitling the section (for example back to «أعمال مختارة» / "Selected work"); ask the owner.
+- Run the checks in section 5, then rebuild `dist/`.
 
 **Later:**
 - sending email (`EMAIL_SETUP.md` Part B)

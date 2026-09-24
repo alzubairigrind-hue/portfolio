@@ -161,6 +161,11 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
   - Applied: a language switch pill in the hero signature row, chat chips styled as attachments (not buttons), the English contact CTA kept on one line on phones.
 - Round 9 (`/proto/round-9`): the owner preferred the earlier card-sized project card over the full-width row. **9C won** and is on `main`: the card at normal size (auto-fill grid) with an abstract drawn preview well (bars and a pill, never a screenshot) between its top bar and text.
 
+## All-sizes critique and round 10 (2026-09-24)
+
+- Third critique at 8 widths × 2 languages: 28/32. Fixed on `main`: no sideways scroll at 320 px, the mini site in flow under the phone at 820–1100 px, purple-only store tiles.
+- Round 10 (Work heading beside the card on wide screens) **rejected**: the owner will add more projects that sit beside the first card, so the card-sized layout with the heading above stays. Don't relayout Work for a single project.
+
 ## Open decisions
 
 None. What's left: the owner uploads `dist` following `DEPLOY.md`.
