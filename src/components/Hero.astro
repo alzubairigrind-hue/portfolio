@@ -64,7 +64,7 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
     </div>
     <div class="note">
       <span aria-hidden="true">{demo.label}</span>
-      <button class="replay" type="button"><span aria-hidden="true">↻</span> {demo.replay}</button>
+      <button class="replay" type="button"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8M21 3v5h-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>{demo.replay}</button>
     </div>
   </div>
 </header>
@@ -124,6 +124,8 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
   .phone__top small { display: block; color: #6b6488; font-size: 0.72rem; }
   .avatar { display: grid; place-items: center; inline-size: 2.1rem; block-size: 2.1rem; border-radius: 30%; background: var(--brand); color: #fff; font-weight: 900; font-family: var(--font-heading); }
   .chat { display: grid; gap: 0.5rem; padding: 0.9rem 0.5rem 1rem; min-block-size: 300px; align-content: start; }
+  /* English lines run wider, so its bubbles stay narrower and the last one clears the mini site. */
+  :global(html[lang='en']) .msg { max-inline-size: 78%; }
   .msg { max-inline-size: 84%; padding: 0.55rem 0.8rem; border-radius: 16px; box-shadow: 0 2px 6px -3px rgb(0 0 0 / 0.2); }
   /* The phone is the client's: their own messages sit on the end side, as in WhatsApp. */
   .msg--me { justify-self: end; background: var(--lilac-soft); border-start-end-radius: 4px; }
