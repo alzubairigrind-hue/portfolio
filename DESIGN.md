@@ -196,6 +196,7 @@ A single centred column: sections cap at 72rem with fluid inline padding (`pad`,
 Page order: Hero → About → Services → Work → How the work is done (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row also carries the language switch pill at its inline-end (translucent white on purple, 44px), mirroring the footer one.
 
 The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
+Between 48rem and 69rem the mini site sits in flow under the phone (as on phones) so it never covers a chat bubble, and below 22rem the hero name row may wrap.
 
 Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
 
@@ -262,6 +263,7 @@ Each service card opens with a 150px lavender-gradient art well holding a small 
 - **Maintenance:** a purple shield with a white check inside a slowly turning dashed lilac ring.
 
 The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chosen in prototype round 6 (6B). They answer the review finding that the page below the hero read as a template.
+The store tiles use lilac-to-purple tones only; no orange, pink or mint.
 
 ### Project Browser Card
 A project is shown inside a browser window: 22px corners, a lavender bar with three dots, the coming-soon badge pushed to the bar's inline-end, and the name and description in the body. A live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.

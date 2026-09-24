@@ -171,6 +171,17 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
     .note { position: static; align-self: flex-end; margin-block-start: 0.75rem; }
   }
 
+  @media (min-width: 48.01rem) and (max-width: 69rem) {
+    .hero__art { display: flex; flex-direction: column; align-items: center; }
+    .mini-site { position: relative; inset: auto; align-self: flex-end; inline-size: 190px; margin-block-start: -0.9rem; margin-inline-end: 0.5rem; }
+    .note { position: static; align-self: flex-end; margin-block-start: 0.75rem; }
+  }
+
+  @media (max-width: 22rem) {
+    .sig { flex-wrap: wrap; }
+    .sig-name { white-space: normal; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .typing { display: none; }
     :global(.js) .replay { display: none; }
