@@ -199,7 +199,7 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 
 A single centred column: sections cap at 72rem with fluid inline padding (`pad`, 1.25rem to 5rem) and 4.5rem block padding, stacked in a grid with a 1.1rem gap. Paragraphs cap at 52ch (about 57–63 characters per line in Alexandria, since `ch` is narrower than the average Arabic letter).
 
-Page order: Hero → About → Services → Work → How the work is done (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row also carries the language switch pill at its inline-end (translucent white on purple, 44px), mirroring the footer one.
+Page order: Hero → About → Services → Work → From message to launch (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row also carries the language switch pill at its inline-end (translucent white on purple, 44px), mirroring the footer one.
 
 The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 Between 48rem and 69rem the mini site sits in flow under the phone (as on phones) so it never covers a chat bubble, and below 22rem the hero name row may wrap.

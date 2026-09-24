@@ -12,7 +12,7 @@ const t = copy[lang];
 const demo = t.heroDemo;
 // Whole words only: splitting inside an Arabic word would break letter joining.
 const words = t.hero.headline.split(' ');
-const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
+const times = ['0.3s', '1.6s', '2.3s', '3.0s'];
 ---
 
 <header class="hero">
@@ -46,7 +46,7 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
       <div class="chat">
         {demo.messages.map((m, i) => (
           <>
-            {i === 1 && <p class="typing" style="--t:1.5s"><i></i><i></i><i></i></p>}
+            {i === 1 && <p class="typing" style="--t:0.7s"><i></i><i></i><i></i></p>}
             <p class={`msg msg--${m.from}`} style={`--t:${times[i]}`}>
               {m.text}
               {m.chip && <span class="chip" dir={m.chipLtr ? 'ltr' : undefined}>{m.chip}</span>}
@@ -55,7 +55,7 @@ const times = ['0.5s', '2.4s', '3.6s', '4.8s'];
         ))}
       </div>
     </div>
-    <div class="mini-site" style="--t:5.6s" aria-hidden="true">
+    <div class="mini-site" style="--t:3.6s" aria-hidden="true">
       <div class="mini-bar"><i></i><i></i><i></i><span dir="ltr">{demo.site.url}</span></div>
       <div class="mini-body">
         <b>{demo.site.title}</b>

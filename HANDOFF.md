@@ -39,7 +39,7 @@
 | **Upload folder** | `dist/` (run `pnpm build` on `main` first) |
 
 **Code map (`src/`):**
-- `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en/`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → How the work is done → Contact → footer). Change the order there, once.
+- `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en/`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → From message to launch → Contact → footer). Change the order there, once.
 - `components/`: one file per section, plus the shared pieces `WhatsAppIcon.astro`, `LanguageSwitch.astro` and `ProjectCard.astro`. The hero chat playback script lives in `Hero.astro`; the page-wide scroll reveal is in `layouts/Base.astro`.
 - `content/copy.ts`: every visible string, including the «ب»/B mark and the «عرض حي»/Live demo label, plus the `projects` list. It must match `docs/COPY.md` verbatim.
 - `shared/i18n.ts`: a leaf module (imports nothing from the app) with the `Lang` type, `dirFor`, `pathFor`, `otherLang` and `localizeDigits`. Use it instead of hard-coding `/en/`, `rtl` or Arabic-Indic digits.
@@ -65,7 +65,7 @@
   - No visible heading; the statement is the section title: «كل موقع نبنيه يبدأ بسؤال واحد: كيف سيكبر معك ويسهل الاعتناء به؟»
   - The paragraph opens with an inline purple pill «منذ 2022» / "Since 2022", then: «ونحن نضع لكل موقع أساسًا متينًا يسهل البناء عليه لاحقًا والاعتناء به، من صفحة واحدة إلى متجر متكامل. نستعين بمختصين إذا استدعى المشروع ذلك، ونشرح كل شيء بوضوح، بلا مصطلحات معقدة، يهمنا أن تعرف ما الذي تدفع مقابله ولماذا.»
   - **Hidden on purpose, though true:** the MIS degree, first in class 2023, teaching 50+ students.
-- **Section titles:** «كيف يتم العمل» / "How the work is done" (5 steps); «التزامات مكتوبة» / "Commitments in writing" (written price, approval before launch, the site in the client's name).
+- **Section titles:** «كيف يتم العمل» / "From message to launch" (5 steps); «التزامات مكتوبة» / "Commitments in writing" (written price, approval before launch, the site in the client's name).
 - **Contact:**
   - The heading is the owner's colloquial «عندك فكرة مشروع؟» (the rest of the page is formal Arabic).
   - It offers a **free consultation, which is a free WhatsApp chat only, with no call promised**.
@@ -77,7 +77,7 @@
   - The How-we-work path fills and lights up on scroll.
   - **Commitments panel:** the dark purple panel stays. It may get **small enhancements only, never a redesign** (a chat-bubble redesign, round 7A, was rejected on sight and reverted). Round 8C is live: staggered pop-in, self-drawing ticks with a lilac ring, and column dividers on desktop.
   - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
-  - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → How the work is done + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
+  - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demo under `public/work/adab-al-furusia/` ships its own HT Moshreq Pro and IBM Plex Sans Arabic fonts.
 - **Projects:** Adab Al-Furusia is live at `/work/adab-al-furusia/`. Its card is card-sized (about ⅓ width on desktop) with an abstract drawn preview (round 9C). **Keep the card-sized layout:** more projects will sit beside it in the row (the owner rejected a wide-screen relayout, round 10).

@@ -58,7 +58,7 @@ export const copy: Record<Lang, SiteCopy> = {
       mark: 'ب',
       eyebrow: 'مطوّر مواقع · المملكة العربية السعودية',
       headline: 'نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.',
-      sub: 'صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.',
+      sub: 'صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.',
       cta: 'راسلنا على واتساب',
       prefill: 'مرحبًا، أرغب في التحدث عن موقع لنشاطي',
       secondaryLink: 'ماذا نبني',
@@ -141,7 +141,7 @@ export const copy: Record<Lang, SiteCopy> = {
       mark: 'B',
       eyebrow: 'Web developer · Saudi Arabia',
       headline: 'Websites worthy of your business, built to keep running after launch.',
-      sub: 'Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.',
+      sub: 'Landing pages, WordPress sites and WooCommerce stores: carefully designed, fast on every phone, and supported after handover.',
       cta: 'Message us on WhatsApp',
       prefill: "Hi, I'd like to talk about a website for my business",
       secondaryLink: 'What we build',
@@ -171,7 +171,7 @@ export const copy: Record<Lang, SiteCopy> = {
     work: { heading: 'Selected work', demoLabel: 'Live demo' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
-      heading: 'How the work is done',
+      heading: 'From message to launch',
       steps: [
         { title: 'A WhatsApp message', body: 'Tell us about your business and what you need.' },
         { title: 'A written price and a clear scope', body: "We agree what's included and what isn't before we start." },
@@ -229,8 +229,8 @@ export const projects: Project[] = [
     slug: 'adab-al-furusia',
     name: { ar: 'أدب الفروسية', en: 'Adab Al-Furusia' },
     description: {
-      ar: 'موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.',
-      en: 'An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.',
+      ar: 'موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية. يعرض الرابط التصميم المقترح للموقع.',
+      en: 'An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries. The demo shows the design concept.',
     },
     status: 'live',
     statusLabel: { ar: 'عرض حي — قريبًا', en: 'Live demo — coming soon' },

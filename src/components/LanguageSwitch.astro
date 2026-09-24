@@ -15,8 +15,6 @@ const target = otherLang(lang);
 <a
   class={className}
   href={pathFor(target)}
-  lang={target}
   hreflang={target}
-  dir={target === 'ar' ? 'rtl' : undefined}
   {...rest}
->{copy[lang].footer.switchLabel}</a>
+><span lang={target} dir={target === 'ar' ? 'rtl' : undefined}>{copy[lang].footer.switchLabel}</span></a>

@@ -22,6 +22,7 @@
   - After the 25/32 critique (owner-approved): the hero WhatsApp button pre-fills «مرحبًا، أرغب في التحدث عن موقع لنشاطي» / "Hi, I'd like to talk about a website for my business"; the Work title is «نعمل عليه الآن» / "What we're building now" (one unfinished project); the leftover luxury wording is gone (Services «رسالة واضحة» / "a clear message"; meta «بتصميم مدروس» / "Carefully designed"); the hero chat gains a replay control, «إعادة التشغيل» / "Replay".
 - **Changed 2026-09-24:** Adab Al-Furusia is live; its card links to the demo at `/work/adab-al-furusia/`.
 - **Changed 2026-09-24:** the Work title is «من أعمالنا» / "Selected work": Adab Al-Furusia is delivered and more projects are coming.
+- **Changed 2026-09-24 (English critique, 24/32):** English hero line and process title reworded ("supported after handover"; "From message to launch"); the project card notes the demo shows the design concept, in both languages; the Arabic hero line now names «مواقع ووردبريس ومتاجر ووكومرس» like Services.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -38,14 +39,14 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **الحرف في الشعار:** ب
 - **السطر العلوي:** مطوّر مواقع · المملكة العربية السعودية
 - **العنوان:** نبني مواقع تليق بعملك، وتبقى تعمل بعد الإطلاق.
-- **النص الفرعي:** صفحات هبوط ومتاجر ووردبريس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.
+- **النص الفرعي:** صفحات هبوط ومواقع ووردبريس ومتاجر ووكومرس، بتصميم مدروس، وسرعة على كل جوال، ورعاية مستمرة بعد التسليم.
 - **الزر الرئيسي:** راسلنا على واتساب → `https://wa.me/966501374100` مع رسالة جاهزة: مرحبًا، أرغب في التحدث عن موقع لنشاطي
 - **الرابط الثانوي:** ماذا نبني ← الخدمات
 
 ### من أعمالنا
 - **زر العرض الحي:** عرض حي
 - **أدب الفروسية**
-  موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.
+  موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية. يعرض الرابط التصميم المقترح للموقع.
   - عرض حي → `/work/adab-al-furusia/`
   - **وسم الشارة (يظهر فقط عندما يكون المشروع قريبًا من الإطلاق؛ لا يظهر الآن):** عرض حي — قريبًا
   - (الكود: غير متاح)
@@ -110,14 +111,14 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **Mark letter:** B
 - **Eyebrow:** Web developer · Saudi Arabia
 - **Headline:** Websites worthy of your business, built to keep running after launch.
-- **Subheadline:** Landing pages and WordPress stores: carefully designed, fast on every phone, and looked after long after handover.
+- **Subheadline:** Landing pages, WordPress sites and WooCommerce stores: carefully designed, fast on every phone, and supported after handover.
 - **Primary CTA:** Message us on WhatsApp → `https://wa.me/966501374100` with a pre-filled message: Hi, I'd like to talk about a website for my business
 - **Secondary link:** What we build → Services
 
 ### Selected work
 - **Live demo button:** Live demo
 - **Adab Al-Furusia**
-  An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.
+  An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries. The demo shows the design concept.
   - Live demo → `/work/adab-al-furusia/`
   - Badge label (shown only while coming soon; not displayed now): Live demo — coming soon
   - (Code: not public)
@@ -134,7 +135,7 @@ Every site we build starts with one question: how will it grow with you and stay
 2. **WordPress sites & WooCommerce stores.** Business sites and online stores you can update yourself, set up properly from day one.
 3. **Administration & maintenance.** Updates, backups, security and fixes, so your site keeps running while you run your business.
 
-### How the work is done
+### From message to launch
 1. **A WhatsApp message:** Tell us about your business and what you need.
 2. **A written price and a clear scope:** We agree what's included and what isn't before we start.
 3. **Design and build:** You review and approve the work before launch.
