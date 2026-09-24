@@ -232,7 +232,7 @@ export const projects: Project[] = [
       ar: 'موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.',
       en: 'An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.',
     },
-    status: 'coming-soon',
+    status: 'live',
     statusLabel: { ar: 'عرض حي — قريبًا', en: 'Live demo — coming soon' },
     repoUrl: null,
   },
