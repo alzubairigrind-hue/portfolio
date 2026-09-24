@@ -21,6 +21,7 @@
   - With the round-6 design (6B): an About badge, «منذ 2022» / "Since 2022", repeating the approved sentence's own words.
   - After the 25/32 critique (owner-approved): the hero WhatsApp button pre-fills «مرحبًا، أرغب في التحدث عن موقع لنشاطي» / "Hi, I'd like to talk about a website for my business"; the Work title is «نعمل عليه الآن» / "What we're building now" (one unfinished project); the leftover luxury wording is gone (Services «رسالة واضحة» / "a clear message"; meta «بتصميم مدروس» / "Carefully designed"); the hero chat gains a replay control, «إعادة التشغيل» / "Replay".
 - **Changed 2026-09-24:** Adab Al-Furusia is live; its card links to the demo at `/work/adab-al-furusia/`.
+- **Changed 2026-09-24:** the Work title is «من أعمالنا» / "Selected work": Adab Al-Furusia is delivered and more projects are coming.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -41,7 +42,7 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **الزر الرئيسي:** راسلنا على واتساب → `https://wa.me/966501374100` مع رسالة جاهزة: مرحبًا، أرغب في التحدث عن موقع لنشاطي
 - **الرابط الثانوي:** ماذا نبني ← الخدمات
 
-### نعمل عليه الآن
+### من أعمالنا
 - **زر العرض الحي:** عرض حي
 - **أدب الفروسية**
   موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية.
@@ -113,7 +114,7 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **Primary CTA:** Message us on WhatsApp → `https://wa.me/966501374100` with a pre-filled message: Hi, I'd like to talk about a website for my business
 - **Secondary link:** What we build → Services
 
-### What we're building now
+### Selected work
 - **Live demo button:** Live demo
 - **Adab Al-Furusia**
   An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries.

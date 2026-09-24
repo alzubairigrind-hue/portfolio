@@ -85,7 +85,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: 'نعمل عليه الآن', demoLabel: 'عرض حي' },
+    work: { heading: 'من أعمالنا', demoLabel: 'عرض حي' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'كيف يتم العمل',
@@ -168,7 +168,7 @@ export const copy: Record<Lang, SiteCopy> = {
         },
       ],
     },
-    work: { heading: "What we're building now", demoLabel: 'Live demo' },
+    work: { heading: 'Selected work', demoLabel: 'Live demo' },
     // Approved 2026-09-24 (from copy v2 rev 2): How we work, commitments, hero demo.
     howWeWork: {
       heading: 'How the work is done',

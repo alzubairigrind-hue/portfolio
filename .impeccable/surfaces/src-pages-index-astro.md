@@ -9,7 +9,7 @@ related_targets: ["src/pages/en/index.astro"]
 
 ## Scope and mode
 
-Persuade. One production page per language, both static, built from the same components. Copy in `COPY.md`, used verbatim. Arabic at `/` is the main page; `/en` exists for recruiters.
+Persuade. One production page per language, both static, built from the same components. Copy in `docs/COPY.md`, used verbatim. Arabic at `/` is the main page; `/en` exists for recruiters.
 
 ## Audience and job
 
@@ -17,7 +17,7 @@ Saudi small-business owners who arrive through a referral, mostly on a phone and
 
 ## Proof
 
-Only the CV facts from COPY.md: first in class, MIS 2023; building for the web since 2022; taught 50+ students. Adab Al-Furusia is the one project, and it stays marked "coming soon" with no live link. No invented metrics or testimonials.
+Only the CV facts from docs/COPY.md: first in class, MIS 2023; building for the web since 2022; taught 50+ students. Adab Al-Furusia is the one project, and it stays marked "coming soon" with no live link. No invented metrics or testimonials.
 
 ## Structure
 
@@ -42,7 +42,7 @@ Hero → About → Services → Work → Contact (Work moved after Services beca
 
 - Type (revised 2026-09-23): Alexandria (SIL OFL, self-hosted) for headings and body in both scripts. HT Moshreq Pro was chosen earlier for the luxury direction, then dropped when round 3 settled on playful and rounded; no licence is bought.
 
-- Hero secondary link (2026-09-23): «ماذا نبني» / "What we build", pointing to Services, not Work. COPY.md updated.
+- Hero secondary link (2026-09-23): «ماذا نبني» / "What we build", pointing to Services, not Work. docs/COPY.md updated.
 - Sadu motif (2026-09-23): العويرجان Uwairjan, a chain of stepped dot-pyramids. Ornament only: its meaning is never stated on the page (it rests on a single study). Source and caveats: `docs/archive/SADU.md`. Parked after round 2: not used on the page unless the user brings it back.
 - Build prerequisite: draw the motif from a real photographed Uwairjan reference (e.g. the UNESCO element gallery for file 02158), not from text descriptions. Never ship the photo; it is a drawing reference only. Avoid tribal brands (wasm) and figurative motifs.
 - Hero atmosphere (2026-09-23): texture and type only. No photography anywhere on the page.
@@ -130,7 +130,7 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 
 - About hides three personal facts at his request (the MIS degree, first in class 2023, teaching 50+ students) and keeps "since 2022".
 - From copy v2 rev 2, only these went live: How we work, Our written commitments, and the illustrative hero chat.
-- The live copy is `COPY.md` v1.1. `docs/archive/COPY_V2_DRAFT.md` is marked not adopted.
+- The live copy is `docs/COPY.md` v1.1. `docs/archive/COPY_V2_DRAFT.md` is marked not adopted.
 - The agency/studio framing is superseded: no agency, company or team claims on the page.
 
 ## Finish review and round 6 (2026-09-24)
@@ -168,7 +168,7 @@ The owner kept the v1 wording with **his name in the hero** (ادريس الزب
 
 ## Open decisions
 
-None. What's left: the owner uploads `dist` following `DEPLOY.md`.
+None. What's left: the owner uploads `dist` following `docs/DEPLOY.md`.
 
 ## Direction contract
 
