@@ -12,7 +12,7 @@ const { lang, project } = Astro.props;
 <article class="browser reveal">
   <div class="bar">
     <i></i><i></i><i></i>
-    {project.status === 'coming-soon' && <span class="badge">{project.statusLabel[lang]}</span>}
+    {project.status === 'coming-soon' && <span class="badge">{project.statusLabel?.[lang]}</span>}
   </div>
   <div class="preview" aria-hidden="true"><span class="preview__bar preview__bar--wide"></span><span class="preview__bar preview__bar--short"></span><span class="preview__pill"></span></div>
   <div class="body">

@@ -1,0 +1,717 @@
+/* ========== تنسيق أقسام الهوم من جديد ========== */
+
+/* استثناء صفحة الهوم فقط: أيقونة الليست (القائمة) تكون بيضاء */
+.hero .menu-toggle {
+  color: #fff !important;
+}
+
+/* نفس استايل الليست على الشاشات الصغيرة مثل About (ضمان تطابق تام على الهوم) */
+@media (max-width: 768px) {
+  .hero .nav-links {
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    order: 10;
+    margin: 12px 0 0;
+    padding: 12px 0;
+    background-color: var(--navbar-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px var(--shadow-color);
+    max-height: 70vh;
+    overflow-y: auto;
+    list-style: none;
+    gap: 0;
+  }
+
+  .hero .nav-links.show {
+    display: flex;
+  }
+
+  .hero .nav-links > li {
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    width: 100%;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .hero .nav-links > li:last-child {
+    border-bottom: none;
+  }
+
+  .hero .nav-links > li.dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .hero .nav-links li a {
+    display: block;
+    padding: 14px 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+    text-align: right;
+  }
+
+  .hero .nav-links .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+    text-align: right;
+  }
+
+  .hero .nav-links .dropbtn .dropbtn-text {
+    flex: 1;
+    text-align: right;
+  }
+
+  .hero .nav-links .dropbtn-icon {
+    color: var(--text-white);
+    font-size: 0.85rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+  }
+
+  .hero .nav-links .dropdown.show .dropbtn-icon {
+    transform: rotate(180deg);
+  }
+
+  .hero .nav-links .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin: 4px 16px 12px;
+    min-width: auto;
+    display: none;
+    padding: 4px 0;
+    list-style: none;
+  }
+
+  .hero .nav-links .dropdown.show .dropdown-content {
+    display: block;
+  }
+
+  .hero .nav-links .dropdown-content a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 2px 8px;
+    transition: background 0.2s ease;
+  }
+
+  .hero .nav-links .dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-white);
+  }
+
+  .hero .nav-links .dropdown-content a.active {
+    background: rgba(31, 126, 119, 0.9);
+    color: var(--text-white);
+  }
+}
+
+.home-sections-wrap {
+  background: linear-gradient(180deg, #f0faf9 0%, #eafaf8 30%, #fff 70%, #eafaf8 100%);
+}
+
+/* شعار رئيسي */
+.home-motto {
+  text-align: center;
+  padding: 48px 24px 32px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.home-motto p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0A3442;
+  line-height: 1.7;
+}
+
+.home-motto p span {
+  color: #33A5A0;
+}
+
+/* قالب كل قسم */
+.home-section {
+  padding: 48px 5% 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.home-section-header .home-section-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #33A5A0 0%, #27a39b 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 14px rgba(51, 165, 160, 0.35);
+}
+
+.home-section-header h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0A3442;
+  margin: 0;
+}
+
+/* حالة عدم وجود محتوى */
+.home-empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  border: 2px dashed rgba(51, 165, 160, 0.35);
+}
+
+.home-empty-state .home-empty-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  background: rgba(51, 165, 160, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #33A5A0;
+  font-size: 2rem;
+}
+
+.home-empty-state p {
+  font-size: 1.1rem;
+  color: #093443;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ========== الإنجازات ========== */
+.home-achieve-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.home-achieve-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 52, 66, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(51, 165, 160, 0.15);
+}
+
+.home-achieve-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(51, 165, 160, 0.18);
+}
+
+.home-achieve-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-achieve-card .home-achieve-body {
+  padding: 20px;
+  text-align: right;
+}
+
+.home-achieve-card h3 {
+  font-size: 1.15rem;
+  color: #0A3442;
+  margin: 0 0 8px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.home-achieve-card p {
+  font-size: 0.95rem;
+  color: #33A5A0;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ========== آخر الأخبار ========== */
+.home-news-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.home-news-card {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(10, 52, 66, 0.06);
+  border-right: 4px solid #33A5A0;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  overflow: hidden;
+}
+
+.home-news-card:hover {
+  box-shadow: 0 6px 24px rgba(51, 165, 160, 0.12);
+  transform: translateX(-4px);
+}
+
+.home-news-image-wrap {
+  flex: 0 0 180px;
+  width: 180px;
+  min-height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eef7f6;
+}
+
+.home-news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-news-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px 8px 6px 0;
+}
+
+.home-news-card .home-news-date {
+  font-size: 0.9rem;
+  color: #33A5A0;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.home-news-card .home-news-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0A3442;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.home-news-card .home-news-text {
+  font-size: 1.05rem;
+  color: #0A3442;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .home-news-card {
+    flex-direction: column;
+  }
+
+  .home-news-image-wrap {
+    flex: none;
+    width: 100%;
+    height: 180px;
+  }
+}
+
+.home-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #33A5A0 0%, #27a39b 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.home-more-btn:hover {
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(51, 165, 160, 0.4);
+}
+
+/* ========== معرض الصور ========== */
+.home-gallery-wrap {
+  padding: 24px 0;
+}
+
+.home-gallery-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 16px 5%;
+  scrollbar-width: thin;
+}
+
+.home-gallery-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.home-gallery-scroll::-webkit-scrollbar-thumb {
+  background: rgba(51, 165, 160, 0.4);
+  border-radius: 4px;
+}
+
+.home-gallery-item {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.home-gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.home-gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== الدورات ========== */
+.home-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.home-course-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 52, 66, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(51, 165, 160, 0.12);
+}
+
+.home-course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(51, 165, 160, 0.15);
+}
+
+.home-course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-course-card .home-course-body {
+  padding: 20px;
+  text-align: right;
+}
+
+.home-course-card h3 {
+  font-size: 1.2rem;
+  color: #0A3442;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.home-course-card .home-course-desc {
+  font-size: 0.95rem;
+  color: #093443;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.home-course-card .home-course-date {
+  font-size: 0.9rem;
+  color: #33A5A0;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.home-course-card .home-course-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(51, 165, 160, 0.2);
+}
+
+.home-course-card .home-course-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0A3442;
+}
+
+.home-course-card .home-course-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #33A5A0 0%, #27a39b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-course-card .home-course-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(51, 165, 160, 0.4);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .home-motto p {
+    font-size: 1.25rem;
+  }
+
+  .home-section {
+    padding: 36px 16px 44px;
+  }
+
+  .home-section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-achieve-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home-courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-gallery-item {
+    flex: 0 0 240px;
+  }
+}
+
+/* ========== أعضاء مجلس الإدارة ========== */
+.home-board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-board-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 52, 66, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(51, 165, 160, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: right;
+}
+
+.home-board-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(51, 165, 160, 0.15);
+}
+
+.home-board-img {
+  flex-shrink: 0;
+}
+
+.home-board-img img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(51, 165, 160, 0.25);
+}
+
+.home-board-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #33A5A0 0%, #27a39b 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 6px 18px rgba(51, 165, 160, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.home-board-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-board-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0A3442;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.home-board-role {
+  font-size: 0.95rem;
+  color: #33A5A0;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .home-board-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-motto {
+    padding: 32px 16px 24px;
+  }
+
+  .home-empty-state {
+    padding: 32px 16px;
+  }
+}
+
+/* ========== إحصائيات الأعضاء ========== */
+.home-stats-section {
+  padding-bottom: 64px;
+}
+
+.home-stats-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.home-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1 1 calc(25% - 24px);
+  min-width: 200px;
+  max-width: 250px;
+  padding: 24px 16px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border: 1px solid rgba(51, 165, 160, 0.2);
+  box-shadow: 0 4px 18px rgba(10, 52, 66, 0.06);
+  box-sizing: border-box;
+}
+
+.home-stats-value {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #33A5A0;
+  letter-spacing: -0.02em;
+}
+
+.home-stats-label {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 600;
+  color: #0A3442;
+  text-align: center;
+}
+
+.home-stats-item--visits {
+  flex: 1 1 100%;
+  max-width: 420px;
+  margin: 8px auto 0;
+  width: 100%;
+}
+
+.home-stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(51, 165, 160, 0.12);
+  color: #33A5A0;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .home-stats-list {
+    max-width: 640px;
+  }
+
+  .home-stats-item {
+    flex: 1 1 calc(50% - 24px);
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-stats-list {
+    gap: 20px;
+    max-width: 360px;
+  }
+
+  .home-stats-item {
+    flex: 1 1 100%;
+    min-width: 0;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 14px;
+    padding: 16px 12px;
+  }
+
+  .home-stats-item--visits {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .home-stats-label {
+    text-align: right;
+    flex: 1;
+  }
+}

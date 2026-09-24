@@ -31,7 +31,7 @@ Saudi small-business referral market — most visitors arrive already primed by 
 - Bilingual delivery is two separate static pages, not a runtime language toggle: Arabic at `/` (`dir="rtl"`), English at `/en/`.
 - Copy is finalized in `docs/COPY.md` and must be used verbatim, in both languages — not paraphrased during build.
 - Project cards show name + short explanation + a "Demo" link (a copy hosted at `/work/<slug>/`) + a "GitHub" link only when the repo is actually public. No screenshots.
-- Only one project ships at launch — "Adab Al-Furusia" (أدب الفروسية), an Arabic equestrian-academy site. Its live demo is at `/work/adab-al-furusia/`.
+- Two projects ship at launch — "Adab Al-Furusia" (أدب الفروسية), an Arabic equestrian-academy site, and "Wethaq" (جمعية وثاق الأسرية), a Laravel family-reconciliation site whose demo is its main page with sample content. Their live demos are at `/work/adab-al-furusia/` and `/work/wethaq/`.
 - RTL correctness is a hard constraint, not a nice-to-have: never split Arabic text into per-letter spans (breaks letter joining), use logical CSS properties throughout, mirror directional icons, and verify the rendered page in an actual browser at desktop and mobile widths — CSS review alone is not sufficient proof.
 
 ## Brand Commitments
@@ -49,7 +49,7 @@ Saudi small-business referral market — most visitors arrive already primed by 
 - `docs/COPY.md` — the live copy, v1.1 (2026-09-24), with full Arabic and English copy for every section. `docs/archive/COPY_RESEARCH.md` and the unadopted `docs/archive/COPY_V2_DRAFT.md` are reference only.
 - On the page: "building for the web since 2022", plus the written commitments (written price, approval before launch, the client owns the domain, hosting and access). No invented testimonials or numbers.
 - Kept **off** the page at the owner's request (2026-09-24), though true: the MIS degree, first in class 2023, and teaching 50+ students. Don't reintroduce them without asking.
-- One real project on hand: Adab Al-Furusia, an Arabic equestrian-academy website. Its live demo is available at `/work/adab-al-furusia/`; future projects must not be presented as live until their demos exist.
+- Two projects on hand: Adab Al-Furusia, an Arabic equestrian-academy website, and Wethaq, a Laravel family-reconciliation website. Their live demos are available at `/work/adab-al-furusia/` and `/work/wethaq/`; the Wethaq demo is its main page with sample content.
 - `docs/archive/REFERENCES.md` — a set of Awwwards-winning developer/designer portfolios collected as background research. The user has explicitly rejected these as direct visual references; they inform later visual-world work only as context on category conventions to differentiate from, never as a template to copy.
 
 ## Product Principles

@@ -220,7 +220,7 @@ export type Project = {
   name: Record<Lang, string>;
   description: Record<Lang, string>;
   status: 'coming-soon' | 'live';
-  statusLabel: Record<Lang, string>;
+  statusLabel?: Record<Lang, string>;
   repoUrl: string | null;
 };
 
@@ -234,6 +234,16 @@ export const projects: Project[] = [
     },
     status: 'live',
     statusLabel: { ar: 'عرض حي — قريبًا', en: 'Live demo — coming soon' },
+    repoUrl: null,
+  },
+  {
+    slug: 'wethaq',
+    name: { ar: 'جمعية وثاق الأسرية', en: 'Wethaq Family Association' },
+    description: {
+      ar: 'موقع جمعية سعودية غير ربحية في الإصلاح الأسري، يعرّف بالجمعية وبرامجها ودوراتها. يعرض الرابط الصفحة الرئيسية بمحتوى تجريبي.',
+      en: 'The website of a Saudi non-profit in family reconciliation, presenting the association, its programs and courses. The demo shows the main page with sample content.',
+    },
+    status: 'live',
     repoUrl: null,
   },
 ];

@@ -1,0 +1,198 @@
+/* الهيدر والدروب داون فوق المحتوى (خصوصاً على الهوم) */
+.hero {
+  position: relative;
+  z-index: 100;
+}
+
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+  .navbar .dropbtn {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    color: #093443;
+    padding: 0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .navbar .dropbtn-icon {
+    font-size: 0.75em;
+    transition: transform 0.25s ease;
+    opacity: 0.9;
+  }
+
+
+  .navbar .dropdown-content.about-dropdown {
+    min-width: 200px;
+  }
+
+  .navbar .dropdown-content.about-dropdown a {
+    font-weight: 700;
+  }
+
+  .navbar .dropdown-content.governance-dropdown {
+    min-width: 320px;
+    max-width: 420px;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border: 1px solid rgba(9, 52, 67, 0.08);
+    scrollbar-width: thin;
+    scrollbar-color: #33a5a0 #f0f7f7;
+  }
+
+  .navbar .dropdown-content.governance-dropdown::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .navbar .dropdown-content.governance-dropdown::-webkit-scrollbar-thumb {
+    background: #33a5a0;
+    border-radius: 6px;
+  }
+
+  .navbar .dropdown-content.governance-dropdown li {
+    list-style: none;
+  }
+
+  .navbar .dropdown-content.governance-dropdown a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(9, 52, 67, 0.06);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .navbar .dropdown-content.governance-dropdown li:last-child a {
+    border-bottom: none;
+  }
+
+  .navbar .dropdown-content.governance-dropdown a i {
+    color: #33a5a0;
+    margin-top: 3px;
+    flex-shrink: 0;
+    font-size: 15px;
+  }
+
+  .navbar .dropdown-content.governance-dropdown a:hover i {
+    color: #fff;
+  }
+
+  .navbar .dropdown-content .dropdown-empty {
+    display: block;
+    padding: 12px 16px;
+    color: #999;
+    font-size: 14px;
+  }
+
+  .navbar .dropdown-content .dropdown-pending {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .navbar .dropdown-content.governance-dropdown .dropdown-pending i {
+    color: #b8860b;
+    width: 16px;
+    text-align: center;
+  }
+
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    right: 0;
+    border-radius: 8px;
+  }
+
+
+  .navbar .dropdown-content a {
+    color: #0A3442;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+  .navbar .dropdown-content a:hover {
+    background-color: rgba(51, 165, 160, 1);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+  /* Hover-open only where a real pointer hovers; on touch, a tap's sticky
+     :hover opened the menu over its own button and swallowed the tap. */
+  @media (hover: hover) and (pointer: fine) {
+    .navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .navbar .dropdown:hover .dropbtn-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+.navbar {
+  gap: 12px;
+}
+
+.navbar .nav-links {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.navbar .auth-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar .auth-form {
+  display: inline-flex;
+  margin: 0;
+}
+
+.navbar .dashboard-access-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #33a5a0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .dashboard-access-btn:hover {
+  background: #0a3442;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+

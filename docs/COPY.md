@@ -23,6 +23,7 @@
 - **Changed 2026-09-24:** Adab Al-Furusia is live; its card links to the demo at `/work/adab-al-furusia/`.
 - **Changed 2026-09-24:** the Work title is «من أعمالنا» / "Selected work": Adab Al-Furusia is delivered and more projects are coming.
 - **Changed 2026-09-24 (English critique, 24/32):** English hero line and process title reworded ("supported after handover"; "From message to launch"); the project card notes the demo shows the design concept, in both languages; the Arabic hero line now names «مواقع ووردبريس ومتاجر ووكومرس» like Services.
+- **Changed 2026-09-25:** Wethaq Family Association was added as a second live demo with sample homepage content.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -49,6 +50,10 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
   موقع عربي لأكاديمية فروسية، يعرّف بالأكاديمية وبرامجها بأسلوب يليق بعراقة الفروسية. يعرض الرابط التصميم المقترح للموقع.
   - عرض حي → `/work/adab-al-furusia/`
   - **وسم الشارة (يظهر فقط عندما يكون المشروع قريبًا من الإطلاق؛ لا يظهر الآن):** عرض حي — قريبًا
+  - (الكود: غير متاح)
+- **جمعية وثاق الأسرية**
+  موقع جمعية سعودية غير ربحية في الإصلاح الأسري، يعرّف بالجمعية وبرامجها ودوراتها. يعرض الرابط الصفحة الرئيسية بمحتوى تجريبي.
+  - عرض حي → `/work/wethaq/`
   - (الكود: غير متاح)
 
 ### (قسم التعريف — بلا عنوان ظاهر)
@@ -121,6 +126,10 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
   An Arabic website for an equestrian academy, presenting the academy and its programs with the dignity the sport carries. The demo shows the design concept.
   - Live demo → `/work/adab-al-furusia/`
   - Badge label (shown only while coming soon; not displayed now): Live demo — coming soon
+  - (Code: not public)
+- **Wethaq Family Association**
+  The website of a Saudi non-profit in family reconciliation, presenting the association, its programs and courses. The demo shows the main page with sample content.
+  - Live demo → `/work/wethaq/`
   - (Code: not public)
 
 ### (Intro section — no visible heading)

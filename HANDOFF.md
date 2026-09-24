@@ -4,7 +4,7 @@
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
   - Arabic at `/` (RTL, default), English at `/en/`.
   - Astro 7 static, Alexandria font for the portfolio itself, deployed to Cloudflare Pages at **portfolio.binmahyub.uk**.
-- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia demo is live at `/work/adab-al-furusia/`. What's left is the owner's upload and the **Later** list.
+- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia and Wethaq demos are live at `/work/adab-al-furusia/` and `/work/wethaq/`. What's left is the owner's upload and the **Later** list.
 
 ---
 
@@ -79,8 +79,8 @@
   - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
   - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
-- **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demo under `public/work/adab-al-furusia/` ships its own HT Moshreq Pro and IBM Plex Sans Arabic fonts.
-- **Projects:** Adab Al-Furusia is live at `/work/adab-al-furusia/`. Its card is card-sized (about ⅓ width on desktop) with an abstract drawn preview (round 9C). **Keep the card-sized layout:** more projects will sit beside it in the row (the owner rejected a wide-screen relayout, round 10).
+- **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demos under `public/work/adab-al-furusia/` and `public/work/wethaq/` ship their own local fonts.
+- **Projects:** Adab Al-Furusia and Wethaq are live at `/work/adab-al-furusia/` and `/work/wethaq/`. Their cards are card-sized (about ⅓ width on desktop) with the abstract drawn preview; **keep the card-sized layout:** more projects will sit beside them in the row (the owner rejected a wide-screen relayout, round 10).
 
 ## 4. Next steps
 
@@ -92,7 +92,7 @@
 2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
 
 **Adding a project** (the owner will add several):
-- Add an entry to the `projects` array in `src/content/copy.ts`: `slug`, `name` {ar, en}, `description` {ar, en}, `status` (`'coming-soon'` or `'live'`), `statusLabel` {ar, en}, `repoUrl` (a URL only if the repo is public, else `null`).
+- Add an entry to the `projects` array in `src/content/copy.ts`: `slug`, `name` {ar, en}, `description` {ar, en}, `status` (`'coming-soon'` or `'live'`), `statusLabel` {ar, en} when coming soon, `repoUrl` (a URL only if the repo is public, else `null`).
 - Add the same name, description and label verbatim to `docs/COPY.md` under «من أعمالنا» / "Selected work", and add the new `slug` to the copy check's allowed data values.
 - `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). For a new project, keep it `'coming-soon'` until then; Adab Al-Furusia is already live.
 - With more than one project, consider retitling the section (for example back to «أعمال مختارة» / "Selected work"); ask the owner.
@@ -108,7 +108,7 @@
 ## 5. Checks to run after any change
 
 - **Build:** `pnpm build` on `main`.
-- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `docs/COPY.md`. Only the data values `adab-al-furusia`, `coming-soon`, `live` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `docs/COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
+- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `docs/COPY.md`. Only the data values `adab-al-furusia`, `wethaq`, `coming-soon`, `live` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `docs/COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
 - **Visual:** screenshots of `/` and `/en/` at 1440×900 and 390×844. Wait about 7 s for the hero chat. Scroll to trigger reveals. **Measure the rendered DOM, not just the CSS.**
 
 ## 6. Gotchas hit in this project

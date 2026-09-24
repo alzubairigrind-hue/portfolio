@@ -1,0 +1,207 @@
+/* Small static-demo additions for the real homepage markup. */
+.sample-banner {
+  padding: 6px 16px;
+  background: #0e3e46;
+  color: #eafaf8;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sample-banner__ar,
+.sample-banner__en {
+  display: inline;
+}
+
+.home-achieve-card img,
+.home-news-image,
+.home-gallery-item img,
+.home-course-card > img {
+  width: 100%;
+  height: 220px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.home-news-image-wrap {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.home-news-image {
+  height: 100%;
+}
+
+.home-gallery-item img {
+  height: 100%;
+}
+
+.footer-column:first-child > img {
+  width: 100px;
+  height: auto;
+  aspect-ratio: auto;
+}
+
+.home-course-card {
+  cursor: default !important;
+}
+
+.home-course-btn {
+  border: 0;
+  font: inherit;
+}
+
+.home-gallery-scroll {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: visible;
+}
+
+.home-gallery-item {
+  min-width: 0;
+  flex: initial;
+}
+
+:root {
+  --teal-text: #1f7a76;
+}
+
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--teal-text);
+  outline-offset: 2px;
+}
+
+.hero :where(a, button, [tabindex]):focus-visible,
+footer :where(a, button, [tabindex]):focus-visible {
+  outline-color: #eafaf8;
+}
+
+.text-content h2.about-title {
+  color: #1c6d68;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.text-content h2:not(.about-title),
+.home-motto p span,
+.home-achieve-card p,
+.home-news-card .home-news-date,
+.home-course-card .home-course-date,
+.home-stats-value {
+  color: var(--teal-text);
+}
+
+.home-section .home-more-btn,
+.home-section .home-course-btn {
+  background: transparent;
+  border: 2px solid var(--teal-text);
+  color: var(--teal-text);
+  cursor: default;
+  box-shadow: none;
+  transition: none;
+}
+
+.home-section .home-more-btn:hover,
+.home-section .home-course-btn:hover,
+.home-section .home-more-btn:active,
+.home-section .home-course-btn:active {
+  background: transparent;
+  color: var(--teal-text);
+  transform: none;
+  box-shadow: none;
+}
+
+.demo-data-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin-inline-start: 8px;
+  border-radius: 999px;
+  background: var(--teal-text);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 24px;
+  padding: 0 28px;
+  border-radius: 15px;
+  background: #fff;
+  color: var(--teal-text);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 52, 66, 0.18);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.hero-cta:hover {
+  background: #eafaf8;
+  color: var(--teal-text);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(10, 52, 66, 0.22);
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding-inline: 20px;
+  }
+
+  .hero-text p {
+    font-size: clamp(1.05rem, 5vw, 1.25rem);
+    line-height: 1.7;
+    text-wrap: balance;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+    text-wrap: balance;
+  }
+
+  .navbar > .auth-actions {
+    display: none;
+  }
+
+  .nav-links > .auth-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 99;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 0 16px;
+  }
+
+  .nav-links > .auth-actions .cta-button {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links > .auth-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .sample-banner__en {
+    display: none;
+  }
+
+  .home-gallery-scroll {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding-inline: 0;
+  }
+}
