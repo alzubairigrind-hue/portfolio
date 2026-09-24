@@ -75,7 +75,8 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
     isolation: isolate;
     display: grid;
     box-sizing: border-box;
-    min-block-size: 100svh;
+    /* Capped so tall screens (tablets in portrait) don't leave an empty band above the headline. */
+    min-block-size: min(100svh, 52rem);
     overflow: hidden;
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
     grid-template-rows: auto 1fr;
@@ -137,7 +138,7 @@ const waPath = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.
   .play .typing { animation: typingLife 0.9s ease both; animation-delay: var(--t); }
   @keyframes typingLife { 0% { opacity: 0; } 15%, 85% { opacity: 1; } 100% { opacity: 0; display: none; } }
 
-  .mini-site { position: absolute; inset-block-end: 14%; inset-inline-end: 6%; inline-size: 210px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.65); color: var(--ink); rotate: -4deg; }
+  .mini-site { position: absolute; inset-block-end: 9%; inset-inline-end: 6%; inline-size: 210px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.65); color: var(--ink); rotate: -4deg; }
   /* The tilt leans away from the phone, so it mirrors with the page direction. */
   :global([dir='rtl']) .mini-site { rotate: 4deg; }
   .play .mini-site { animation: pop 0.7s var(--spring) both; animation-delay: var(--t); }

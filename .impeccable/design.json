@@ -201,7 +201,7 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Paragraphs, max 62ch."
+        "purpose": "Paragraphs, max 52ch."
       },
       "label": {
         "displayName": "Label",

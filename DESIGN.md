@@ -65,7 +65,7 @@ spacing:
   section-block: "4.5rem"
   card: "1.75rem"
   grid-gap: "1.25rem"
-  measure: "62ch"
+  measure: "52ch"
   container: "72rem"
 components:
   button-light:
@@ -179,7 +179,7 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 - **Headline** (800, `headline`): section headings; `headline-panel` is the larger heading inside the Contact panel.
 - **Lead** (700, `lead`): the one heading-font sentence that opens About.
 - **Title** (800, `title`): card and step titles.
-- **Body** (400, `body`): paragraphs, capped at 62ch; hero lede 1.05–1.2rem at 42ch in Soft Lavender Ink.
+- **Body** (400, `body`): paragraphs, capped at 52ch; hero lede 1.05–1.2rem at 42ch in Soft Lavender Ink.
 - **Label** (700, `label`): badges, chips, the language switch, the owner's role line (400) under his name.
 
 ### Named Rules
@@ -191,11 +191,11 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 
 ## Layout
 
-A single centred column: sections cap at 72rem with fluid inline padding (`pad`, 1.25rem to 5rem) and 4.5rem block padding, stacked in a grid with a 1.1rem gap. Paragraphs cap at 62ch.
+A single centred column: sections cap at 72rem with fluid inline padding (`pad`, 1.25rem to 5rem) and 4.5rem block padding, stacked in a grid with a 1.1rem gap. Paragraphs cap at 52ch (about 57–63 characters per line in Alexandria, since `ch` is narrower than the average Arabic letter).
 
-The hero fills the first screen (100svh) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
+The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 
-Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fill so one card stays card-sized and 3–5 later fill rows). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
+Card grids use auto-fit or auto-fill with `minmax` (Services 16rem; Work `min(100%, 18rem)` in auto-fit so the one project spans the full row and 3–5 later wrap into columns). Commitments use auto-fit at 15rem, and from 60rem wide sit in three columns split by thin lilac dividers (round 8C). How-we-work is a numbered list capped at 46rem with a vertical rail on the inline-start.
 
 **The Logical Properties Rule.** Every margin, padding, inset, size and corner is written with logical properties (`inline`, `block`, `start`, `end`), so the Arabic and English pages mirror from one stylesheet. Physical left/right is not used.
 
