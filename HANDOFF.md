@@ -4,7 +4,7 @@
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
   - Arabic at `/` (RTL, default), English at `/en/`.
   - Astro 7 static, Alexandria font for the portfolio itself, deployed to Cloudflare Pages at **portfolio.binmahyub.uk**.
-- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia, Wethaq and Madarij demos are live at `/work/adab-al-furusia/`, `/work/wethaq/` and `/work/madarij/`. What's left is the owner's upload and the **Later** list.
+- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia, Wethaq and Madarij demos are live at `/work/adab-al-furusia/`, `/work/wethaq/` and `/work/madarij/`. It is live at https://portfolio.binmahyub.uk, deployed from GitHub by Cloudflare Pages. What's left is the **Later** list.
 
 ---
 
@@ -27,7 +27,7 @@
   See `reference-board/copy-v2-draft.html` for the pattern.
 - **Honesty is non-negotiable.** No invented numbers, testimonials, team, company or claims.
 - **Heavy mechanical work may go to the `cheap` delegate lane** (OpenCode, `~/.config/delegate-skills/config.json`). Design-critical work is done directly.
-- **Commits:** the orchestrator commits, with a `Co-Authored-By` trailer. Never push; there's no remote.
+- **Commits:** the orchestrator commits, with a `Co-Authored-By` trailer. The remote is the public repo https://github.com/alzubairigrind-hue/portfolio, and **a push to `main` publishes the live site**: push only when the owner asks, and never push `prototype/hero` (every pushed branch gets a public preview address).
 
 ## 2. Where everything is
 
@@ -36,7 +36,7 @@
 | **Real site** | branch **`main`** in this folder. Dev server: `pnpm astro dev --port 4321` → http://localhost:4321/ and /en/ |
 | **Prototypes (rounds 1–6)** | branch **`prototype/hero`**, checked out as a *git worktree* at `../005_myPortfolio-proto`. Dev server: `pnpm astro dev --port 4322` from there → http://localhost:4322/proto (index of every round and its verdict) |
 | **Reference boards 1–3** | `reference-board/` (git-excluded via `.git/info/exclude`; third-party screenshots, never commit). Archive: `../005_myPortfolio-archive/reference-board-2026-09-23.tar.gz` |
-| **Upload folder** | `dist/` (run `pnpm build` on `main` first) |
+| **Deploy** | push `main` to GitHub; Cloudflare Pages builds and publishes it (`docs/DEPLOY.md`) |
 
 **Code map (`src/`):**
 - `pages/index.astro` (`/`) and `pages/en/index.astro` (`/en/`) are one-line wrappers around `components/OnePage.astro`, which holds the section order (Hero → About → Services → Work → From message to launch → Contact → footer). Change the order there, once.
@@ -51,7 +51,7 @@
 - `DESIGN.md` plus `.impeccable/design.json`: the shipped design system.
 - `.impeccable/surfaces/src-pages-index-astro.md`: the design brief and full decision history. Read or write it with `~/.claude/skills/impeccable/scripts/impeccable surface-brief read|write src/pages/index.astro …`.
 - `.impeccable/critique/2026-09-24T11-28-32Z__src-pages-index-astro.md`: the **latest critique, 28/32**, checked at 8 screen widths (320–1920) in both languages. Its P1s are fixed; its remaining points are optional. Trend: 25 → 27 → 28.
-- `docs/DEPLOY.md`: the owner's step-by-step Cloudflare Pages Direct Upload guide.
+- `docs/DEPLOY.md`: how the site deploys (push to `main` → Cloudflare Pages), its build settings, and how to roll back.
 - `docs/EMAIL_SETUP.md`: receiving is live (info@binmahyub.uk goes to Gmail); Part B, sending, is for later.
 - `docs/archive/COPY_RESEARCH.md`: 18 agency sites, reference only. `docs/archive/COPY_V2_DRAFT.md`: **not adopted**, reference only.
 - `docs/archive/REFERENCE_BOARD_METHOD.md`, `docs/archive/SADU.md` (the Sadu motif, parked), `docs/archive/REFERENCES.md` (rejected Awwwards references).
@@ -88,7 +88,7 @@
 
 **Done earlier the same day:** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
 
-1. **Run `pnpm build` on `main`, then upload `dist/`** following `docs/DEPLOY.md` from step 5.
+1. **Deploy by pushing `main`** (`docs/DEPLOY.md`); check the live site afterwards.
 2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
 
 **Adding a project** (the owner will add several):
@@ -96,7 +96,7 @@
 - Add the same name, description and label verbatim to `docs/COPY.md` under «من أعمالنا» / "Selected work", and add the new `slug` to the copy check's allowed data values.
 - `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). For a new project, keep it `'coming-soon'` until then; Adab Al-Furusia is already live.
 - With more than one project, consider retitling the section (for example back to «أعمال مختارة» / "Selected work"); ask the owner.
-- Run the checks in section 5, then rebuild `dist/`.
+- Run the checks in section 5, then commit and push `main` to publish.
 
 **Later:**
 - sending email (`docs/EMAIL_SETUP.md` Part B)

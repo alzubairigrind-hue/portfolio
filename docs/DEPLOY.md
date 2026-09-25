@@ -1,68 +1,55 @@
-# Deploy: portfolio.binmahyub.uk (Cloudflare Pages)
+# Deploy: portfolio.binmahyub.uk (Cloudflare Pages + GitHub)
 
-- **Method:** Cloudflare Pages **Direct Upload**. You drag the built `dist` folder into the dashboard. No Git or command line needed.
-- **Written:** 2026-09-24. Menu names come from general knowledge, not a live check; if a label doesn't match, look for the nearest equivalent.
-- **One limitation:** a Direct Upload project **can't be switched to automatic Git deploys later**. If you later want "push to GitHub, and the site updates itself", you'd create a second Pages project connected to the repo and move the domain to it. That's fine for now.
+- **Live:** https://portfolio.binmahyub.uk (Cloudflare preview address: https://portfolio-68f.pages.dev)
+- **Repo:** https://github.com/alzubairigrind-hue/portfolio (public)
+- **How it updates:** every push to `main` on GitHub makes Cloudflare Pages rebuild and publish the site, usually within 1–2 minutes. Nothing is uploaded by hand.
+- **Set up:** 2026-09-26, following Cloudflare's docs (*Pages → Get started → Git integration*).
 
 ---
 
-## Part A: Build (on this computer)
+## Updating the site
 
-1. Open a terminal in the project folder:
+1. Change the code on `main`, check it locally (`pnpm dev`), and commit.
+2. Push:
    ```
-   cd ~/02_Profession/Projects/01_Personal/005_myPortfolio
+   git push
    ```
-2. Make sure you're on the real site, not the prototypes:
-   ```
-   git switch main
-   ```
-3. Build:
-   ```
-   pnpm build
-   ```
-4. The site is now in the **`dist`** folder. That folder is what you upload.
+3. Watch it in Cloudflare → **Workers & Pages** → **portfolio** → **Deployments**. The newest one shows **Success** when it's live.
 
-## Part B: Create the Pages project (first time only)
-
-5. Log in at **dash.cloudflare.com**.
-6. In the left menu, open **Workers & Pages**.
-7. Click **Create**.
-8. Open the **Pages** tab.
-9. Choose **Upload assets** (Direct Upload).
-10. Project name: **binmahyub-portfolio**.
-11. Click **Create project**.
-12. Drag the **`dist`** folder from your file manager into the upload box.
-13. Wait for the upload to finish.
-14. Click **Deploy site**.
-15. Open the **`binmahyub-portfolio.pages.dev`** link it shows.
-16. Check both pages: `/` (Arabic) and `/en/` (English).
-
-## Part C: Connect portfolio.binmahyub.uk
-
-17. In the project, open the **Custom domains** tab.
-18. Click **Set up a custom domain**.
-19. Type **portfolio.binmahyub.uk**.
-20. Click **Continue**.
-21. Click **Activate domain**. binmahyub.uk is already on Cloudflare, so the DNS record is added for you.
-22. Wait until the status shows **Active**. This usually takes a few minutes while the HTTPS certificate is issued.
-23. Open **https://portfolio.binmahyub.uk**.
-
-## Part D: Check after going live
-
-24. On your phone, open the site and tap **راسلنا على واتساب**. WhatsApp should open a chat with your number.
-25. Tap the email link. It should start an email to **info@binmahyub.uk**.
-26. At the bottom, tap **English**, then **العربية**, to check both languages.
-
-## Updating the site later
-
-27. Run steps 1–3 again (build).
-28. Cloudflare → **Workers & Pages** → **binmahyub-portfolio**.
-29. Click **Create deployment** (or **Upload new version**).
-30. Drag the new **`dist`** folder in.
-31. Click **Save and deploy**.
+**Other branches:** pushing any branch other than `main` builds a separate **preview** address (`<branch>.portfolio-68f.pages.dev`), not the real site. Preview addresses are public, so push only branches you're happy for people to see. The `prototype/hero` branch stays local.
 
 ## Undo a bad update
 
-32. In the project, open **Deployments**.
-33. Find the previous good deployment.
-34. Open its **⋯** menu and choose **Rollback**.
+1. Cloudflare → **Workers & Pages** → **portfolio** → **Deployments**.
+2. Find the last good deployment.
+3. Open its **⋯** menu and choose **Rollback**.
+
+Then fix the problem on `main` and push again.
+
+## Build settings (for reference)
+
+Set once when the project was created; they live in the project's **Settings**.
+
+| Setting | Value |
+|---|---|
+| Framework preset | Astro |
+| Build command | `pnpm build` |
+| Build output directory | `dist` |
+| Production branch | `main` |
+| Environment variable | `PNPM_VERSION` = `11.10.0` |
+
+**Why `PNPM_VERSION`:** Cloudflare's build image uses pnpm 10.11.1 by default, but this project uses pnpm 11 (its `pnpm-workspace.yaml` uses pnpm 11's `allowBuilds` setting). If you upgrade pnpm on your computer, update this value to match.
+
+**Node.js:** the build image's default, Node 22.16.0, meets Astro 7's minimum (22.12.0), so no setting is needed.
+
+## Custom domain
+
+`portfolio.binmahyub.uk` is attached under the project's **Custom domains** tab. `binmahyub.uk` is on Cloudflare, so the DNS record and the HTTPS certificate were created, and are renewed, automatically.
+
+## Check after an update
+
+1. Open https://portfolio.binmahyub.uk and https://portfolio.binmahyub.uk/en/.
+2. Tap **راسلنا على واتساب**. WhatsApp should open a chat with your number.
+3. Tap the email link. It should start an email to **info@binmahyub.uk**.
+4. Tap the language pill in the top row, next to your name, to switch between Arabic and English.
+5. Open each project's **«عرض حي» / Live demo**. It should open in a new tab.
