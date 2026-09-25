@@ -30,14 +30,15 @@ const { lang, project } = Astro.props;
 </article>
 
 <style>
-  .browser { border-radius: 22px; overflow: hidden; background: #fff; border: 1px solid var(--card-line); box-shadow: 0 30px 60px -36px rgb(43 20 99 / 0.55); }
+  .browser { display: flex; flex-direction: column; border-radius: 22px; overflow: hidden; background: #fff; border: 1px solid var(--card-line); box-shadow: 0 30px 60px -36px rgb(43 20 99 / 0.55); }
   .bar { display: flex; align-items: center; gap: 6px; padding: 0.7rem 1rem; background: #f1eefa; }
   .bar i { inline-size: 10px; block-size: 10px; border-radius: 50%; background: #cfc6ea; }
   .badge { margin-inline-start: auto; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.85rem; border-radius: var(--radius-pill); background: #fff; border: 1px dashed var(--lilac); color: var(--brand); font-size: 0.8rem; font-weight: 700; }
   .badge::before { content: ''; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: var(--lilac); }
-  .body { padding: 1.5rem 1.75rem 1.75rem; display: grid; gap: 0.5rem; }
+  .body { flex: 1; padding: 1.5rem 1.75rem 1.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .body h3 { margin: 0; }
-  .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: 0.5rem; }
+  /* Pinned to the card's end so every button in the row sits on one line. */
+  .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-block-start: auto; padding-block-start: 0.5rem; }
   .link { font-weight: 700; }
   /* An abstract drawn preview, never a screenshot: the project stays honestly "coming soon". */
   .preview { block-size: 120px; margin-block-start: 1.5rem; margin-inline: 1.75rem; padding: 1.25rem; display: grid; align-content: center; gap: 0.75rem; border-radius: 16px; background: linear-gradient(160deg, #ece6ff, #f8f6ff); }

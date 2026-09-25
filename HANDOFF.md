@@ -77,7 +77,7 @@
   - The How-we-work path fills and lights up on scroll.
   - **Commitments panel:** the dark purple panel stays. It may get **small enhancements only, never a redesign** (a chat-bubble redesign, round 7A, was rejected on sight and reverted). Round 8C is live: staggered pop-in, self-drawing ticks with a lilac ring, and column dividers on desktop.
   - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
-  - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
+  - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. The only language pill sits in the hero's name row; the footer has just the copyright.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demos under `public/work/adab-al-furusia/` and `public/work/wethaq/` ship their own local fonts.
 - **Projects:** Adab Al-Furusia, Wethaq and Madarij are live at `/work/adab-al-furusia/`, `/work/wethaq/` and `/work/madarij/`. Their cards are card-sized (about ⅓ width on desktop) with the abstract drawn preview; **keep the card-sized layout:** more projects will sit beside them in the row (the owner rejected a wide-screen relayout, round 10).

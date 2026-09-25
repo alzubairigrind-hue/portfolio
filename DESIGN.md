@@ -104,14 +104,8 @@ components:
     rounded: "{rounded.pill}"
     padding: "0.25rem 0.85rem"
   language-switch:
-    variants:
-      hero:
-        backgroundColor: "rgb(255 255 255 / 0.1)"
-        textColor: "{colors.hero-ink}"
-      footer:
-        backgroundColor: "{colors.card}"
-        textColor: "{colors.brand}"
-        border: "1px solid {colors.card-line}"
+    backgroundColor: "rgb(255 255 255 / 0.1)"
+    textColor: "{colors.hero-ink}"
     rounded: "{rounded.pill}"
     padding: "0 1.1rem"
     minHeight: "2.75rem"
@@ -164,7 +158,7 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 - **Moonlit Ink** (`hero-ink`) and **Soft Lavender Ink** (`hero-ink-2`): headline and body text on purple grounds respectively.
 - **Aubergine Ink** (`ink`): headings and body text on white.
 - **Dusk Grey** (`ink-2`): paragraph text in sections and the footer.
-- **Lavender Card** (`card`) with **Card Hairline** (`card-line`): the fill and 1px edge of every card and of the language switch.
+- **Lavender Card** (`card`) with **Card Hairline** (`card-line`): the fill and 1px edge of every card.
 
 ### Named Rules
 **The One Purple Rule.** The brand has one hue. Deep purple grounds, violet-to-purple gradients and lilac tints are all the same family; no second accent hue enters the system.
@@ -199,7 +193,7 @@ A two-register palette: a saturated deep purple night for scenes and calls to ac
 
 A single centred column: sections cap at 72rem with fluid inline padding (`pad`, 1.25rem to 5rem) and 4.5rem block padding, stacked in a grid with a 1.1rem gap. Paragraphs cap at 52ch (about 57–63 characters per line in Alexandria, since `ch` is narrower than the average Arabic letter).
 
-Page order: Hero → About → Services → Work → From message to launch (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row also carries the language switch pill at its inline-end (translucent white on purple, 44px), mirroring the footer one.
+Page order: Hero → About → Services → Work → From message to launch (with the commitments) → Contact, so the commitments run straight into the ask. The hero's signature row carries the page's only language switch, a pill at its inline-end (translucent white on purple, 44px).
 
 The hero fills the first screen (100svh, capped at 52rem so tablets in portrait keep no empty band above the headline) as a two-column grid (1.05fr text, 0.95fr art) with the brand signature (tile plus name and role) spanning the top at inline-start. Below 48rem it becomes one column: signature, text, then the phone with the mini site stacked beneath it at the inline-end, and the illustrative label under both. The WhatsApp button stays inside the first viewport on phones.
 Between 48rem and 69rem the mini site sits in flow under the phone (as on phones) so it never covers a chat bubble, and below 22rem the hero name row may wrap.
@@ -251,7 +245,7 @@ The night ground reused as a block: Night Purple fill, white headings, Soft Lave
 - **Coming-soon badge:** white pill, dashed lilac border, lilac dot, Night Purple text. A supported state for an unfinished future project; Adab Al-Furusia is live.
 
 ### Navigation
-There is no top navigation. The footer carries the copyright and the language switch: a lavender pill (`language-switch`) with Night Purple text that scales to 1.05 on hover, marked with the target language and direction.
+There is no top navigation. The language switch lives only in the hero's signature row (`language-switch`), marked with the target language and direction; the footer carries just the copyright.
 
 ### Hero WhatsApp Demo (signature)
 A phone-shaped card (330px, 34px corners, pale lavender body) holding a WhatsApp-style chat that plays once when well in view and holds its final state (it replays after leaving the screen, on a tap, or via the Replay pill beside the label): the client's messages (Lilac Mist) on the end side, the studio's replies (white) on the start side, a three-dot typing indicator, chips that read as attachments (Lilac Mist tint, Night Purple text, not filled buttons), then a small browser-window mini site that pops in slightly rotated. Messages enter with a spring rise; the mini site pops. It is decorative (`aria-hidden`) and always captioned «مثال توضيحي» / "Illustrative example".
@@ -272,7 +266,7 @@ The drawings are decorative (`aria-hidden`) and stop under reduced motion. Chose
 The store tiles use lilac-to-purple tones only; no orange, pink or mint.
 
 ### Project Browser Card
-A project is shown inside a browser window: 22px corners, a lavender bar with three dots, and the name and description in the body. A coming-soon project can show its badge at the bar's inline-end; a live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Both links open in a new tab. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
+A project is shown inside a browser window: 22px corners, a lavender bar with three dots, and the name and description in the body. A coming-soon project can show its badge at the bar's inline-end; a live project adds a Brand button to `/work/<slug>/`; GitHub appears only when the repo is public. Both links open in a new tab, pinned to the card's bottom so buttons line up across a row whatever the description length. Cards sit in an auto-fill grid (min 18rem), so 3–5 projects lay out without redesign.
 Between the top bar and the text is a 120px lavender-gradient well (16px corners) holding two lilac-mist bars (70% and 45%) and a small Night Purple pill; it is decorative (`aria-hidden`), abstract, and never a screenshot (chosen in prototype round 9, 9C, 2026-09-24).
 
 ### How-we-work Path (signature)

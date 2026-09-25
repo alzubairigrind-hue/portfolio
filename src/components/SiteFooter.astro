@@ -1,6 +1,5 @@
 ---
 import { copy, type Lang } from '../content/copy';
-import LanguageSwitch from './LanguageSwitch.astro';
 
 interface Props {
   lang: Lang;
@@ -12,11 +11,8 @@ const t = copy[lang];
 
 <footer>
   <p>{t.footer.copyright}</p>
-  <LanguageSwitch lang={lang} class="switch" />
 </footer>
 
 <style>
   footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; max-inline-size: 72rem; margin-inline: auto; padding: 2rem var(--pad) 3rem; color: var(--ink-2); font-size: 0.9rem; }
-  .switch { display: inline-flex; align-items: center; min-block-size: 2.75rem; padding-inline: 1.1rem; border-radius: var(--radius-pill); background: var(--card); border: 1px solid var(--card-line); text-decoration: none; font-weight: 700; color: var(--brand); transition: scale 0.35s var(--spring); }
-  .switch:hover { scale: 1.05; }
 </style>
