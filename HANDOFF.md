@@ -4,7 +4,7 @@
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
   - Arabic at `/` (RTL, default), English at `/en/`.
   - Astro 7 static, Alexandria font for the portfolio itself, deployed to Cloudflare Pages at **portfolio.binmahyub.uk**.
-- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia and Wethaq demos are live at `/work/adab-al-furusia/` and `/work/wethaq/`. What's left is the owner's upload and the **Later** list.
+- **Status:** ready to launch. The latest critique scored 28/32, and the Adab Al-Furusia, Wethaq and Madarij demos are live at `/work/adab-al-furusia/`, `/work/wethaq/` and `/work/madarij/`. What's left is the owner's upload and the **Later** list.
 
 ---
 
@@ -80,7 +80,7 @@
   - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. A language pill sits in the hero's name row as well as the footer.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demos under `public/work/adab-al-furusia/` and `public/work/wethaq/` ship their own local fonts.
-- **Projects:** Adab Al-Furusia and Wethaq are live at `/work/adab-al-furusia/` and `/work/wethaq/`. Their cards are card-sized (about ⅓ width on desktop) with the abstract drawn preview; **keep the card-sized layout:** more projects will sit beside them in the row (the owner rejected a wide-screen relayout, round 10).
+- **Projects:** Adab Al-Furusia, Wethaq and Madarij are live at `/work/adab-al-furusia/`, `/work/wethaq/` and `/work/madarij/`. Their cards are card-sized (about ⅓ width on desktop) with the abstract drawn preview; **keep the card-sized layout:** more projects will sit beside them in the row (the owner rejected a wide-screen relayout, round 10).
 
 ## 4. Next steps
 
@@ -108,7 +108,7 @@
 ## 5. Checks to run after any change
 
 - **Build:** `pnpm build` on `main`.
-- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `docs/COPY.md`. Only the data values `adab-al-furusia`, `wethaq`, `coming-soon`, `live` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `docs/COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
+- **Copy check:** every string value in `src/content/copy.ts` must appear verbatim in `docs/COPY.md`. Only the data values `adab-al-furusia`, `wethaq`, `madarij`, `coming-soon`, `live` and the chat's `me`/`them` tags are allowed to be missing. The previous session did this with a small Node script (read `docs/COPY.md`, walk the exported `copy`/`projects`/`links` objects, and report misses); recreate it if needed.
 - **Visual:** screenshots of `/` and `/en/` at 1440×900 and 390×844. Wait about 7 s for the hero chat. Scroll to trigger reveals. **Measure the rendered DOM, not just the CSS.**
 
 ## 6. Gotchas hit in this project

@@ -246,6 +246,16 @@ export const projects: Project[] = [
     status: 'live',
     repoUrl: null,
   },
+  {
+    slug: 'madarij',
+    name: { ar: 'جمعية مدارج', en: 'Madarij Association' },
+    description: {
+      ar: 'تصميم مقترح لموقع جمعية في تبوك تطوّر العمل التنموي والتميز المؤسسي، يعرض عملها وسجلّها للزوار والمتطوعين.',
+      en: 'A proposed website design for a Tabuk association that develops non-profit work and institutional excellence, putting its record on show for visitors and volunteers.',
+    },
+    status: 'live',
+    repoUrl: null,
+  },
 ];
 
 export const links = {

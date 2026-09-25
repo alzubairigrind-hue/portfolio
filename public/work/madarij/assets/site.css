@@ -1,0 +1,683 @@
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('fonts/NotoKufiArabic-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('fonts/NotoKufiArabic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Noto Sans Arabic';
+    src: url('fonts/NotoSansArabic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Noto Sans Arabic';
+    src: url('fonts/NotoSansArabic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  :root {
+    --c-primary: #145463;
+    --c-primary-deep: #0B2E36;
+    --c-accent: #59A694;
+    /* accent dark enough to carry white text at AA; --c-accent itself must stay
+       light enough for .positioning-card h3 on the dark band (5.07:1). */
+    --c-accent-strong: #41796C;
+    --c-accent-hover: #4a8c7d;
+    --c-bg: #FAFBFA;
+    --c-line: #DCE3E2;
+    --c-ink: #14201F;
+    --c-ink-soft: #3d4a49;
+    --c-ink-muted: #d6e4e3;
+    --c-white: #fff;
+    --c-error: #A6402F;
+    --font-display: 'Noto Kufi Arabic', 'Segoe UI', sans-serif;
+    --font-body: 'Noto Sans Arabic', 'Segoe UI', sans-serif;
+    --entry-gap: clamp(3.5rem, 7vw, 6.5rem);
+    --gutter: clamp(1.25rem, 4vw, 2.5rem);
+    --thread-w: 34px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--c-bg);
+    color: var(--c-ink);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; margin: 0; }
+  p { margin: 0; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .skip-link {
+    position: absolute;
+    right: 1rem;
+    top: -3rem;
+    background: var(--c-primary-deep);
+    color: var(--c-white);
+    padding: 0.75rem 1.25rem;
+    z-index: 100;
+    transition: top 0.15s;
+    font-weight: 700;
+  }
+  .skip-link:focus { top: 1rem; }
+
+  :focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 2px;
+  }
+
+  /* ---------- Layout shell ---------- */
+  .wrap {
+    max-width: min(1400px, 94vw);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    position: relative;
+  }
+
+  .measure { max-width: 68ch; }
+
+  /* ---------- The Thread (signature component) ---------- */
+  /* #main is the positioned ancestor so top:0;bottom:0 stretches this to the
+     document's real content height — height:100% on an absolutely positioned
+     box with no ancestor of definite height silently collapses instead. */
+  main#main { position: relative; }
+  #thread-layer {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    top: 0;
+    bottom: 0;
+    max-width: min(1400px, 94vw);
+    margin-inline: auto;
+    pointer-events: none;
+    z-index: 1;
+  }
+  #thread-svg {
+    position: sticky;
+    top: 0;
+    width: var(--thread-w);
+    height: 100vh;
+    margin-inline-start: auto;
+    display: none;
+  }
+  @media (min-width: 720px) {
+    #thread-svg { display: block; }
+  }
+  #thread-path {
+    fill: none;
+    stroke: var(--c-primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+  #thread-seal {
+    /* matches #thread-svg: the rail is desktop-only, and a seal without its
+       rail both reads as a stray dot and overflows the viewport at mobile,
+       where the thread layer is flush to the edge and left:-6px goes negative. */
+    display: none;
+    position: absolute;
+    /* the line's stroke spans 0-2px of the lane, so its centre is x=1;
+       a 14px dot centred there starts at -6px. Physical `left` on purpose:
+       this is a visual offset from the lane edge, not a text-direction one. */
+    left: -6px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--c-accent);
+    transform: translateY(-50%);
+  }
+  /* Must sit AFTER the base rule above: both are single-ID selectors of equal
+     specificity, so source order decides. #thread-svg gets away with the reverse
+     order only because its base rule is declared above its media query. */
+  @media (min-width: 720px) {
+    #thread-seal { display: block; }
+  }
+
+  /* ---------- Nav ---------- */
+  header.site-header {
+    border-bottom: 2px solid var(--c-primary);
+    background: var(--c-primary-deep);
+    position: relative;
+    z-index: 10;
+  }
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 0.9rem;
+    gap: 0.6rem 1rem;
+  }
+  .brand-mark { display: flex; align-items: center; gap: 0.6rem; }
+  .brand-mark img { height: 64px; width: auto; }
+  .brand-mark span {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--c-primary-deep);
+  }
+  nav.primary-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem clamp(0.75rem, 2.5vw, 1.75rem);
+    margin: 0;
+    padding: 0;
+  }
+  nav.primary-nav a {
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: var(--c-white);
+    padding-block: 0.35rem;
+    padding-inline: 0.35rem;
+    border-bottom: 2px solid transparent;
+    font-size: 0.9rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  nav.primary-nav a:hover,
+  nav.primary-nav a:focus-visible { border-bottom-color: var(--c-white); }
+  @media (max-width: 479px) {
+    .nav-row { flex-direction: column; align-items: flex-start; }
+    nav.primary-nav { width: 100%; }
+    nav.primary-nav ul {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 0.75rem;
+      padding-bottom: 0.5rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    nav.primary-nav ul::-webkit-scrollbar { display: none; }
+  }
+  /* ---------- Entries (section grammar) ---------- */
+  .entry {
+    border-top: 2px solid var(--c-primary);
+    padding-top: clamp(2rem, 4vw, 3.5rem);
+    padding-bottom: var(--entry-gap);
+    /* Reserve the thread gutter with padding, not margin: .entry sits on the
+       same element as .wrap, whose margin-inline:auto does the centring. A
+       fixed margin on one side makes the other side's auto absorb all the
+       slack and pins the column to the edge. */
+    padding-inline-end: calc(var(--gutter) + var(--thread-w) + 0.5rem);
+  }
+  @media (max-width: 719px) {
+    .entry { padding-inline-end: var(--gutter); }
+  }
+  .entry-number {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: var(--c-primary);
+    font-size: 0.8125rem;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .entry-heading { font-size: clamp(1.5rem, 4vw, 2.25rem); color: var(--c-primary-deep); }
+  .entry-lede { margin-top: 1rem; font-size: 1.0625rem; color: var(--c-ink-soft); }
+
+  /* ---------- Hero ---------- */
+  #hero.entry { padding-top: 2.5rem; }
+  .hero-grid {
+    display: grid;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 1.5rem;
+    align-items: center;
+  }
+  @media (min-width: 860px) {
+    .hero-grid { grid-template-columns: 1.15fr 0.85fr; }
+  }
+  .hero-headline { font-size: clamp(2rem, 5.2vw, 3.25rem); color: var(--c-primary-deep); }
+  .credential-line {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-primary);
+    letter-spacing: 0.01em;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 2rem; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.95rem 2.25rem;
+    border-radius: 8px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 0 rgba(20, 84, 99, 0.10);
+    transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .btn-primary {
+    background: var(--c-accent-strong);
+    color: var(--c-white);
+    border-color: var(--c-accent-strong);
+  }
+  .btn-primary:hover, .btn-primary:focus-visible {
+    background: var(--c-accent-hover);
+    border-color: var(--c-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(20, 84, 99, 0.18);
+  }
+  .btn-ghost {
+    background: rgba(255, 255, 255, 0.45);
+    color: var(--c-primary);
+    border-color: rgba(20, 84, 99, 0.35);
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible {
+    background: var(--c-primary);
+    color: var(--c-white);
+    border-color: var(--c-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(20, 84, 99, 0.18);
+  }
+
+  .hero-photo-wrap { position: relative; }
+  .hero-photo-wrap img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: 50% 55%;
+    border: 1px solid var(--c-line);
+  }
+  .hero-photo-caption {
+    margin-top: 0.6rem;
+    font-size: 0.8125rem;
+    color: var(--c-ink-soft);
+  }
+
+  /* ---------- Record (ledger table) ---------- */
+  .record-intro { max-width: 60ch; color: var(--c-ink-soft); margin-top: 1rem; }
+  .record-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  @media (min-width: 640px) {
+    .record-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .record-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    /* This section's ground is --c-line, so a --c-line border is invisible.
+       A tinted --c-primary reads on both the tint and the light ground. */
+    padding: 1.15rem 1.25rem;
+    border: 1px solid rgba(20, 84, 99, 0.28);
+    background: rgba(250, 251, 250, 0.55);
+  }
+  @media (min-width: 640px) {
+    .record-row:nth-child(odd) { padding-inline-end: 1.5rem; border-inline-end: 1px solid var(--c-line); }
+    .record-row:nth-child(even) { padding-inline-start: 1.5rem; }
+  }
+  .record-label { font-weight: 500; }
+  .record-value {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-primary);
+    font-size: 1.375rem;
+    white-space: nowrap;
+  }
+  .record-footnote { margin-top: 1.25rem; font-size: 0.8125rem; color: var(--c-ink-soft); }
+
+  /* ---------- Governance (register) ---------- */
+  .governance-grid {
+    display: grid;
+    gap: 1.75rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .governance-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .governance-family {
+    border-top: 2px solid var(--c-primary);
+    padding-top: 1.25rem;
+  }
+  .governance-family-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .governance-family h3 { font-size: 1.0625rem; color: var(--c-primary); margin: 0; }
+  .governance-family-count {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-primary);
+    font-size: 1.125rem;
+  }
+  .governance-docs {
+    list-style: none;
+    margin: 0.9rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--c-line);
+  }
+  .governance-docs li {
+    padding-block: 0.85rem;
+    border-bottom: 1px solid var(--c-line);
+    font-size: 0.9375rem;
+    color: var(--c-ink);
+  }
+  .governance-docs li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* ---------- Domains (strata + objectives) ---------- */
+  .domains-layout {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 760px) {
+    .domains-layout { grid-template-columns: 2fr 1fr; align-items: start; }
+  }
+  .domains-strata { list-style: none; margin: 0; padding: 0; }
+  .domains-strata li {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding-block: 0.85rem;
+    border-top: 2px solid var(--c-primary);
+  }
+  .domains-num {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-primary);
+    font-size: 0.9375rem;
+    flex-shrink: 0;
+  }
+  .domains-text { color: var(--c-ink); font-size: 0.9375rem; }
+  .domains-objectives { border-top: 2px solid var(--c-primary); padding-top: 1rem; }
+  .domains-objectives h3 { font-size: 0.9375rem; color: var(--c-ink-soft); margin: 0 0 0.75rem; }
+  .domains-objectives ul { list-style: none; margin: 0; padding: 0; }
+  .domains-objectives li {
+    padding-block: 0.5rem;
+    border-top: 1px solid var(--c-line);
+    font-size: 0.875rem;
+    color: var(--c-ink);
+  }
+  .domains-objectives li:first-child { border-top: none; }
+
+  /* ---------- Segments (wide, sparse) ---------- */
+  .segments-row {
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+    margin: 2.5rem 0 1rem;
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .segments-row { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 960px) {
+    .segments-row { grid-template-columns: repeat(5, 1fr); }
+  }
+  .segments-row li { border-top: 2px solid var(--c-primary); padding-top: 0.85rem; }
+  /* Staggered rise. Applied by script only, so the items are fully visible
+     when JavaScript is unavailable rather than stuck at opacity 0. */
+  .segments-row li.seg-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  .segments-row li.seg-reveal.seg-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1000ms ease-out, transform 1000ms ease-out;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .segments-row li.seg-reveal { opacity: 1; transform: none; }
+    .segments-row li.seg-reveal.seg-in { transition: none; }
+  }
+  .segments-num {
+    display: block;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-primary);
+    font-size: 0.9375rem;
+    margin-bottom: 0.4rem;
+  }
+  .segments-text { color: var(--c-ink); font-size: 0.9375rem; display: block; }
+
+  /* ---------- Positioning ---------- */
+  #positioning { background: var(--c-primary-deep); color: var(--c-white); border-top-color: var(--c-primary-deep); }
+  #positioning .entry-number,
+  #positioning .entry-heading { color: var(--c-white); }
+  #positioning .entry-lede { color: var(--c-ink-muted); }
+  #positioning .wrap-inner { padding-block: 0; }
+
+  /* ---------- Tint bands (surface level two) ---------- */
+  #record, #board, #segments, #volunteer { background: var(--c-line); border-top-color: var(--c-primary); }
+  /* #volunteer-tighten: this section was 662px, the tallest after the two
+     registers, and most of it was padding around a 402px form. */
+  #volunteer { padding-bottom: clamp(2rem, 4vw, 3.25rem); }
+  #record .wrap-inner, #board .wrap-inner, #segments .wrap-inner, #volunteer .wrap-inner { --c-line: rgba(20, 84, 99, 0.28); }
+  #record .wrap-inner, #board .wrap-inner, #segments .wrap-inner, #volunteer .wrap-inner { padding-block: 0; }
+  .positioning-body { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+  @media (min-width: 760px) { .positioning-body { grid-template-columns: 1fr 1fr; } }
+  .positioning-card {
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 1.5rem;
+  }
+  .positioning-card h3 { font-size: 1.125rem; color: var(--c-accent); margin-bottom: 0.6rem; }
+  .positioning-card p { color: var(--c-ink-muted); font-size: 0.95rem; }
+
+  /* ---------- Board roster ---------- */
+  .board-roster {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .board-roster li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding-block: 0.85rem;
+    border-bottom: 1px solid var(--c-line);
+  }
+  .board-num {
+    font-weight: 600;
+    color: var(--c-primary);
+    flex-shrink: 0;
+    min-width: 1.75rem;
+  }
+  @media (max-width: 720px) {
+    .board-roster { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Programmes ---------- */
+  .programme-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 760px) { .programme-grid { grid-template-columns: repeat(3, 1fr); } }
+  .programme-card {
+    border-top: 2px solid var(--c-primary);
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: relative;
+  }
+  .programme-tag {
+    align-self: flex-start;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--c-line);
+    color: var(--c-ink-soft);
+  }
+  .programme-tag.real {
+    /* --c-accent-hover measured 3.79:1 on --c-bg at 11px; AA needs 4.5.
+       --c-accent-strong measures 4.85 on the same ground. */
+    color: var(--c-accent-strong);
+    border-color: var(--c-accent);
+  }
+  .programme-name { font-family: var(--font-display); font-weight: 700; font-size: 1.1875rem; color: var(--c-primary-deep); }
+  .programme-meta { font-size: 0.8125rem; color: var(--c-ink-soft); font-variant-numeric: tabular-nums; }
+  .programme-purpose { font-size: 0.9375rem; color: var(--c-ink-soft); }
+  .programme-status {
+    margin-top: auto;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--c-primary);
+  }
+
+  /* ---------- Volunteer ---------- */
+  #volunteer { position: relative; }
+  .volunteer-grid { display: grid; gap: 2rem; margin-top: 1.5rem; }
+  @media (min-width: 820px) { .volunteer-grid { grid-template-columns: 1fr 1fr; } }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 0.85rem;
+  }
+  .field label { font-weight: 500; font-size: 0.9375rem; }
+  .field input, .field select {
+    /* inputs carry an intrinsic minimum width; without this they refuse to
+       shrink and force a horizontal overflow at narrow viewports. */
+    min-width: 0;
+    width: 100%;
+    font: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid var(--c-line);
+    padding: 0.6rem 0.1rem;
+    color: var(--c-ink);
+  }
+  .field input:focus-visible, .field select:focus-visible {
+    outline: none;
+    border-bottom-color: var(--c-primary);
+    border-bottom-width: 2px;
+  }
+  .field-note { font-size: 0.8125rem; color: var(--c-ink-soft); margin-top: 0.4rem; }
+  .form-status-note {
+    margin-top: 1rem;
+    font-size: 0.8125rem;
+    font-style: italic;
+    color: var(--c-ink-soft);
+  }
+
+  /* ---------- Footer ---------- */
+  /* No thread reservation here: #thread-layer lives inside <main>, and the
+     footer sits outside it. Insetting the band only knocked its inner .wrap
+     out of alignment with the header. */
+  footer.site-footer {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid var(--c-primary);
+    background: var(--c-primary-deep);
+    color: var(--c-white);
+    padding-block: 2.5rem;
+  }
+  footer.site-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/tabuk-stepped-facade.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) contrast(0.85);
+    opacity: 0.08;
+    pointer-events: none;
+  }
+  footer.site-footer > * { position: relative; z-index: 1; }
+  .footer-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  @media (min-width: 720px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+    .footer-brand { grid-column: 1; }
+    .footer-license { grid-column: 1; }
+    .footer-social { grid-column: 2; grid-row: 1 / span 2; }
+  }
+  .footer-brand { display: flex; align-items: center; gap: 0.6rem; }
+  .footer-brand img { height: 74px; width: auto; }
+  .footer-license { font-size: 0.8125rem; color: var(--c-ink-muted); max-width: 40ch; font-variant-numeric: tabular-nums; }
+  .footer-credits { grid-column: 1 / -1; margin: 0; font-size: 0.8125rem; line-height: 1.6; color: var(--c-ink-muted); }
+  .footer-credits a { color: var(--c-white); text-underline-offset: 0.15em; }
+  .footer-social { min-width: 220px; }
+  .footer-channel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 1.5rem;
+  }
+  @media (min-width: 720px) {
+    .footer-channel-list { grid-template-columns: 1fr 1fr; }
+    .footer-channel-list li { border-top: none; padding-block: 0.25rem; }
+  }
+  .footer-channel-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    min-height: 44px;
+    padding-block: 0.4rem;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+  .footer-channel-list li:first-child { border-top: none; }
+  .footer-channel-label { color: var(--c-ink-muted); }
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--c-white);
+    border-bottom: 1.5px solid var(--c-white);
+  }

@@ -24,6 +24,7 @@
 - **Changed 2026-09-24:** the Work title is «من أعمالنا» / "Selected work": Adab Al-Furusia is delivered and more projects are coming.
 - **Changed 2026-09-24 (English critique, 24/32):** English hero line and process title reworded ("supported after handover"; "From message to launch"); the project card notes the demo shows the design concept, in both languages; the Arabic hero line now names «مواقع ووردبريس ومتاجر ووكومرس» like Services.
 - **Changed 2026-09-25:** Wethaq Family Association was added as a second live demo with sample homepage content.
+- **Changed 2026-09-25:** Madarij Association was added as a third live demo: a pitch design, direction 01.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -54,6 +55,10 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **جمعية وثاق الأسرية**
   موقع جمعية سعودية غير ربحية في الإصلاح الأسري، يعرّف بالجمعية وبرامجها ودوراتها. يعرض الرابط الصفحة الرئيسية بمحتوى تجريبي.
   - عرض حي → `/work/wethaq/`
+  - (الكود: غير متاح)
+- **جمعية مدارج**
+  تصميم مقترح لموقع جمعية في تبوك تطوّر العمل التنموي والتميز المؤسسي، يعرض عملها وسجلّها للزوار والمتطوعين.
+  - عرض حي → `/work/madarij/`
   - (الكود: غير متاح)
 
 ### (قسم التعريف — بلا عنوان ظاهر)
@@ -130,6 +135,10 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **Wethaq Family Association**
   The website of a Saudi non-profit in family reconciliation, presenting the association, its programs and courses. The demo shows the main page with sample content.
   - Live demo → `/work/wethaq/`
+  - (Code: not public)
+- **Madarij Association**
+  A proposed website design for a Tabuk association that develops non-profit work and institutional excellence, putting its record on show for visitors and volunteers.
+  - Live demo → `/work/madarij/`
   - (Code: not public)
 
 ### (Intro section — no visible heading)
