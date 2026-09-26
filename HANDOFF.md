@@ -34,8 +34,8 @@
 | What | Where |
 |---|---|
 | **Real site** | branch **`main`** in this folder. Dev server: `pnpm astro dev --port 4321` → http://localhost:4321/ and /en/ |
-| **Prototypes (rounds 1–6)** | branch **`prototype/hero`**, checked out as a *git worktree* at `../005_myPortfolio-proto`. Dev server: `pnpm astro dev --port 4322` from there → http://localhost:4322/proto (index of every round and its verdict) |
-| **Reference boards 1–3** | `reference-board/` (git-excluded via `.git/info/exclude`; third-party screenshots, never commit). Archive: `../005_myPortfolio-archive/reference-board-2026-09-23.tar.gz` |
+| **Prototypes (rounds 1–10, finished)** | branch **`prototype/hero`**, kept for history only, inside this repo. **This project lives in exactly one folder** (`005_myPortfolio`): never create a git worktree or any sibling folder (`-proto`, `-archive`, …); the owner removed them on 2026-09-26. To look at the prototypes, `git switch prototype/hero` here (commit or stash first), then `git switch main` back. |
+| **Reference boards 1–3** | `reference-board/` (git-excluded via `.git/info/exclude`; third-party screenshots, never commit). Backup: `reference-board/reference-board-2026-09-23.tar.gz` |
 | **Deploy** | push `main` to GitHub; Cloudflare Pages builds and publishes it (`docs/DEPLOY.md`) |
 
 **Code map (`src/`):**
@@ -118,6 +118,6 @@
 - **Don't kill a server with `pkill -f "<pattern>"`** from a shell whose own command line contains that pattern; it kills itself. Use `pgrep` to get the PID, then `kill <PID>`.
 - **The Playwright MCP code runner has no `fs` or `require`.** Download files with `curl` instead. Its browser sometimes closes mid-run; just retry.
 - **The Playwright MCP browser profile can be locked** ("Browser is already in use"). Drive a headless browser from a Node script instead: `playwright-core` from `~/.npm/_npx/e41f203b7505f1fb/node_modules/playwright-core` with `executablePath` set to `~/.cache/ms-playwright/chromium-1234/chrome-linux*/chrome`.
-- **Root docs used to vanish when switching branches.** After committing docs on `main`, merge `main` into `prototype/hero`, inside the worktree.
+- **Root docs vanish when switching to `prototype/hero`** (it predates them); they come back on `git switch main`. Don't merge `main` into the prototype branch: it's finished history.
 - **Arabic spelling:** watch the hamzas (إذا، أن، إلى); they're a visible trust signal in this market. Never split Arabic below the word level in animations; letter joining breaks.
-- **Servers left running at handoff:** the dev servers on :4321 (`main`) and :4322 (prototype worktree). They're safe to stop and restart with the commands above.
+- **Dev server:** one, on :4321 from this folder (`pnpm astro dev --port 4321`). Safe to stop and restart.
