@@ -1,6 +1,7 @@
 # HANDOFF: portfolio one-pager (read this first)
 
-- **Written:** 2026-09-24, updated the same day after a second session. The next agent starts with no memory of it.
+- **Written:** 2026-09-24; last updated 2026-09-27 after a third session. The next agent starts with no memory of it.
+- **The owner considers the project finished (2026-09-27).** Nothing is pending; only start work the owner asks for.
 - **Project:** a one-page bilingual portfolio for **Edres Al-Zubairi**, a web developer in Saudi Arabia, with his brand **Bin Mahyub / بن مهيوب** kept in the details.
   - Arabic at `/` (RTL, default), English at `/en/`.
   - Astro 7 static, Alexandria font for the portfolio itself, deployed to Cloudflare Pages at **portfolio.binmahyub.uk**.
@@ -84,18 +85,35 @@
 
 ## 4. Next steps
 
+**Done 2026-09-24 → 27 (third session), all live:**
+- **Three project demos**, each a vanilla HTML/CSS/JS copy under `public/work/<slug>/`, card opens it in a new tab:
+  - `adab-al-furusia`: Vue pitch direction 01 converted; media 140 MB → 7.6 MB; demo mobile menu fixed; hero text contrast fixed. Card: "design concept".
+  - `wethaq`: homepage of the owner's Laravel project (source: `../../03_career/wethaq.org.sa/public_html`, rendered from its local app). The live wethaq.org.sa runs another vendor's CMS, not this code, so it was not copied. Empty DB sections hold labelled sample content with illustration tiles (no real people), `noindex`, sample bar. Critique 20/32; fixes applied in the demo (see Open items for the Laravel equivalents).
+  - `madarij`: pitch direction 01 from `../003_digital_hub/runs/madarij/design/01` (PHP guard line dropped). Unconfirmed hero photo replaced by *Tabuk Fortress 2022* (amanderson2, CC BY 2.0); footer texture is *Wadi al-Disah2* (Clemens Schmillen, CC BY-SA 4.0); both credited in its footer.
+- **Portfolio changes:** Work title «من أعمالنا» / "Selected work"; one language switch (hero only, footer pill removed); card buttons pinned to the card bottom; English critique 24/32 and its fixes (language pill placement, clearer English copy, both hero lines name WordPress sites and WooCommerce stores); hero chat loops (hold ~4s, fade, restart; pauses on hover/tap, off-screen and in hidden tabs; still under reduced motion), Replay button removed; hero content framed at 90rem on wide screens; tab icons now a Latin **B**.
+- **Docs:** COPY/DEPLOY/EMAIL_SETUP moved to `docs/`, finished-round docs in `docs/archive/`, README added.
+- **Deploy:** public repo https://github.com/alzubairigrind-hue/portfolio; Cloudflare Pages project **portfolio** (preview `portfolio-68f.pages.dev`) builds every push to `main`; custom domain portfolio.binmahyub.uk active. Settings in `docs/DEPLOY.md`.
+- **One folder:** the old `-proto` worktree and `-archive` folder were removed; see the Prototypes row in section 2.
+
+**Open items (none required; ask before doing any):**
+- **Wethaq's real Laravel code** still has the bugs fixed in the demo: in `public/landing-assets/CSS/nav.css` wrap the `.navbar .dropdown:hover` rules in `@media (hover: hover) and (pointer: fine)` (touch taps opened the submenu over its own button); `landing.js` dropdown selector `.navbar .dropdown > a.dropbtn` plus `aria-expanded`, Escape and outside-click closing; the about `<h1>جمعية</h1>` in `resources/views/landing/index.blade.php` → `<h2>`; `:focus-visible` outlines; a darker teal `#1f7a76` for teal text on light backgrounds and behind white button text; decorative social icons (`alt=""`, `aria-hidden`); hero padding, a «اطلب استشارة» button and the phone matchmaking button moved into the menu. Compare with `public/work/wethaq/` (`css/demo.css`, `css/nav.css`, `js/landing.js`, `index.html`).
+- **Madarij's boardroom photo** (`boardroom-real.jpg`, captioned as the association's own board meeting) can return only if the owner confirms it is theirs.
+- **Project card previews** are the same abstract drawing on all three cards (DESIGN.md: never a screenshot); a per-project accent colour would tell them apart.
+- **Outside this repo:** `../../Archive/DOO/01_Frousia/project_files/froosia` duplicates `../003_digital_hub/runs/froosia` (1.8 GB) and holds an outdated `vanilla/` copy of the Furusia demo; the owner has not decided whether to remove it.
+- `notes.md` is the owner's untracked file: never touch or commit it.
+
 **Done on 2026-09-24 (second session, continued):** round 9C (card-sized project card with a drawn preview); a third critique at all screen sizes, 28/32; fixes for its P1s (no sideways scroll at 320 px, the mini site in flow under the phone at 820–1100 px) and the store drawing's purple-only tiles; round 10 rejected. Heavy lifting went through the `codex-delegate` skill, with every result checked here before commit.
 
 **Done earlier the same day:** WhatsApp glyphs and hero pre-fill; the chat plays once; Work retitled and full-width; readability fixes (label, email target, 52ch measure, «فاخر» removed); rounds 7 (rejected) and 8 (8C shipped) on the prototype worktree; `/impeccable polish` (hero capped at 52rem, 44 px language switch, SVG replay icon); a second critique, 27/32; its follow-up (Work moved before How-we-work, hero language pill, chat chips as attachments, English contact CTA on one line); `dist/` rebuilt.
 
 1. **Deploy by pushing `main`** (`docs/DEPLOY.md`); check the live site afterwards.
-2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; the hero sub-line says «صفحات هبوط ومتاجر ووردبريس» while the service is «مواقع ووردبريس ومتاجر ووكومرس»; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
+2. **Optional, from the 27/32 critique** (ask before doing any): the steps «سعر مكتوب ونطاق واضح» and «التصميم والبناء» restate commitments 1–2; «ماذا نبني» is a full-size second pill on phones; the English mini site brushes the last chat bubble's corner (the owner accepted this).
 
 **Adding a project** (the owner will add several):
 - Add an entry to the `projects` array in `src/content/copy.ts`: `slug`, `name` {ar, en}, `description` {ar, en}, `status` (`'coming-soon'` or `'live'`), `statusLabel` {ar, en} when coming soon, `repoUrl` (a URL only if the repo is public, else `null`).
 - Add the same name, description and label verbatim to `docs/COPY.md` under «من أعمالنا» / "Selected work", and add the new `slug` to the copy check's allowed data values.
 - `'live'` shows a «عرض حي» / "Live demo" button to `/work/<slug>/`, so that demo page must exist first (PRODUCT.md: a copy hosted on this site). For a new project, keep it `'coming-soon'` until then; Adab Al-Furusia is already live.
-- With more than one project, consider retitling the section (for example back to «أعمال مختارة» / "Selected work"); ask the owner.
+- Put the demo in `public/work/<slug>/` as vanilla HTML/CSS/JS with relative paths and local fonts; add `noindex` and label any sample content when the demo shows a real organisation.
 - Run the checks in section 5, then commit and push `main` to publish.
 
 **Later:**
