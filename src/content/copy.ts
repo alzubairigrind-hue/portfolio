@@ -40,7 +40,6 @@ export type SiteCopy = {
     contact: string;
     status: string;
     label: string;
-    replay: string;
     messages: { from: 'me' | 'them'; text: string; chip?: string; chipLtr?: boolean }[];
     site: { url: string; title: string; button: string };
   };
@@ -107,7 +106,6 @@ export const copy: Record<Lang, SiteCopy> = {
       contact: 'بن مهيوب',
       status: 'متصل الآن',
       label: 'مثال توضيحي',
-      replay: 'إعادة التشغيل',
       messages: [
         { from: 'me', text: 'مرحبًا، نشاطي مقهى، وأحتاج موقعًا فيه قائمة المشروبات، وميزانيتي تقريبية.' },
         { from: 'them', text: 'أهلًا بك! أرسلنا لك السعر مكتوبًا مع كل ما يشمله العمل.', chip: 'عرض السعر' },
@@ -190,7 +188,6 @@ export const copy: Record<Lang, SiteCopy> = {
       contact: 'Bin Mahyub',
       status: 'Online now',
       label: 'Illustrative example',
-      replay: 'Replay',
       messages: [
         { from: 'me', text: 'Hi, I run a café, I need a site with our drinks menu, and I have a rough budget.' },
         { from: 'them', text: "Welcome! We've sent you the written price, with everything it includes.", chip: 'Quote' },

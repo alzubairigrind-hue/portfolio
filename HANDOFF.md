@@ -76,7 +76,7 @@
   - **6B middle:** service cards with small moving drawings (phone, store, shield), and the project in a browser-window card.
   - The How-we-work path fills and lights up on scroll.
   - **Commitments panel:** the dark purple panel stays. It may get **small enhancements only, never a redesign** (a chat-bubble redesign, round 7A, was rejected on sight and reverted). Round 8C is live: staggered pop-in, self-drawing ticks with a lilac ring, and column dividers on desktop.
-  - **Hero chat:** plays once when in view and holds; replays on leaving view, tap, or the «إعادة التشغيل» / "Replay" pill.
+  - **Hero chat:** loops continuously while at least 40% is in view, holding the finished chat for reading before a brief fade and restart; hover or tap pauses it, a hidden tab pauses it, leaving the viewport stops it, and reduced motion leaves the final state static. The hero content sits in a centered 90rem (1440px) frame on wide screens while the purple background remains full-bleed.
   - **Page order:** Hero → About → Services → Work («من أعمالنا» / "Selected work", full-width) → From message to launch + commitments → Contact. The only language pill sits in the hero's name row; the footer has just the copyright.
   - **Springy "bubbly" motion everywhere is intentional; keep it.** Everything is off under reduced motion.
 - **Font:** The portfolio itself uses Alexandria (self-hosted, OFL). The static demos under `public/work/adab-al-furusia/` and `public/work/wethaq/` ship their own local fonts.

@@ -25,6 +25,7 @@
 - **Changed 2026-09-24 (English critique, 24/32):** English hero line and process title reworded ("supported after handover"; "From message to launch"); the project card notes the demo shows the design concept, in both languages; the Arabic hero line now names «مواقع ووردبريس ومتاجر ووكومرس» like Services.
 - **Changed 2026-09-25:** Wethaq Family Association was added as a second live demo with sample homepage content.
 - **Changed 2026-09-25:** Madarij Association was added as a third live demo: a pitch design, direction 01.
+- **Changed 2026-09-26:** the hero chat now loops continuously (pause on hover or tap, stops off-screen, still static under reduced motion); the Replay button is gone.
 - **Voice:** "we", warm and confident, Modern Standard Arabic for the Arabic version
 - **Main idea:** built to keep running
 - **Client worries answered:** a cheap/template look, breaking on phones, slow or invisible on Google, unclear price
@@ -97,7 +98,6 @@ The Arabic version is the default page (`/`). The English version is at `/en/`.
 - **نحن:** موقعك أصبح مباشرًا، والنطاق والاستضافة باسمك. (شارة: yourcafe.sa)
 - **الموقع المصغّر:** yourcafe.sa · موقعك هنا · تواصل معنا
 - **الوسم:** مثال توضيحي
-- **زر الإعادة:** إعادة التشغيل
 
 ### تواصل
 - **العنوان:** عندك فكرة مشروع؟
@@ -174,7 +174,6 @@ Every site we build starts with one question: how will it grow with you and stay
 - **Us:** Your site is live, and the domain and hosting are in your name. (chip: yourcafe.sa)
 - **Mini site:** yourcafe.sa · Your site here · Contact us
 - **Label:** Illustrative example
-- **Replay button:** Replay
 
 ### Contact
 - **Heading:** Have a project idea?
